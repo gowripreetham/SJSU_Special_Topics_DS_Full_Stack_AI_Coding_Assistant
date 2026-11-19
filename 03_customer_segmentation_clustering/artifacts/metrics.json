@@ -1,0 +1,2692 @@
+{
+ "n": 200,
+ "sweep": [
+  {
+   "k": 2,
+   "inertia": 269.691012192764,
+   "silhouette": 0.3212707813918878,
+   "calinski": 95.66940839463767,
+   "davies": 1.266953745774289,
+   "gmm_bic": 1148.47253135969,
+   "ward_silhouette": 0.3842337621772661
+  },
+  {
+   "k": 3,
+   "inertia": 157.7040081503594,
+   "silhouette": 0.46658474419000145,
+   "calinski": 151.3351212635948,
+   "davies": 0.716482156943549,
+   "gmm_bic": 1151.718274341355,
+   "ward_silhouette": 0.4610481446570447
+  },
+  {
+   "k": 4,
+   "inertia": 108.92131661364358,
+   "silhouette": 0.4939069237513199,
+   "calinski": 174.59521459297633,
+   "davies": 0.7095564965521565,
+   "gmm_bic": 1079.4939915082437,
+   "ward_silhouette": 0.4925507715349343
+  },
+  {
+   "k": 5,
+   "inertia": 65.56840815571681,
+   "silhouette": 0.5546571631111091,
+   "calinski": 248.64932001536357,
+   "davies": 0.5722356162263352,
+   "gmm_bic": 1058.6522524191894,
+   "ward_silhouette": 0.5538089226688662
+  },
+  {
+   "k": 6,
+   "inertia": 55.057348270386015,
+   "silhouette": 0.5398800926790663,
+   "calinski": 243.08789485068303,
+   "davies": 0.6545674732339849,
+   "gmm_bic": 1071.5592483507833,
+   "ward_silhouette": 0.5386761871036926
+  },
+  {
+   "k": 7,
+   "inertia": 44.86475569922557,
+   "silhouette": 0.5281492781108291,
+   "calinski": 254.621179742776,
+   "davies": 0.7147841166477835,
+   "gmm_bic": 1087.328517453244,
+   "ward_silhouette": 0.5197949293475768
+  },
+  {
+   "k": 8,
+   "inertia": 37.228187677585886,
+   "silhouette": 0.4552147906587443,
+   "calinski": 267.27899442036147,
+   "davies": 0.7602174322282717,
+   "gmm_bic": 1082.4803883625245,
+   "ward_silhouette": 0.4308617778221774
+  },
+  {
+   "k": 9,
+   "inertia": 32.39226763033117,
+   "silhouette": 0.4570853966942764,
+   "calinski": 270.94844703331796,
+   "davies": 0.7632260748108199,
+   "gmm_bic": 1106.8058256120178,
+   "ward_silhouette": 0.43768997758154127
+  },
+  {
+   "k": 10,
+   "inertia": 29.981897788243703,
+   "silhouette": 0.4431713026508046,
+   "calinski": 260.54032083245403,
+   "davies": 0.7934962688817423,
+   "gmm_bic": 1113.752900778869,
+   "ward_silhouette": 0.4339007174968657
+  }
+ ],
+ "dbscan": [
+  {
+   "eps": 0.25,
+   "min_samples": 3,
+   "clusters": 12,
+   "noise_pct": 8.0,
+   "silhouette": 0.40903811765706183
+  },
+  {
+   "eps": 0.25,
+   "min_samples": 5,
+   "clusters": 6,
+   "noise_pct": 25.0,
+   "silhouette": 0.5316566047427249
+  },
+  {
+   "eps": 0.25,
+   "min_samples": 8,
+   "clusters": 5,
+   "noise_pct": 39.5,
+   "silhouette": 0.5947188584860695
+  },
+  {
+   "eps": 0.3,
+   "min_samples": 3,
+   "clusters": 9,
+   "noise_pct": 7.000000000000001,
+   "silhouette": 0.47204049387962216
+  },
+  {
+   "eps": 0.3,
+   "min_samples": 5,
+   "clusters": 7,
+   "noise_pct": 17.5,
+   "silhouette": 0.5243276105881419
+  },
+  {
+   "eps": 0.3,
+   "min_samples": 8,
+   "clusters": 5,
+   "noise_pct": 36.0,
+   "silhouette": 0.5925555190017017
+  },
+  {
+   "eps": 0.35,
+   "min_samples": 3,
+   "clusters": 7,
+   "noise_pct": 5.5,
+   "silhouette": 0.5153893817159471
+  },
+  {
+   "eps": 0.35,
+   "min_samples": 5,
+   "clusters": 6,
+   "noise_pct": 11.5,
+   "silhouette": 0.5577457478878458
+  },
+  {
+   "eps": 0.35,
+   "min_samples": 8,
+   "clusters": 4,
+   "noise_pct": 27.500000000000004,
+   "silhouette": 0.5994016095414765
+  },
+  {
+   "eps": 0.4,
+   "min_samples": 3,
+   "clusters": 4,
+   "noise_pct": 5.0,
+   "silhouette": 0.3953808255515419
+  },
+  {
+   "eps": 0.4,
+   "min_samples": 5,
+   "clusters": 4,
+   "noise_pct": 7.5,
+   "silhouette": 0.4780592455223124
+  },
+  {
+   "eps": 0.4,
+   "min_samples": 8,
+   "clusters": 5,
+   "noise_pct": 12.5,
+   "silhouette": 0.5489916076416773
+  },
+  {
+   "eps": 0.5,
+   "min_samples": 3,
+   "clusters": 2,
+   "noise_pct": 3.5000000000000004,
+   "silhouette": 0.3892468662417122
+  },
+  {
+   "eps": 0.5,
+   "min_samples": 5,
+   "clusters": 2,
+   "noise_pct": 4.0,
+   "silhouette": 0.3875583892728279
+  },
+  {
+   "eps": 0.5,
+   "min_samples": 8,
+   "clusters": 2,
+   "noise_pct": 7.5,
+   "silhouette": 0.4010057526878973
+  }
+ ],
+ "autoresearch": {
+  "best": {
+   "algo": "kmeans",
+   "k": 6,
+   "features": "income+spend",
+   "scaler": "standard"
+  },
+  "best_score": 0.5044506626187665,
+  "history": [
+   {
+    "iter": 0,
+    "change": "baseline",
+    "config": {
+     "algo": "kmeans",
+     "k": 3,
+     "features": "age+income+spend",
+     "scaler": "standard"
+    },
+    "score": 0.3096368180507774,
+    "accepted": true,
+    "best": 0.3096368180507774,
+    "secs": 0.06
+   },
+   {
+    "iter": 1,
+    "change": "algo: kmeans \u2192 gmm",
+    "config": {
+     "algo": "gmm",
+     "k": 3,
+     "features": "age+income+spend",
+     "scaler": "standard"
+    },
+    "score": 0.1370653503907621,
+    "accepted": false,
+    "best": 0.3096368180507774,
+    "secs": 0.14
+   },
+   {
+    "iter": 2,
+    "change": "features: age+income+spend \u2192 income+spend",
+    "config": {
+     "algo": "kmeans",
+     "k": 3,
+     "features": "income+spend",
+     "scaler": "standard"
+    },
+    "score": 0.4661076346746746,
+    "accepted": true,
+    "best": 0.4661076346746746,
+    "secs": 0.05
+   },
+   {
+    "iter": 3,
+    "change": "k: 3 \u2192 4",
+    "config": {
+     "algo": "kmeans",
+     "k": 4,
+     "features": "income+spend",
+     "scaler": "standard"
+    },
+    "score": 0.44510408258974904,
+    "accepted": false,
+    "best": 0.4661076346746746,
+    "secs": 0.06
+   },
+   {
+    "iter": 4,
+    "change": "algo: kmeans \u2192 gmm",
+    "config": {
+     "algo": "gmm",
+     "k": 3,
+     "features": "income+spend",
+     "scaler": "standard"
+    },
+    "score": 0.3622150708891195,
+    "accepted": false,
+    "best": 0.4661076346746746,
+    "secs": 0.12
+   },
+   {
+    "iter": 5,
+    "change": "scaler: standard \u2192 minmax",
+    "config": {
+     "algo": "kmeans",
+     "k": 3,
+     "features": "income+spend",
+     "scaler": "minmax"
+    },
+    "score": 0.40402622767413765,
+    "accepted": false,
+    "best": 0.4661076346746746,
+    "secs": 0.05
+   },
+   {
+    "iter": 6,
+    "change": "scaler: standard \u2192 robust",
+    "config": {
+     "algo": "kmeans",
+     "k": 3,
+     "features": "income+spend",
+     "scaler": "robust"
+    },
+    "score": 0.4698130335730026,
+    "accepted": true,
+    "best": 0.4698130335730026,
+    "secs": 0.06
+   },
+   {
+    "iter": 7,
+    "change": "algo: kmeans \u2192 gmm",
+    "config": {
+     "algo": "gmm",
+     "k": 3,
+     "features": "income+spend",
+     "scaler": "robust"
+    },
+    "score": 0.36459982658134094,
+    "accepted": false,
+    "best": 0.4698130335730026,
+    "secs": 0.13
+   },
+   {
+    "iter": 8,
+    "change": "features: income+spend \u2192 age+income+spend",
+    "config": {
+     "algo": "kmeans",
+     "k": 3,
+     "features": "age+income+spend",
+     "scaler": "robust"
+    },
+    "score": 0.31120917852950747,
+    "accepted": false,
+    "best": 0.4698130335730026,
+    "secs": 0.06
+   },
+   {
+    "iter": 9,
+    "change": "k: 3 \u2192 9",
+    "config": {
+     "algo": "kmeans",
+     "k": 9,
+     "features": "income+spend",
+     "scaler": "robust"
+    },
+    "score": 0.4258225911882174,
+    "accepted": false,
+    "best": 0.4698130335730026,
+    "secs": 0.09
+   },
+   {
+    "iter": 10,
+    "change": "algo: kmeans \u2192 ward",
+    "config": {
+     "algo": "ward",
+     "k": 3,
+     "features": "income+spend",
+     "scaler": "robust"
+    },
+    "score": 0.44156242953750136,
+    "accepted": false,
+    "best": 0.4698130335730026,
+    "secs": 0.05
+   },
+   {
+    "iter": 11,
+    "change": "features: income+spend \u2192 all+gender",
+    "config": {
+     "algo": "kmeans",
+     "k": 3,
+     "features": "all+gender",
+     "scaler": "robust"
+    },
+    "score": 0.2520030308894389,
+    "accepted": false,
+    "best": 0.4698130335730026,
+    "secs": 0.06
+   },
+   {
+    "iter": 12,
+    "change": "k: 3 \u2192 8",
+    "config": {
+     "algo": "kmeans",
+     "k": 8,
+     "features": "income+spend",
+     "scaler": "robust"
+    },
+    "score": 0.4223991727160665,
+    "accepted": false,
+    "best": 0.4698130335730026,
+    "secs": 0.1
+   },
+   {
+    "iter": 13,
+    "change": "features: income+spend \u2192 age+spend",
+    "config": {
+     "algo": "kmeans",
+     "k": 3,
+     "features": "age+spend",
+     "scaler": "robust"
+    },
+    "score": 0.37638263094367,
+    "accepted": false,
+    "best": 0.4698130335730026,
+    "secs": 0.06
+   },
+   {
+    "iter": 14,
+    "change": "k: 3 \u2192 4",
+    "config": {
+     "algo": "kmeans",
+     "k": 4,
+     "features": "income+spend",
+     "scaler": "robust"
+    },
+    "score": 0.44212019816260156,
+    "accepted": false,
+    "best": 0.4698130335730026,
+    "secs": 0.06
+   },
+   {
+    "iter": 15,
+    "change": "k: 3 \u2192 7",
+    "config": {
+     "algo": "kmeans",
+     "k": 7,
+     "features": "income+spend",
+     "scaler": "robust"
+    },
+    "score": 0.469293964842464,
+    "accepted": false,
+    "best": 0.4698130335730026,
+    "secs": 0.07
+   },
+   {
+    "iter": 16,
+    "change": "k: 3 \u2192 6",
+    "config": {
+     "algo": "kmeans",
+     "k": 6,
+     "features": "income+spend",
+     "scaler": "robust"
+    },
+    "score": 0.5022468304406132,
+    "accepted": true,
+    "best": 0.5022468304406132,
+    "secs": 0.08
+   },
+   {
+    "iter": 17,
+    "change": "algo: kmeans \u2192 ward",
+    "config": {
+     "algo": "ward",
+     "k": 6,
+     "features": "income+spend",
+     "scaler": "robust"
+    },
+    "score": 0.4913336545070319,
+    "accepted": false,
+    "best": 0.5022468304406132,
+    "secs": 0.08
+   },
+   {
+    "iter": 18,
+    "change": "features: income+spend \u2192 age+income+spend",
+    "config": {
+     "algo": "kmeans",
+     "k": 6,
+     "features": "age+income+spend",
+     "scaler": "robust"
+    },
+    "score": 0.4058816943656859,
+    "accepted": false,
+    "best": 0.5022468304406132,
+    "secs": 0.07
+   },
+   {
+    "iter": 19,
+    "change": "scaler: robust \u2192 standard",
+    "config": {
+     "algo": "kmeans",
+     "k": 6,
+     "features": "income+spend",
+     "scaler": "standard"
+    },
+    "score": 0.5044506626187665,
+    "accepted": true,
+    "best": 0.5044506626187665,
+    "secs": 0.07
+   },
+   {
+    "iter": 20,
+    "change": "algo: kmeans \u2192 ward",
+    "config": {
+     "algo": "ward",
+     "k": 6,
+     "features": "income+spend",
+     "scaler": "standard"
+    },
+    "score": 0.4923759344191873,
+    "accepted": false,
+    "best": 0.5044506626187665,
+    "secs": 0.06
+   },
+   {
+    "iter": 21,
+    "change": "features: income+spend \u2192 age+income+spend",
+    "config": {
+     "algo": "kmeans",
+     "k": 6,
+     "features": "age+income+spend",
+     "scaler": "standard"
+    },
+    "score": 0.41099909223979914,
+    "accepted": false,
+    "best": 0.5044506626187665,
+    "secs": 0.07
+   },
+   {
+    "iter": 22,
+    "change": "algo: kmeans \u2192 gmm",
+    "config": {
+     "algo": "gmm",
+     "k": 6,
+     "features": "income+spend",
+     "scaler": "standard"
+    },
+    "score": 0.49967887213017675,
+    "accepted": false,
+    "best": 0.5044506626187665,
+    "secs": 0.16
+   },
+   {
+    "iter": 23,
+    "change": "scaler: standard \u2192 minmax",
+    "config": {
+     "algo": "kmeans",
+     "k": 6,
+     "features": "income+spend",
+     "scaler": "minmax"
+    },
+    "score": 0.49346564555371364,
+    "accepted": false,
+    "best": 0.5044506626187665,
+    "secs": 0.07
+   },
+   {
+    "iter": 24,
+    "change": "features: income+spend \u2192 all+gender",
+    "config": {
+     "algo": "kmeans",
+     "k": 6,
+     "features": "all+gender",
+     "scaler": "standard"
+    },
+    "score": 0.2760591212166341,
+    "accepted": false,
+    "best": 0.5044506626187665,
+    "secs": 0.07
+   },
+   {
+    "iter": 25,
+    "change": "k: 6 \u2192 8",
+    "config": {
+     "algo": "kmeans",
+     "k": 8,
+     "features": "income+spend",
+     "scaler": "standard"
+    },
+    "score": 0.42320091130770504,
+    "accepted": false,
+    "best": 0.5044506626187665,
+    "secs": 0.08
+   },
+   {
+    "iter": 26,
+    "change": "features: income+spend \u2192 age+spend",
+    "config": {
+     "algo": "kmeans",
+     "k": 6,
+     "features": "age+spend",
+     "scaler": "standard"
+    },
+    "score": 0.4363605701390749,
+    "accepted": false,
+    "best": 0.5044506626187665,
+    "secs": 0.07
+   },
+   {
+    "iter": 27,
+    "change": "k: 6 \u2192 2",
+    "config": {
+     "algo": "kmeans",
+     "k": 2,
+     "features": "income+spend",
+     "scaler": "standard"
+    },
+    "score": 0.2177395006458809,
+    "accepted": false,
+    "best": 0.5044506626187665,
+    "secs": 0.05
+   },
+   {
+    "iter": 28,
+    "change": "k: 6 \u2192 7",
+    "config": {
+     "algo": "kmeans",
+     "k": 7,
+     "features": "income+spend",
+     "scaler": "standard"
+    },
+    "score": 0.46592844786493626,
+    "accepted": false,
+    "best": 0.5044506626187665,
+    "secs": 0.07
+   }
+  ],
+  "maximize": true,
+  "n_trials": 29,
+  "n_accepted": 5
+ },
+ "best": {
+  "algo": "kmeans",
+  "k": 6,
+  "features": "income+spend",
+  "scaler": "standard"
+ },
+ "profiles": [
+  {
+   "cluster": 0,
+   "persona": "Mainstream Middle",
+   "action": "Seasonal promotions and cross-sell of popular categories",
+   "n": 81,
+   "share": 0.405,
+   "age": 42.71604938271605,
+   "income": 55.2962962962963,
+   "spend": 49.51851851851852,
+   "male_pct": 40.74074074074074,
+   "silhouette": 0.581730210252486
+  },
+  {
+   "cluster": 1,
+   "persona": "Affluent but Careful",
+   "action": "Value-proof messaging, quality guarantees, targeted luxury offers",
+   "n": 35,
+   "share": 0.175,
+   "age": 41.114285714285714,
+   "income": 88.2,
+   "spend": 17.114285714285714,
+   "male_pct": 54.285714285714285,
+   "silhouette": 0.49821223708432033
+  },
+  {
+   "cluster": 2,
+   "persona": "Premium Enthusiasts 2",
+   "action": "VIP programme, early access, premium bundles",
+   "n": 10,
+   "share": 0.05,
+   "age": 32.2,
+   "income": 109.7,
+   "spend": 82.0,
+   "male_pct": 40.0,
+   "silhouette": 0.3272361048457605
+  },
+  {
+   "cluster": 3,
+   "persona": "Budget Essentials",
+   "action": "Discount coupons, loyalty points on staples",
+   "n": 23,
+   "share": 0.115,
+   "age": 45.21739130434783,
+   "income": 26.304347826086957,
+   "spend": 20.91304347826087,
+   "male_pct": 39.130434782608695,
+   "silhouette": 0.5105060797073505
+  },
+  {
+   "cluster": 4,
+   "persona": "Young Trend Spenders",
+   "action": "Flash sales, buy-now-pay-later, social campaigns",
+   "n": 22,
+   "share": 0.11,
+   "age": 25.272727272727273,
+   "income": 25.727272727272727,
+   "spend": 79.36363636363636,
+   "male_pct": 40.909090909090914,
+   "silhouette": 0.595225541682419
+  },
+  {
+   "cluster": 5,
+   "persona": "Premium Enthusiasts",
+   "action": "VIP programme, early access, premium bundles",
+   "n": 29,
+   "share": 0.145,
+   "age": 32.86206896551724,
+   "income": 78.55172413793103,
+   "spend": 82.17241379310344,
+   "male_pct": 48.275862068965516,
+   "silhouette": 0.5279131175403731
+  }
+ ],
+ "final": {
+  "silhouette": 0.5398800926790663,
+  "calinski": 243.08789485068303,
+  "davies": 0.6545674732339849,
+  "stability_ari": 0.8687507446904104
+ },
+ "points": [
+  {
+   "age": 19,
+   "income": 15,
+   "spend": 39,
+   "c": 3,
+   "px": -0.616,
+   "py": -1.763,
+   "sil": 0.411
+  },
+  {
+   "age": 21,
+   "income": 15,
+   "spend": 81,
+   "c": 4,
+   "px": -1.666,
+   "py": -1.821,
+   "sil": 0.696
+  },
+  {
+   "age": 20,
+   "income": 16,
+   "spend": 6,
+   "c": 3,
+   "px": 0.338,
+   "py": -1.675,
+   "sil": 0.639
+  },
+  {
+   "age": 23,
+   "income": 16,
+   "spend": 77,
+   "c": 4,
+   "px": -1.457,
+   "py": -1.772,
+   "sil": 0.696
+  },
+  {
+   "age": 31,
+   "income": 17,
+   "spend": 40,
+   "c": 3,
+   "px": -0.038,
+   "py": -1.663,
+   "sil": 0.386
+  },
+  {
+   "age": 22,
+   "income": 17,
+   "spend": 76,
+   "c": 4,
+   "px": -1.482,
+   "py": -1.735,
+   "sil": 0.697
+  },
+  {
+   "age": 35,
+   "income": 18,
+   "spend": 6,
+   "c": 3,
+   "px": 1.095,
+   "py": -1.566,
+   "sil": 0.648
+  },
+  {
+   "age": 23,
+   "income": 18,
+   "spend": 94,
+   "c": 4,
+   "px": -1.926,
+   "py": -1.721,
+   "sil": 0.659
+  },
+  {
+   "age": 64,
+   "income": 19,
+   "spend": 3,
+   "c": 3,
+   "px": 2.645,
+   "py": -1.461,
+   "sil": 0.629
+  },
+  {
+   "age": 30,
+   "income": 19,
+   "spend": 72,
+   "c": 4,
+   "px": -0.97,
+   "py": -1.636,
+   "sil": 0.662
+  },
+  {
+   "age": 67,
+   "income": 19,
+   "spend": 14,
+   "c": 3,
+   "px": 2.496,
+   "py": -1.47,
+   "sil": 0.677
+  },
+  {
+   "age": 35,
+   "income": 19,
+   "spend": 99,
+   "c": 4,
+   "px": -1.457,
+   "py": -1.664,
+   "sil": 0.623
+  },
+  {
+   "age": 58,
+   "income": 20,
+   "spend": 15,
+   "c": 3,
+   "px": 2.01,
+   "py": -1.453,
+   "sil": 0.679
+  },
+  {
+   "age": 24,
+   "income": 20,
+   "spend": 77,
+   "c": 4,
+   "px": -1.413,
+   "py": -1.618,
+   "sil": 0.718
+  },
+  {
+   "age": 37,
+   "income": 20,
+   "spend": 13,
+   "c": 3,
+   "px": 1.0,
+   "py": -1.496,
+   "sil": 0.68
+  },
+  {
+   "age": 22,
+   "income": 20,
+   "spend": 79,
+   "c": 4,
+   "px": -1.569,
+   "py": -1.625,
+   "sil": 0.725
+  },
+  {
+   "age": 35,
+   "income": 21,
+   "spend": 35,
+   "c": 3,
+   "px": 0.294,
+   "py": -1.494,
+   "sil": 0.481
+  },
+  {
+   "age": 20,
+   "income": 21,
+   "spend": 66,
+   "c": 4,
+   "px": -1.316,
+   "py": -1.572,
+   "sil": 0.541
+  },
+  {
+   "age": 52,
+   "income": 23,
+   "spend": 29,
+   "c": 3,
+   "px": 1.317,
+   "py": -1.372,
+   "sil": 0.578
+  },
+  {
+   "age": 35,
+   "income": 23,
+   "spend": 98,
+   "c": 4,
+   "px": -1.437,
+   "py": -1.51,
+   "sil": 0.625
+  },
+  {
+   "age": 35,
+   "income": 24,
+   "spend": 35,
+   "c": 3,
+   "px": 0.289,
+   "py": -1.38,
+   "sil": 0.461
+  },
+  {
+   "age": 25,
+   "income": 24,
+   "spend": 73,
+   "c": 4,
+   "px": -1.26,
+   "py": -1.457,
+   "sil": 0.676
+  },
+  {
+   "age": 46,
+   "income": 25,
+   "spend": 5,
+   "c": 3,
+   "px": 1.667,
+   "py": -1.274,
+   "sil": 0.641
+  },
+  {
+   "age": 31,
+   "income": 25,
+   "spend": 73,
+   "c": 4,
+   "px": -0.958,
+   "py": -1.406,
+   "sil": 0.67
+  },
+  {
+   "age": 54,
+   "income": 28,
+   "spend": 14,
+   "c": 3,
+   "px": 1.82,
+   "py": -1.155,
+   "sil": 0.661
+  },
+  {
+   "age": 29,
+   "income": 28,
+   "spend": 82,
+   "c": 4,
+   "px": -1.311,
+   "py": -1.309,
+   "sil": 0.705
+  },
+  {
+   "age": 45,
+   "income": 28,
+   "spend": 32,
+   "c": 3,
+   "px": 0.87,
+   "py": -1.201,
+   "sil": 0.486
+  },
+  {
+   "age": 35,
+   "income": 28,
+   "spend": 61,
+   "c": 4,
+   "px": -0.432,
+   "py": -1.266,
+   "sil": 0.293
+  },
+  {
+   "age": 40,
+   "income": 29,
+   "spend": 31,
+   "c": 3,
+   "px": 0.643,
+   "py": -1.173,
+   "sil": 0.493
+  },
+  {
+   "age": 23,
+   "income": 29,
+   "spend": 87,
+   "c": 4,
+   "px": -1.755,
+   "py": -1.291,
+   "sil": 0.685
+  },
+  {
+   "age": 60,
+   "income": 30,
+   "spend": 4,
+   "c": 3,
+   "px": 2.395,
+   "py": -1.052,
+   "sil": 0.606
+  },
+  {
+   "age": 21,
+   "income": 30,
+   "spend": 73,
+   "c": 4,
+   "px": -1.474,
+   "py": -1.237,
+   "sil": 0.612
+  },
+  {
+   "age": 53,
+   "income": 33,
+   "spend": 4,
+   "c": 3,
+   "px": 2.034,
+   "py": -0.952,
+   "sil": 0.577
+  },
+  {
+   "age": 18,
+   "income": 33,
+   "spend": 92,
+   "c": 4,
+   "px": -2.152,
+   "py": -1.157,
+   "sil": 0.605
+  },
+  {
+   "age": 49,
+   "income": 33,
+   "spend": 14,
+   "c": 3,
+   "px": 1.558,
+   "py": -0.976,
+   "sil": 0.61
+  },
+  {
+   "age": 21,
+   "income": 33,
+   "spend": 81,
+   "c": 4,
+   "px": -1.699,
+   "py": -1.134,
+   "sil": 0.64
+  },
+  {
+   "age": 42,
+   "income": 34,
+   "spend": 17,
+   "c": 3,
+   "px": 1.119,
+   "py": -0.957,
+   "sil": 0.586
+  },
+  {
+   "age": 30,
+   "income": 34,
+   "spend": 73,
+   "c": 4,
+   "px": -1.025,
+   "py": -1.065,
+   "sil": 0.529
+  },
+  {
+   "age": 36,
+   "income": 37,
+   "spend": 26,
+   "c": 3,
+   "px": 0.562,
+   "py": -0.869,
+   "sil": 0.422
+  },
+  {
+   "age": 20,
+   "income": 37,
+   "spend": 75,
+   "c": 4,
+   "px": -1.592,
+   "py": -0.975,
+   "sil": 0.486
+  },
+  {
+   "age": 65,
+   "income": 38,
+   "spend": 35,
+   "c": 3,
+   "px": 1.784,
+   "py": -0.781,
+   "sil": 0.091
+  },
+  {
+   "age": 24,
+   "income": 38,
+   "spend": 92,
+   "c": 4,
+   "px": -1.857,
+   "py": -0.954,
+   "sil": 0.501
+  },
+  {
+   "age": 48,
+   "income": 39,
+   "spend": 36,
+   "c": 3,
+   "px": 0.893,
+   "py": -0.781,
+   "sil": -0.012
+  },
+  {
+   "age": 31,
+   "income": 39,
+   "spend": 61,
+   "c": 0,
+   "px": -0.655,
+   "py": -0.855,
+   "sil": 0.121
+  },
+  {
+   "age": 49,
+   "income": 39,
+   "spend": 28,
+   "c": 3,
+   "px": 1.163,
+   "py": -0.767,
+   "sil": 0.313
+  },
+  {
+   "age": 24,
+   "income": 39,
+   "spend": 65,
+   "c": 4,
+   "px": -1.119,
+   "py": -0.876,
+   "sil": 0.05
+  },
+  {
+   "age": 50,
+   "income": 40,
+   "spend": 55,
+   "c": 0,
+   "px": 0.471,
+   "py": -0.767,
+   "sil": 0.394
+  },
+  {
+   "age": 27,
+   "income": 40,
+   "spend": 47,
+   "c": 0,
+   "px": -0.475,
+   "py": -0.805,
+   "sil": 0.439
+  },
+  {
+   "age": 29,
+   "income": 40,
+   "spend": 42,
+   "c": 0,
+   "px": -0.237,
+   "py": -0.793,
+   "sil": 0.297
+  },
+  {
+   "age": 31,
+   "income": 40,
+   "spend": 42,
+   "c": 0,
+   "px": -0.135,
+   "py": -0.789,
+   "sil": 0.297
+  },
+  {
+   "age": 49,
+   "income": 42,
+   "spend": 52,
+   "c": 0,
+   "px": 0.499,
+   "py": -0.688,
+   "sil": 0.525
+  },
+  {
+   "age": 33,
+   "income": 42,
+   "spend": 60,
+   "c": 0,
+   "px": -0.531,
+   "py": -0.735,
+   "sil": 0.304
+  },
+  {
+   "age": 31,
+   "income": 43,
+   "spend": 54,
+   "c": 0,
+   "px": -0.47,
+   "py": -0.692,
+   "sil": 0.519
+  },
+  {
+   "age": 59,
+   "income": 43,
+   "spend": 60,
+   "c": 0,
+   "px": 0.785,
+   "py": -0.64,
+   "sil": 0.343
+  },
+  {
+   "age": 50,
+   "income": 43,
+   "spend": 45,
+   "c": 0,
+   "px": 0.74,
+   "py": -0.638,
+   "sil": 0.493
+  },
+  {
+   "age": 47,
+   "income": 43,
+   "spend": 41,
+   "c": 0,
+   "px": 0.698,
+   "py": -0.638,
+   "sil": 0.376
+  },
+  {
+   "age": 51,
+   "income": 44,
+   "spend": 50,
+   "c": 0,
+   "px": 0.652,
+   "py": -0.605,
+   "sil": 0.602
+  },
+  {
+   "age": 69,
+   "income": 44,
+   "spend": 46,
+   "c": 0,
+   "px": 1.674,
+   "py": -0.56,
+   "sil": 0.544
+  },
+  {
+   "age": 27,
+   "income": 46,
+   "spend": 51,
+   "c": 0,
+   "px": -0.596,
+   "py": -0.582,
+   "sil": 0.641
+  },
+  {
+   "age": 53,
+   "income": 46,
+   "spend": 46,
+   "c": 0,
+   "px": 0.859,
+   "py": -0.518,
+   "sil": 0.596
+  },
+  {
+   "age": 70,
+   "income": 46,
+   "spend": 56,
+   "c": 0,
+   "px": 1.447,
+   "py": -0.496,
+   "sil": 0.56
+  },
+  {
+   "age": 19,
+   "income": 46,
+   "spend": 55,
+   "c": 0,
+   "px": -1.111,
+   "py": -0.605,
+   "sil": 0.581
+  },
+  {
+   "age": 67,
+   "income": 47,
+   "spend": 52,
+   "c": 0,
+   "px": 1.403,
+   "py": -0.459,
+   "sil": 0.651
+  },
+  {
+   "age": 54,
+   "income": 47,
+   "spend": 59,
+   "c": 0,
+   "px": 0.552,
+   "py": -0.497,
+   "sil": 0.504
+  },
+  {
+   "age": 63,
+   "income": 48,
+   "spend": 51,
+   "c": 0,
+   "px": 1.225,
+   "py": -0.428,
+   "sil": 0.68
+  },
+  {
+   "age": 18,
+   "income": 48,
+   "spend": 59,
+   "c": 0,
+   "px": -1.275,
+   "py": -0.537,
+   "sil": 0.528
+  },
+  {
+   "age": 43,
+   "income": 48,
+   "spend": 50,
+   "c": 0,
+   "px": 0.239,
+   "py": -0.47,
+   "sil": 0.685
+  },
+  {
+   "age": 68,
+   "income": 48,
+   "spend": 48,
+   "c": 0,
+   "px": 1.561,
+   "py": -0.413,
+   "sil": 0.667
+  },
+  {
+   "age": 19,
+   "income": 48,
+   "spend": 59,
+   "c": 0,
+   "px": -1.225,
+   "py": -0.535,
+   "sil": 0.528
+  },
+  {
+   "age": 32,
+   "income": 48,
+   "spend": 47,
+   "c": 0,
+   "px": -0.237,
+   "py": -0.489,
+   "sil": 0.654
+  },
+  {
+   "age": 70,
+   "income": 49,
+   "spend": 55,
+   "c": 0,
+   "px": 1.469,
+   "py": -0.38,
+   "sil": 0.643
+  },
+  {
+   "age": 47,
+   "income": 49,
+   "spend": 42,
+   "c": 0,
+   "px": 0.659,
+   "py": -0.411,
+   "sil": 0.574
+  },
+  {
+   "age": 60,
+   "income": 50,
+   "spend": 49,
+   "c": 0,
+   "px": 1.124,
+   "py": -0.355,
+   "sil": 0.708
+  },
+  {
+   "age": 60,
+   "income": 50,
+   "spend": 56,
+   "c": 0,
+   "px": 0.933,
+   "py": -0.365,
+   "sil": 0.64
+  },
+  {
+   "age": 59,
+   "income": 54,
+   "spend": 47,
+   "c": 0,
+   "px": 1.121,
+   "py": -0.202,
+   "sil": 0.732
+  },
+  {
+   "age": 26,
+   "income": 54,
+   "spend": 54,
+   "c": 0,
+   "px": -0.744,
+   "py": -0.283,
+   "sil": 0.715
+  },
+  {
+   "age": 45,
+   "income": 54,
+   "spend": 53,
+   "c": 0,
+   "px": 0.247,
+   "py": -0.241,
+   "sil": 0.728
+  },
+  {
+   "age": 40,
+   "income": 54,
+   "spend": 48,
+   "c": 0,
+   "px": 0.131,
+   "py": -0.244,
+   "sil": 0.741
+  },
+  {
+   "age": 23,
+   "income": 54,
+   "spend": 52,
+   "c": 0,
+   "px": -0.841,
+   "py": -0.287,
+   "sil": 0.738
+  },
+  {
+   "age": 49,
+   "income": 54,
+   "spend": 42,
+   "c": 0,
+   "px": 0.751,
+   "py": -0.216,
+   "sil": 0.654
+  },
+  {
+   "age": 57,
+   "income": 54,
+   "spend": 51,
+   "c": 0,
+   "px": 0.91,
+   "py": -0.212,
+   "sil": 0.746
+  },
+  {
+   "age": 38,
+   "income": 54,
+   "spend": 55,
+   "c": 0,
+   "px": -0.163,
+   "py": -0.259,
+   "sil": 0.699
+  },
+  {
+   "age": 67,
+   "income": 54,
+   "spend": 41,
+   "c": 0,
+   "px": 1.691,
+   "py": -0.176,
+   "sil": 0.631
+  },
+  {
+   "age": 46,
+   "income": 54,
+   "spend": 44,
+   "c": 0,
+   "px": 0.544,
+   "py": -0.226,
+   "sil": 0.692
+  },
+  {
+   "age": 21,
+   "income": 54,
+   "spend": 57,
+   "c": 0,
+   "px": -1.079,
+   "py": -0.299,
+   "sil": 0.659
+  },
+  {
+   "age": 48,
+   "income": 54,
+   "spend": 46,
+   "c": 0,
+   "px": 0.591,
+   "py": -0.224,
+   "sil": 0.721
+  },
+  {
+   "age": 55,
+   "income": 57,
+   "spend": 58,
+   "c": 0,
+   "px": 0.611,
+   "py": -0.112,
+   "sil": 0.611
+  },
+  {
+   "age": 22,
+   "income": 57,
+   "spend": 55,
+   "c": 0,
+   "px": -0.979,
+   "py": -0.179,
+   "sil": 0.681
+  },
+  {
+   "age": 34,
+   "income": 58,
+   "spend": 60,
+   "c": 0,
+   "px": -0.51,
+   "py": -0.122,
+   "sil": 0.538
+  },
+  {
+   "age": 50,
+   "income": 58,
+   "spend": 46,
+   "c": 0,
+   "px": 0.685,
+   "py": -0.067,
+   "sil": 0.741
+  },
+  {
+   "age": 68,
+   "income": 59,
+   "spend": 55,
+   "c": 0,
+   "px": 1.349,
+   "py": -0.003,
+   "sil": 0.66
+  },
+  {
+   "age": 18,
+   "income": 59,
+   "spend": 41,
+   "c": 0,
+   "px": -0.802,
+   "py": -0.091,
+   "sil": 0.668
+  },
+  {
+   "age": 48,
+   "income": 60,
+   "spend": 49,
+   "c": 0,
+   "px": 0.498,
+   "py": 0.0,
+   "sil": 0.725
+  },
+  {
+   "age": 40,
+   "income": 60,
+   "spend": 40,
+   "c": 0,
+   "px": 0.339,
+   "py": -0.004,
+   "sil": 0.637
+  },
+  {
+   "age": 32,
+   "income": 60,
+   "spend": 42,
+   "c": 0,
+   "px": -0.121,
+   "py": -0.024,
+   "sil": 0.68
+  },
+  {
+   "age": 24,
+   "income": 60,
+   "spend": 52,
+   "c": 0,
+   "px": -0.801,
+   "py": -0.056,
+   "sil": 0.697
+  },
+  {
+   "age": 47,
+   "income": 60,
+   "spend": 47,
+   "c": 0,
+   "px": 0.502,
+   "py": 0.001,
+   "sil": 0.731
+  },
+  {
+   "age": 27,
+   "income": 60,
+   "spend": 50,
+   "c": 0,
+   "px": -0.594,
+   "py": -0.047,
+   "sil": 0.718
+  },
+  {
+   "age": 48,
+   "income": 61,
+   "spend": 42,
+   "c": 0,
+   "px": 0.688,
+   "py": 0.049,
+   "sil": 0.668
+  },
+  {
+   "age": 20,
+   "income": 61,
+   "spend": 49,
+   "c": 0,
+   "px": -0.924,
+   "py": -0.022,
+   "sil": 0.713
+  },
+  {
+   "age": 23,
+   "income": 62,
+   "spend": 41,
+   "c": 0,
+   "px": -0.554,
+   "py": 0.034,
+   "sil": 0.633
+  },
+  {
+   "age": 49,
+   "income": 62,
+   "spend": 48,
+   "c": 0,
+   "px": 0.572,
+   "py": 0.08,
+   "sil": 0.705
+  },
+  {
+   "age": 67,
+   "income": 62,
+   "spend": 59,
+   "c": 0,
+   "px": 1.183,
+   "py": 0.103,
+   "sil": 0.497
+  },
+  {
+   "age": 26,
+   "income": 62,
+   "spend": 55,
+   "c": 0,
+   "px": -0.786,
+   "py": 0.02,
+   "sil": 0.614
+  },
+  {
+   "age": 49,
+   "income": 62,
+   "spend": 56,
+   "c": 0,
+   "px": 0.353,
+   "py": 0.068,
+   "sil": 0.589
+  },
+  {
+   "age": 21,
+   "income": 62,
+   "spend": 42,
+   "c": 0,
+   "px": -0.683,
+   "py": 0.028,
+   "sil": 0.654
+  },
+  {
+   "age": 66,
+   "income": 63,
+   "spend": 50,
+   "c": 0,
+   "px": 1.377,
+   "py": 0.152,
+   "sil": 0.675
+  },
+  {
+   "age": 54,
+   "income": 63,
+   "spend": 46,
+   "c": 0,
+   "px": 0.879,
+   "py": 0.132,
+   "sil": 0.696
+  },
+  {
+   "age": 68,
+   "income": 63,
+   "spend": 43,
+   "c": 0,
+   "px": 1.671,
+   "py": 0.167,
+   "sil": 0.656
+  },
+  {
+   "age": 66,
+   "income": 63,
+   "spend": 48,
+   "c": 0,
+   "px": 1.432,
+   "py": 0.155,
+   "sil": 0.69
+  },
+  {
+   "age": 65,
+   "income": 63,
+   "spend": 52,
+   "c": 0,
+   "px": 1.272,
+   "py": 0.147,
+   "sil": 0.65
+  },
+  {
+   "age": 19,
+   "income": 63,
+   "spend": 54,
+   "c": 0,
+   "px": -1.115,
+   "py": 0.045,
+   "sil": 0.615
+  },
+  {
+   "age": 38,
+   "income": 64,
+   "spend": 42,
+   "c": 0,
+   "px": 0.175,
+   "py": 0.141,
+   "sil": 0.619
+  },
+  {
+   "age": 19,
+   "income": 64,
+   "spend": 46,
+   "c": 0,
+   "px": -0.897,
+   "py": 0.094,
+   "sil": 0.68
+  },
+  {
+   "age": 18,
+   "income": 65,
+   "spend": 48,
+   "c": 0,
+   "px": -1.005,
+   "py": 0.127,
+   "sil": 0.653
+  },
+  {
+   "age": 19,
+   "income": 65,
+   "spend": 50,
+   "c": 0,
+   "px": -1.009,
+   "py": 0.127,
+   "sil": 0.635
+  },
+  {
+   "age": 63,
+   "income": 65,
+   "spend": 43,
+   "c": 0,
+   "px": 1.414,
+   "py": 0.232,
+   "sil": 0.617
+  },
+  {
+   "age": 49,
+   "income": 65,
+   "spend": 59,
+   "c": 0,
+   "px": 0.265,
+   "py": 0.178,
+   "sil": 0.418
+  },
+  {
+   "age": 51,
+   "income": 67,
+   "spend": 43,
+   "c": 0,
+   "px": 0.802,
+   "py": 0.282,
+   "sil": 0.57
+  },
+  {
+   "age": 50,
+   "income": 67,
+   "spend": 57,
+   "c": 0,
+   "px": 0.367,
+   "py": 0.26,
+   "sil": 0.431
+  },
+  {
+   "age": 27,
+   "income": 67,
+   "spend": 56,
+   "c": 0,
+   "px": -0.772,
+   "py": 0.211,
+   "sil": 0.463
+  },
+  {
+   "age": 38,
+   "income": 67,
+   "spend": 40,
+   "c": 0,
+   "px": 0.225,
+   "py": 0.259,
+   "sil": 0.5
+  },
+  {
+   "age": 40,
+   "income": 69,
+   "spend": 58,
+   "c": 0,
+   "px": -0.171,
+   "py": 0.313,
+   "sil": 0.327
+  },
+  {
+   "age": 39,
+   "income": 69,
+   "spend": 91,
+   "c": 5,
+   "px": -1.126,
+   "py": 0.262,
+   "sil": 0.619
+  },
+  {
+   "age": 23,
+   "income": 70,
+   "spend": 29,
+   "c": 1,
+   "px": -0.24,
+   "py": 0.357,
+   "sil": 0.008
+  },
+  {
+   "age": 31,
+   "income": 70,
+   "spend": 77,
+   "c": 5,
+   "px": -1.15,
+   "py": 0.304,
+   "sil": 0.574
+  },
+  {
+   "age": 43,
+   "income": 71,
+   "spend": 35,
+   "c": 0,
+   "px": 0.608,
+   "py": 0.429,
+   "sil": 0.2
+  },
+  {
+   "age": 40,
+   "income": 71,
+   "spend": 95,
+   "c": 5,
+   "px": -1.189,
+   "py": 0.335,
+   "sil": 0.582
+  },
+  {
+   "age": 59,
+   "income": 71,
+   "spend": 11,
+   "c": 1,
+   "px": 2.077,
+   "py": 0.499,
+   "sil": 0.49
+  },
+  {
+   "age": 38,
+   "income": 71,
+   "spend": 75,
+   "c": 5,
+   "px": -0.742,
+   "py": 0.36,
+   "sil": 0.558
+  },
+  {
+   "age": 47,
+   "income": 71,
+   "spend": 9,
+   "c": 1,
+   "px": 1.524,
+   "py": 0.476,
+   "sil": 0.501
+  },
+  {
+   "age": 39,
+   "income": 71,
+   "spend": 75,
+   "c": 5,
+   "px": -0.691,
+   "py": 0.362,
+   "sil": 0.558
+  },
+  {
+   "age": 25,
+   "income": 72,
+   "spend": 34,
+   "c": 0,
+   "px": -0.279,
+   "py": 0.43,
+   "sil": 0.116
+  },
+  {
+   "age": 31,
+   "income": 72,
+   "spend": 71,
+   "c": 5,
+   "px": -0.989,
+   "py": 0.389,
+   "sil": 0.455
+  },
+  {
+   "age": 20,
+   "income": 73,
+   "spend": 5,
+   "c": 1,
+   "px": 0.261,
+   "py": 0.5,
+   "sil": 0.537
+  },
+  {
+   "age": 29,
+   "income": 73,
+   "spend": 88,
+   "c": 5,
+   "px": -1.558,
+   "py": 0.398,
+   "sil": 0.664
+  },
+  {
+   "age": 44,
+   "income": 73,
+   "spend": 7,
+   "c": 1,
+   "px": 1.423,
+   "py": 0.549,
+   "sil": 0.54
+  },
+  {
+   "age": 32,
+   "income": 73,
+   "spend": 73,
+   "c": 5,
+   "px": -0.995,
+   "py": 0.426,
+   "sil": 0.548
+  },
+  {
+   "age": 19,
+   "income": 74,
+   "spend": 10,
+   "c": 1,
+   "px": 0.071,
+   "py": 0.528,
+   "sil": 0.551
+  },
+  {
+   "age": 35,
+   "income": 74,
+   "spend": 72,
+   "c": 5,
+   "px": -0.817,
+   "py": 0.472,
+   "sil": 0.535
+  },
+  {
+   "age": 57,
+   "income": 75,
+   "spend": 5,
+   "c": 1,
+   "px": 2.133,
+   "py": 0.656,
+   "sil": 0.564
+  },
+  {
+   "age": 32,
+   "income": 75,
+   "spend": 93,
+   "c": 5,
+   "px": -1.547,
+   "py": 0.473,
+   "sil": 0.61
+  },
+  {
+   "age": 28,
+   "income": 76,
+   "spend": 40,
+   "c": 0,
+   "px": -0.299,
+   "py": 0.58,
+   "sil": 0.198
+  },
+  {
+   "age": 32,
+   "income": 76,
+   "spend": 87,
+   "c": 5,
+   "px": -1.384,
+   "py": 0.52,
+   "sil": 0.671
+  },
+  {
+   "age": 25,
+   "income": 77,
+   "spend": 12,
+   "c": 1,
+   "px": 0.315,
+   "py": 0.653,
+   "sil": 0.586
+  },
+  {
+   "age": 28,
+   "income": 77,
+   "spend": 97,
+   "c": 5,
+   "px": -1.863,
+   "py": 0.535,
+   "sil": 0.532
+  },
+  {
+   "age": 48,
+   "income": 77,
+   "spend": 36,
+   "c": 1,
+   "px": 0.823,
+   "py": 0.667,
+   "sil": -0.029
+  },
+  {
+   "age": 32,
+   "income": 77,
+   "spend": 74,
+   "c": 5,
+   "px": -1.03,
+   "py": 0.577,
+   "sil": 0.627
+  },
+  {
+   "age": 34,
+   "income": 78,
+   "spend": 22,
+   "c": 1,
+   "px": 0.495,
+   "py": 0.696,
+   "sil": 0.485
+  },
+  {
+   "age": 34,
+   "income": 78,
+   "spend": 90,
+   "c": 5,
+   "px": -1.369,
+   "py": 0.596,
+   "sil": 0.633
+  },
+  {
+   "age": 43,
+   "income": 78,
+   "spend": 17,
+   "c": 1,
+   "px": 1.089,
+   "py": 0.723,
+   "sil": 0.564
+  },
+  {
+   "age": 39,
+   "income": 78,
+   "spend": 88,
+   "c": 5,
+   "px": -1.061,
+   "py": 0.61,
+   "sil": 0.652
+  },
+  {
+   "age": 44,
+   "income": 78,
+   "spend": 20,
+   "c": 1,
+   "px": 1.057,
+   "py": 0.72,
+   "sil": 0.522
+  },
+  {
+   "age": 38,
+   "income": 78,
+   "spend": 76,
+   "c": 5,
+   "px": -0.782,
+   "py": 0.625,
+   "sil": 0.649
+  },
+  {
+   "age": 47,
+   "income": 78,
+   "spend": 16,
+   "c": 1,
+   "px": 1.319,
+   "py": 0.733,
+   "sil": 0.574
+  },
+  {
+   "age": 27,
+   "income": 78,
+   "spend": 89,
+   "c": 5,
+   "px": -1.696,
+   "py": 0.582,
+   "sil": 0.644
+  },
+  {
+   "age": 37,
+   "income": 78,
+   "spend": 1,
+   "c": 1,
+   "px": 1.223,
+   "py": 0.733,
+   "sil": 0.574
+  },
+  {
+   "age": 30,
+   "income": 78,
+   "spend": 78,
+   "c": 5,
+   "px": -1.243,
+   "py": 0.605,
+   "sil": 0.661
+  },
+  {
+   "age": 34,
+   "income": 78,
+   "spend": 1,
+   "c": 1,
+   "px": 1.071,
+   "py": 0.727,
+   "sil": 0.574
+  },
+  {
+   "age": 30,
+   "income": 78,
+   "spend": 73,
+   "c": 5,
+   "px": -1.106,
+   "py": 0.612,
+   "sil": 0.609
+  },
+  {
+   "age": 56,
+   "income": 79,
+   "spend": 35,
+   "c": 1,
+   "px": 1.252,
+   "py": 0.762,
+   "sil": 0.097
+  },
+  {
+   "age": 29,
+   "income": 79,
+   "spend": 83,
+   "c": 5,
+   "px": -1.432,
+   "py": 0.634,
+   "sil": 0.657
+  },
+  {
+   "age": 19,
+   "income": 81,
+   "spend": 5,
+   "c": 1,
+   "px": 0.195,
+   "py": 0.803,
+   "sil": 0.615
+  },
+  {
+   "age": 31,
+   "income": 81,
+   "spend": 93,
+   "c": 5,
+   "px": -1.609,
+   "py": 0.7,
+   "sil": 0.547
+  },
+  {
+   "age": 50,
+   "income": 85,
+   "spend": 26,
+   "c": 1,
+   "px": 1.184,
+   "py": 0.991,
+   "sil": 0.505
+  },
+  {
+   "age": 36,
+   "income": 85,
+   "spend": 75,
+   "c": 5,
+   "px": -0.869,
+   "py": 0.889,
+   "sil": 0.49
+  },
+  {
+   "age": 42,
+   "income": 86,
+   "spend": 20,
+   "c": 1,
+   "px": 0.941,
+   "py": 1.021,
+   "sil": 0.608
+  },
+  {
+   "age": 33,
+   "income": 86,
+   "spend": 95,
+   "c": 5,
+   "px": -1.571,
+   "py": 0.892,
+   "sil": 0.385
+  },
+  {
+   "age": 36,
+   "income": 87,
+   "spend": 27,
+   "c": 1,
+   "px": 0.443,
+   "py": 1.036,
+   "sil": 0.504
+  },
+  {
+   "age": 32,
+   "income": 87,
+   "spend": 63,
+   "c": 5,
+   "px": -0.747,
+   "py": 0.974,
+   "sil": 0.272
+  },
+  {
+   "age": 40,
+   "income": 87,
+   "spend": 13,
+   "c": 1,
+   "px": 1.03,
+   "py": 1.065,
+   "sil": 0.658
+  },
+  {
+   "age": 28,
+   "income": 87,
+   "spend": 75,
+   "c": 5,
+   "px": -1.278,
+   "py": 0.948,
+   "sil": 0.417
+  },
+  {
+   "age": 36,
+   "income": 87,
+   "spend": 10,
+   "c": 1,
+   "px": 0.909,
+   "py": 1.061,
+   "sil": 0.655
+  },
+  {
+   "age": 36,
+   "income": 87,
+   "spend": 92,
+   "c": 5,
+   "px": -1.339,
+   "py": 0.941,
+   "sil": 0.387
+  },
+  {
+   "age": 52,
+   "income": 88,
+   "spend": 13,
+   "c": 1,
+   "px": 1.636,
+   "py": 1.129,
+   "sil": 0.66
+  },
+  {
+   "age": 30,
+   "income": 88,
+   "spend": 86,
+   "c": 5,
+   "px": -1.48,
+   "py": 0.975,
+   "sil": 0.387
+  },
+  {
+   "age": 58,
+   "income": 88,
+   "spend": 15,
+   "c": 1,
+   "px": 1.886,
+   "py": 1.139,
+   "sil": 0.655
+  },
+  {
+   "age": 27,
+   "income": 88,
+   "spend": 69,
+   "c": 5,
+   "px": -1.166,
+   "py": 0.993,
+   "sil": 0.314
+  },
+  {
+   "age": 59,
+   "income": 93,
+   "spend": 14,
+   "c": 1,
+   "px": 1.954,
+   "py": 1.333,
+   "sil": 0.653
+  },
+  {
+   "age": 35,
+   "income": 93,
+   "spend": 90,
+   "c": 5,
+   "px": -1.346,
+   "py": 1.17,
+   "sil": 0.071
+  },
+  {
+   "age": 37,
+   "income": 97,
+   "spend": 32,
+   "c": 1,
+   "px": 0.338,
+   "py": 1.412,
+   "sil": 0.462
+  },
+  {
+   "age": 32,
+   "income": 97,
+   "spend": 86,
+   "c": 2,
+   "px": -1.396,
+   "py": 1.322,
+   "sil": 0.114
+  },
+  {
+   "age": 46,
+   "income": 98,
+   "spend": 15,
+   "c": 1,
+   "px": 1.259,
+   "py": 1.494,
+   "sil": 0.636
+  },
+  {
+   "age": 29,
+   "income": 98,
+   "spend": 88,
+   "c": 2,
+   "px": -1.604,
+   "py": 1.351,
+   "sil": 0.17
+  },
+  {
+   "age": 41,
+   "income": 99,
+   "spend": 39,
+   "c": 1,
+   "px": 0.346,
+   "py": 1.487,
+   "sil": 0.335
+  },
+  {
+   "age": 30,
+   "income": 99,
+   "spend": 97,
+   "c": 2,
+   "px": -1.802,
+   "py": 1.378,
+   "sil": 0.125
+  },
+  {
+   "age": 54,
+   "income": 101,
+   "spend": 24,
+   "c": 1,
+   "px": 1.412,
+   "py": 1.613,
+   "sil": 0.572
+  },
+  {
+   "age": 28,
+   "income": 101,
+   "spend": 68,
+   "c": 2,
+   "px": -1.112,
+   "py": 1.492,
+   "sil": 0.205
+  },
+  {
+   "age": 41,
+   "income": 103,
+   "spend": 17,
+   "c": 1,
+   "px": 0.941,
+   "py": 1.671,
+   "sil": 0.607
+  },
+  {
+   "age": 36,
+   "income": 103,
+   "spend": 85,
+   "c": 2,
+   "px": -1.176,
+   "py": 1.561,
+   "sil": 0.379
+  },
+  {
+   "age": 34,
+   "income": 103,
+   "spend": 23,
+   "c": 1,
+   "px": 0.422,
+   "py": 1.647,
+   "sil": 0.573
+  },
+  {
+   "age": 32,
+   "income": 103,
+   "spend": 69,
+   "c": 2,
+   "px": -0.94,
+   "py": 1.576,
+   "sil": 0.281
+  },
+  {
+   "age": 33,
+   "income": 113,
+   "spend": 8,
+   "c": 1,
+   "px": 0.764,
+   "py": 2.048,
+   "sil": 0.558
+  },
+  {
+   "age": 38,
+   "income": 113,
+   "spend": 91,
+   "c": 2,
+   "px": -1.258,
+   "py": 1.938,
+   "sil": 0.484
+  },
+  {
+   "age": 47,
+   "income": 120,
+   "spend": 16,
+   "c": 1,
+   "px": 1.242,
+   "py": 2.334,
+   "sil": 0.482
+  },
+  {
+   "age": 35,
+   "income": 120,
+   "spend": 79,
+   "c": 2,
+   "px": -1.094,
+   "py": 2.216,
+   "sil": 0.544
+  },
+  {
+   "age": 45,
+   "income": 126,
+   "spend": 28,
+   "c": 1,
+   "px": 0.8,
+   "py": 2.541,
+   "sil": 0.277
+  },
+  {
+   "age": 32,
+   "income": 126,
+   "spend": 74,
+   "c": 2,
+   "px": -1.12,
+   "py": 2.445,
+   "sil": 0.509
+  },
+  {
+   "age": 32,
+   "income": 137,
+   "spend": 18,
+   "c": 1,
+   "px": 0.395,
+   "py": 2.947,
+   "sil": 0.284
+  },
+  {
+   "age": 30,
+   "income": 137,
+   "spend": 83,
+   "c": 2,
+   "px": -1.488,
+   "py": 2.847,
+   "sil": 0.461
+  }
+ ],
+ "pca_var": [
+  0.4426616720824504,
+  0.33308378461522425
+ ],
+ "pca_load": [
+  [
+   0.706,
+   -0.048,
+   -0.706
+  ],
+  [
+   0.03,
+   0.999,
+   -0.038
+  ]
+ ],
+ "hist": {
+  "age": [
+   22,
+   16,
+   17,
+   26,
+   23,
+   18,
+   7,
+   14,
+   19,
+   9,
+   5,
+   7,
+   7,
+   10
+  ],
+  "income": [
+   20,
+   12,
+   18,
+   22,
+   18,
+   32,
+   20,
+   22,
+   16,
+   8,
+   4,
+   2,
+   4,
+   2
+  ],
+  "spend": [
+   12,
+   13,
+   11,
+   8,
+   11,
+   20,
+   23,
+   28,
+   15,
+   5,
+   21,
+   8,
+   13,
+   12
+  ]
+ },
+ "hist_edges": {
+  "age": [
+   18.0,
+   21.7,
+   25.4,
+   29.1,
+   32.9,
+   36.6,
+   40.3,
+   44.0,
+   47.7,
+   51.4,
+   55.1,
+   58.9,
+   62.6,
+   66.3,
+   70.0
+  ],
+  "income": [
+   15.0,
+   23.7,
+   32.4,
+   41.1,
+   49.9,
+   58.6,
+   67.3,
+   76.0,
+   84.7,
+   93.4,
+   102.1,
+   110.9,
+   119.6,
+   128.3,
+   137.0
+  ],
+  "spend": [
+   1.0,
+   8.0,
+   15.0,
+   22.0,
+   29.0,
+   36.0,
+   43.0,
+   50.0,
+   57.0,
+   64.0,
+   71.0,
+   78.0,
+   85.0,
+   92.0,
+   99.0
+  ]
+ },
+ "gender": {
+  "Female": 112,
+  "Male": 88
+ },
+ "corr": [
+  [
+   1.0,
+   -0.012,
+   -0.327
+  ],
+  [
+   -0.012,
+   1.0,
+   0.01
+  ],
+  [
+   -0.327,
+   0.01,
+   1.0
+  ]
+ ],
+ "desc": [
+  [
+   "count",
+   200.0,
+   200.0,
+   200.0
+  ],
+  [
+   "mean",
+   38.8,
+   60.6,
+   50.2
+  ],
+  [
+   "std",
+   14.0,
+   26.3,
+   25.8
+  ],
+  [
+   "min",
+   18.0,
+   15.0,
+   1.0
+  ],
+  [
+   "25%",
+   28.8,
+   41.5,
+   34.8
+  ],
+  [
+   "50%",
+   36.0,
+   61.5,
+   50.0
+  ],
+  [
+   "75%",
+   49.0,
+   78.0,
+   73.0
+  ],
+  [
+   "max",
+   70.0,
+   137.0,
+   99.0
+  ]
+ ],
+ "secs": 2.7
+}

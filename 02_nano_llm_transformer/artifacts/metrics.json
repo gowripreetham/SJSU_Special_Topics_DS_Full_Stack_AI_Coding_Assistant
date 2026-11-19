@@ -1,0 +1,1644 @@
+{
+ "config": {
+  "vocab_size": 73,
+  "d_model": 128,
+  "n_layer": 4,
+  "n_head": 4,
+  "ctx": 192,
+  "dropout": 0.05,
+  "use_rope": true,
+  "use_swiglu": true,
+  "use_rmsnorm": true
+ },
+ "n_params": 796416,
+ "param_groups": {
+  "token embedding (tied with head)": 9344,
+  "attention (qkv + out)": 262144,
+  "feed-forward": 523776,
+  "norms": 1152
+ },
+ "vocab": [
+  "<|user|>",
+  "<|assistant|>",
+  "<|end|>",
+  "\n",
+  " ",
+  "!",
+  "$",
+  "&",
+  "'",
+  ",",
+  "-",
+  ".",
+  "0",
+  "1",
+  "3",
+  "5",
+  ":",
+  ";",
+  "?",
+  "A",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F",
+  "G",
+  "H",
+  "I",
+  "J",
+  "K",
+  "L",
+  "M",
+  "N",
+  "O",
+  "P",
+  "Q",
+  "R",
+  "S",
+  "T",
+  "U",
+  "V",
+  "W",
+  "X",
+  "Y",
+  "Z",
+  "a",
+  "b",
+  "c",
+  "d",
+  "e",
+  "f",
+  "g",
+  "h",
+  "i",
+  "j",
+  "k",
+  "l",
+  "m",
+  "n",
+  "o",
+  "p",
+  "q",
+  "r",
+  "s",
+  "t",
+  "u",
+  "v",
+  "w",
+  "x",
+  "y",
+  "z",
+  "{",
+  "}"
+ ],
+ "corpus_chars": 1115394,
+ "train_tokens": 1134374,
+ "val_tokens": 111540,
+ "autoresearch": {
+  "best": {
+   "rope": true,
+   "swiglu": true,
+   "rmsnorm": false,
+   "d_model": 128,
+   "n_layer": 3,
+   "lr": 0.003,
+   "dropout": 0.0
+  },
+  "best_score": 2.073881904284159,
+  "history": [
+   {
+    "iter": 0,
+    "change": "baseline: learned positions + GELU MLP + LayerNorm",
+    "config": {
+     "rope": false,
+     "swiglu": false,
+     "rmsnorm": false,
+     "d_model": 96,
+     "n_layer": 3,
+     "lr": 0.001,
+     "dropout": 0.1
+    },
+    "score": 2.557311018308004,
+    "accepted": true,
+    "best": 2.557311018308004,
+    "secs": 20.0
+   },
+   {
+    "iter": 1,
+    "change": "rope: False \u2192 True",
+    "config": {
+     "rope": true,
+     "swiglu": false,
+     "rmsnorm": false,
+     "d_model": 96,
+     "n_layer": 3,
+     "lr": 0.001,
+     "dropout": 0.1
+    },
+    "score": 2.3949763774871826,
+    "accepted": true,
+    "best": 2.3949763774871826,
+    "secs": 20.3
+   },
+   {
+    "iter": 2,
+    "change": "rmsnorm: False \u2192 True",
+    "config": {
+     "rope": true,
+     "swiglu": false,
+     "rmsnorm": true,
+     "d_model": 96,
+     "n_layer": 3,
+     "lr": 0.001,
+     "dropout": 0.1
+    },
+    "score": 2.399556358655294,
+    "accepted": false,
+    "best": 2.3949763774871826,
+    "secs": 21.2
+   },
+   {
+    "iter": 3,
+    "change": "swiglu: False \u2192 True",
+    "config": {
+     "rope": true,
+     "swiglu": true,
+     "rmsnorm": false,
+     "d_model": 96,
+     "n_layer": 3,
+     "lr": 0.001,
+     "dropout": 0.1
+    },
+    "score": 2.3860373497009277,
+    "accepted": true,
+    "best": 2.3860373497009277,
+    "secs": 20.7
+   },
+   {
+    "iter": 4,
+    "change": "lr: 0.001 \u2192 0.002",
+    "config": {
+     "rope": true,
+     "swiglu": true,
+     "rmsnorm": false,
+     "d_model": 96,
+     "n_layer": 3,
+     "lr": 0.002,
+     "dropout": 0.1
+    },
+    "score": 2.2278511921564736,
+    "accepted": true,
+    "best": 2.2278511921564736,
+    "secs": 20.9
+   },
+   {
+    "iter": 5,
+    "change": "lr: 0.002 \u2192 0.003",
+    "config": {
+     "rope": true,
+     "swiglu": true,
+     "rmsnorm": false,
+     "d_model": 96,
+     "n_layer": 3,
+     "lr": 0.003,
+     "dropout": 0.1
+    },
+    "score": 2.199487288792928,
+    "accepted": true,
+    "best": 2.199487288792928,
+    "secs": 20.7
+   },
+   {
+    "iter": 6,
+    "change": "dropout: 0.1 \u2192 0.0",
+    "config": {
+     "rope": true,
+     "swiglu": true,
+     "rmsnorm": false,
+     "d_model": 96,
+     "n_layer": 3,
+     "lr": 0.003,
+     "dropout": 0.0
+    },
+    "score": 2.143209218978882,
+    "accepted": true,
+    "best": 2.143209218978882,
+    "secs": 11.3
+   },
+   {
+    "iter": 7,
+    "change": "d_model: 96 \u2192 128",
+    "config": {
+     "rope": true,
+     "swiglu": true,
+     "rmsnorm": false,
+     "d_model": 128,
+     "n_layer": 3,
+     "lr": 0.003,
+     "dropout": 0.0
+    },
+    "score": 2.073881904284159,
+    "accepted": true,
+    "best": 2.073881904284159,
+    "secs": 15.6
+   },
+   {
+    "iter": 8,
+    "change": "n_layer: 3 \u2192 4",
+    "config": {
+     "rope": true,
+     "swiglu": true,
+     "rmsnorm": false,
+     "d_model": 128,
+     "n_layer": 4,
+     "lr": 0.003,
+     "dropout": 0.0
+    },
+    "score": 2.075202544530233,
+    "accepted": false,
+    "best": 2.073881904284159,
+    "secs": 29.2
+   }
+  ],
+  "maximize": false,
+  "n_trials": 9,
+  "n_accepted": 7
+ },
+ "pretrain_curve": [
+  {
+   "step": 0,
+   "train": 4.317,
+   "val": 4.286,
+   "lr": 2e-05
+  },
+  {
+   "step": 100,
+   "train": 2.2939,
+   "val": 2.2306,
+   "lr": 0.002
+  },
+  {
+   "step": 200,
+   "train": 1.9191,
+   "val": 1.9317,
+   "lr": 0.00198
+  },
+  {
+   "step": 300,
+   "train": 1.8058,
+   "val": 1.8511,
+   "lr": 0.001922
+  },
+  {
+   "step": 400,
+   "train": 1.6839,
+   "val": 1.7967,
+   "lr": 0.001828
+  },
+  {
+   "step": 500,
+   "train": 1.5376,
+   "val": 1.7463,
+   "lr": 0.001702
+  },
+  {
+   "step": 600,
+   "train": 1.5544,
+   "val": 1.6932,
+   "lr": 0.00155
+  },
+  {
+   "step": 700,
+   "train": 1.613,
+   "val": 1.6646,
+   "lr": 0.001378
+  },
+  {
+   "step": 800,
+   "train": 1.2805,
+   "val": 1.6344,
+   "lr": 0.001194
+  },
+  {
+   "step": 900,
+   "train": 1.438,
+   "val": 1.6024,
+   "lr": 0.001006
+  },
+  {
+   "step": 1000,
+   "train": 1.3514,
+   "val": 1.5749,
+   "lr": 0.000822
+  },
+  {
+   "step": 1100,
+   "train": 1.2222,
+   "val": 1.5672,
+   "lr": 0.00065
+  },
+  {
+   "step": 1200,
+   "train": 1.3168,
+   "val": 1.5477,
+   "lr": 0.000498
+  },
+  {
+   "step": 1300,
+   "train": 1.168,
+   "val": 1.5402,
+   "lr": 0.000372
+  },
+  {
+   "step": 1400,
+   "train": 1.282,
+   "val": 1.5319,
+   "lr": 0.000278
+  },
+  {
+   "step": 1500,
+   "train": 1.3627,
+   "val": 1.5257,
+   "lr": 0.00022
+  },
+  {
+   "step": 1599,
+   "train": 1.112,
+   "val": 1.5207,
+   "lr": 0.0002
+  }
+ ],
+ "sft_curve": [
+  {
+   "step": 0,
+   "loss": 0.9548
+  },
+  {
+   "step": 100,
+   "loss": 0.0872
+  },
+  {
+   "step": 200,
+   "loss": 0.0436
+  },
+  {
+   "step": 300,
+   "loss": 0.0323
+  },
+  {
+   "step": 400,
+   "loss": 0.0147
+  },
+  {
+   "step": 500,
+   "loss": 0.0207
+  },
+  {
+   "step": 600,
+   "loss": 0.0133
+  },
+  {
+   "step": 700,
+   "loss": 0.0094
+  },
+  {
+   "step": 800,
+   "loss": 0.0056
+  },
+  {
+   "step": 900,
+   "loss": 0.0039
+  },
+  {
+   "step": 1000,
+   "loss": 0.0071
+  },
+  {
+   "step": 1100,
+   "loss": 0.0023
+  },
+  {
+   "step": 1200,
+   "loss": 0.0007
+  },
+  {
+   "step": 1299,
+   "loss": 0.0011
+  }
+ ],
+ "val_loss": 1.542279883225759,
+ "val_ppl": 4.675237124281361,
+ "val_loss_after_sft": 5.594304688771566,
+ "uniform_ppl": 73,
+ "sample_pretrain": "ROMEO:\nI have now no grieve and the good of heaven,\nTo more and steal our highness and heavens right,\nThe prince of my wants and unstruck'd some rise.\nIf thou ask against him, in no name of thy admy face and fraw.\n\nKING HENRY VI:\nBut the sea way, and in my senter,\nBreach you death all the peoples of her la",
+ "eval": {
+  "seen_exact": 1.0,
+  "unseen_exact": 0.9642857142857143,
+  "unseen_sim": 0.9747099296603335,
+  "n_seen": 56,
+  "n_unseen": 168
+ },
+ "unseen_rows": [
+  {
+   "q": "please describe overfitting",
+   "expected": "Overfitting is when a model memorises training noise and fails on new data. Fix it with more data or regularisation.",
+   "got": "Overfitting is when a model memorises training noise and fails on new data. Fix it with more data or regularisation.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by overfitting?",
+   "expected": "Overfitting is when a model memorises training noise and fails on new data. Fix it with more data or regularisation.",
+   "got": "Overfitting is when a model memorises training noise and fails on new data. Fix it with more data or regularisation.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand overfitting",
+   "expected": "Overfitting is when a model memorises training noise and fails on new data. Fix it with more data or regularisation.",
+   "got": "Overfitting is when a model memorises training noise and fails on new data. Fix it with more data or regularisation.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe underfitting",
+   "expected": "Underfitting is when a model is too simple to capture the pattern, so both train and test error stay high.",
+   "got": "Underfitting is when a model is too simple to capture the pattern, so both train and test error stay high.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by underfitting?",
+   "expected": "Underfitting is when a model is too simple to capture the pattern, so both train and test error stay high.",
+   "got": "Underfitting is when a model is too simple to capture the pattern, so both train and test error stay high.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand underfitting",
+   "expected": "Underfitting is when a model is too simple to capture the pattern, so both train and test error stay high.",
+   "got": "Underfitting is when a model is too simple to capture the pattern, so both train and test error stay high.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe cross-validation",
+   "expected": "Cross-validation splits data into k folds, trains on k-1 and tests on the last, rotating to estimate real performance.",
+   "got": "Cross-validation splits data into k folds, trains on k-1 and tests on the last, rotating to estimate real performance.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by cross-validation?",
+   "expected": "Cross-validation splits data into k folds, trains on k-1 and tests on the last, rotating to estimate real performance.",
+   "got": "Cross-validation splits data into k folds, trains on k-1 and tests on the last, rotating to estimate real performance.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand cross-validation",
+   "expected": "Cross-validation splits data into k folds, trains on k-1 and tests on the last, rotating to estimate real performance.",
+   "got": "Cross-validation splits data into k folds, trains on k-1 and tests on the last, rotating to estimate real performance.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe data leakage",
+   "expected": "Data leakage is when information from outside the training data sneaks into features, inflating scores unfairly.",
+   "got": "Data leakage is when information from outside the training data sneaks into features, inflating scores unfairly.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by data leakage?",
+   "expected": "Data leakage is when information from outside the training data sneaks into features, inflating scores unfairly.",
+   "got": "Data leakage is when information from outside the training data sneaks into features, inflating scores unfairly.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand data leakage",
+   "expected": "Data leakage is when information from outside the training data sneaks into features, inflating scores unfairly.",
+   "got": "Data leakage is when information from outside the training data sneaks into features, inflating scores unfairly.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe gradient descent",
+   "expected": "Gradient descent lowers the loss by stepping the weights against the gradient, scaled by a learning rate.",
+   "got": "Gradient descent lowers the loss by stepping the weights against the gradient, scaled by a learning rate.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by gradient descent?",
+   "expected": "Gradient descent lowers the loss by stepping the weights against the gradient, scaled by a learning rate.",
+   "got": "Gradient descent lowers the loss by stepping the weights against the gradient, scaled by a learning rate.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand gradient descent",
+   "expected": "Gradient descent lowers the loss by stepping the weights against the gradient, scaled by a learning rate.",
+   "got": "Gradient descent lowers the loss by stepping the weights against the gradient, scaled by a learning rate.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe learning rate",
+   "expected": "The learning rate is the step size of gradient descent. Too high diverges, too low trains very slowly.",
+   "got": "The learning rate is the step size of gradient descent. Too high diverges, too low trains very slowly.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by learning rate?",
+   "expected": "The learning rate is the step size of gradient descent. Too high diverges, too low trains very slowly.",
+   "got": "The learning rate is the step size of gradient descent. Too high diverges, too low trains very slowly.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand learning rate",
+   "expected": "The learning rate is the step size of gradient descent. Too high diverges, too low trains very slowly.",
+   "got": "The learning rate is the step size of gradient descent. Too high diverges, too low trains very slowly.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe backpropagation",
+   "expected": "Backpropagation applies the chain rule backwards through the network to get the gradient of every weight.",
+   "got": "Backpropagation applies the chain rule backwards through the network to get the gradient of every weight.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by backpropagation?",
+   "expected": "Backpropagation applies the chain rule backwards through the network to get the gradient of every weight.",
+   "got": "Backpropagation applies the chain rule backwards through the network to get the gradient of every weight.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand backpropagation",
+   "expected": "Backpropagation applies the chain rule backwards through the network to get the gradient of every weight.",
+   "got": "Backpropagation applies the chain rule backwards through the network to get the gradient of every weight.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe a transformer",
+   "expected": "A transformer is a neural network built from self-attention layers that lets every token look at every other token.",
+   "got": "A transformer is a neural network built from self-attention layers that lets every token look at every other token.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by a transformer?",
+   "expected": "A transformer is a neural network built from self-attention layers that lets every token look at every other token.",
+   "got": "A transformer is a neural network built from self-attention layers that lets every token look at every other token.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand a transformer",
+   "expected": "A transformer is a neural network built from self-attention layers that lets every token look at every other token.",
+   "got": "A transformer is a neural network built from self-attention layers that lets every token look at every other token.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe attention",
+   "expected": "Attention scores how much each token should use every other token, then mixes their values by those weights.",
+   "got": "Attention scores how much each token should use every other token, then mixes their values by those weights.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by attention?",
+   "expected": "Attention scores how much each token should use every other token, then mixes their values by those weights.",
+   "got": "Attention scores how much each token should use every other token, then mixes their values by those weights.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand attention",
+   "expected": "Attention scores how much each token should use every other token, then mixes their values by those weights.",
+   "got": "Attention scores how much each token should use every other token, then mixes their values by those weights.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe rope",
+   "expected": "RoPE rotates query and key vectors by an angle that depends on position, so attention sees relative distance.",
+   "got": "RoPE rotates query and key vectors by an angle that depends on position, so attention sees relative distance.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by rope?",
+   "expected": "RoPE rotates query and key vectors by an angle that depends on position, so attention sees relative distance.",
+   "got": "RoPE rotates query and key vectors by an angle that depends on position, so attention sees relative distance.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand rope",
+   "expected": "RoPE rotates query and key vectors by an angle that depends on position, so attention sees relative distance.",
+   "got": "Data leakage is when information from outside the training data sneaks into features, inflating scores unfairly.",
+   "exact": false,
+   "sim": 0.2895927601809955
+  },
+  {
+   "q": "please describe rmsnorm",
+   "expected": "RMSNorm rescales activations by their root mean square. It is cheaper than LayerNorm and works just as well.",
+   "got": "RMSNorm rescales activations by their root mean square. It is cheaper than LayerNorm and works just as well.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by rmsnorm?",
+   "expected": "RMSNorm rescales activations by their root mean square. It is cheaper than LayerNorm and works just as well.",
+   "got": "RMSNorm rescales activations by their root mean square. It is cheaper than LayerNorm and works just as well.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand rmsnorm",
+   "expected": "RMSNorm rescales activations by their root mean square. It is cheaper than LayerNorm and works just as well.",
+   "got": "RMSNorm rescales activations by their root mean square. It is cheaper than LayerNorm and works just as well.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe swiglu",
+   "expected": "SwiGLU is a gated feed-forward layer: one branch passes through SiLU and multiplies the other branch.",
+   "got": "SwiGLU is a gated feed-forward layer: one branch passes through SiLU and multiplies the other branch.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by swiglu?",
+   "expected": "SwiGLU is a gated feed-forward layer: one branch passes through SiLU and multiplies the other branch.",
+   "got": "SwiGLU is a gated feed-forward layer: one branch passes through SiLU and multiplies the other branch.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand swiglu",
+   "expected": "SwiGLU is a gated feed-forward layer: one branch passes through SiLU and multiplies the other branch.",
+   "got": "SwiGLU is a gated feed-forward layer: one branch passes through SiLU and multiplies the other branch.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe a token",
+   "expected": "A token is the unit of text a language model reads. Here each character is one token.",
+   "got": "A token is the unit of text a language model reads. Here each character is one token.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by a token?",
+   "expected": "A token is the unit of text a language model reads. Here each character is one token.",
+   "got": "A token is the unit of text a language model reads. Here each character is one token.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand a token",
+   "expected": "A token is the unit of text a language model reads. Here each character is one token.",
+   "got": "A token is the unit of text a language model reads. Here each character is one token.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe an embedding",
+   "expected": "An embedding is a learned vector that represents a token, so similar tokens end up close together.",
+   "got": "An embedding is a learned vector that represents a token, so similar tokens end up close together.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by an embedding?",
+   "expected": "An embedding is a learned vector that represents a token, so similar tokens end up close together.",
+   "got": "An embedding is a learned vector that represents a token, so similar tokens end up close together.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand an embedding",
+   "expected": "An embedding is a learned vector that represents a token, so similar tokens end up close together.",
+   "got": "Underfitting is when a model is too simple to capture the pattern, so both train and test error stay high.",
+   "exact": false,
+   "sim": 0.3627450980392157
+  },
+  {
+   "q": "please describe temperature",
+   "expected": "Temperature rescales logits before sampling. Low values are safe and repetitive, high values are creative and risky.",
+   "got": "Temperature rescales logits before sampling. Low values are safe and repetitive, high values are creative and risky.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by temperature?",
+   "expected": "Temperature rescales logits before sampling. Low values are safe and repetitive, high values are creative and risky.",
+   "got": "Temperature rescales logits before sampling. Low values are safe and repetitive, high values are creative and risky.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand temperature",
+   "expected": "Temperature rescales logits before sampling. Low values are safe and repetitive, high values are creative and risky.",
+   "got": "Temperature rescales logits before sampling. Low values are safe and repetitive, high values are creative and risky.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe top-k sampling",
+   "expected": "Top-k sampling keeps only the k most likely next tokens and samples among them, cutting off the unlikely tail.",
+   "got": "Top-k sampling keeps only the k most likely next tokens and samples among them, cutting off the unlikely tail.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by top-k sampling?",
+   "expected": "Top-k sampling keeps only the k most likely next tokens and samples among them, cutting off the unlikely tail.",
+   "got": "Top-k sampling keeps only the k most likely next tokens and samples among them, cutting off the unlikely tail.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand top-k sampling",
+   "expected": "Top-k sampling keeps only the k most likely next tokens and samples among them, cutting off the unlikely tail.",
+   "got": "Top-k sampling keeps only the k most likely next tokens and samples among them, cutting off the unlikely tail.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe fine-tuning",
+   "expected": "Fine-tuning continues training a pretrained model on a small task dataset so it adapts to that task.",
+   "got": "Fine-tuning continues training a pretrained model on a small task dataset so it adapts to that task.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by fine-tuning?",
+   "expected": "Fine-tuning continues training a pretrained model on a small task dataset so it adapts to that task.",
+   "got": "Fine-tuning continues training a pretrained model on a small task dataset so it adapts to that task.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand fine-tuning",
+   "expected": "Fine-tuning continues training a pretrained model on a small task dataset so it adapts to that task.",
+   "got": "Fine-tuning continues training a pretrained model on a small task dataset so it adapts to that task.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe pretraining",
+   "expected": "Pretraining teaches a model general language by predicting the next token on a large unlabeled corpus.",
+   "got": "Pretraining teaches a model general language by predicting the next token on a large unlabeled corpus.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by pretraining?",
+   "expected": "Pretraining teaches a model general language by predicting the next token on a large unlabeled corpus.",
+   "got": "Pretraining teaches a model general language by predicting the next token on a large unlabeled corpus.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand pretraining",
+   "expected": "Pretraining teaches a model general language by predicting the next token on a large unlabeled corpus.",
+   "got": "Pretraining teaches a model general language by predicting the next token on a large unlabeled corpus.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe perplexity",
+   "expected": "Perplexity is the exponential of the average loss. Lower means the model is less surprised by the text.",
+   "got": "Perplexity is the exponential of the average loss. Lower means the model is less surprised by the text.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by perplexity?",
+   "expected": "Perplexity is the exponential of the average loss. Lower means the model is less surprised by the text.",
+   "got": "Perplexity is the exponential of the average loss. Lower means the model is less surprised by the text.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand perplexity",
+   "expected": "Perplexity is the exponential of the average loss. Lower means the model is less surprised by the text.",
+   "got": "Perplexity is the exponential of the average loss. Lower means the model is less surprised by the text.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe crisp-dm",
+   "expected": "CRISP-DM is a six phase process: business understanding, data understanding, preparation, modeling, evaluation, deployment.",
+   "got": "CRISP-DM is a six phase process: business understanding, data understanding, preparation, modeling, evaluation, deployment.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by crisp-dm?",
+   "expected": "CRISP-DM is a six phase process: business understanding, data understanding, preparation, modeling, evaluation, deployment.",
+   "got": "CRISP-DM is a six phase process: business understanding, data understanding, preparation, modeling, evaluation, deployment.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand crisp-dm",
+   "expected": "CRISP-DM is a six phase process: business understanding, data understanding, preparation, modeling, evaluation, deployment.",
+   "got": "CRISP-DM is a six phase process: business understanding, data understanding, preparation, modeling, evaluation, deployment.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe precision",
+   "expected": "Precision is the share of predicted positives that are truly positive. It drops when there are false alarms.",
+   "got": "Precision is the share of predicted positives that are truly positive. It drops when there are false alarms.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by precision?",
+   "expected": "Precision is the share of predicted positives that are truly positive. It drops when there are false alarms.",
+   "got": "Precision is the share of predicted positives that are truly positive. It drops when there are false alarms.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand precision",
+   "expected": "Precision is the share of predicted positives that are truly positive. It drops when there are false alarms.",
+   "got": "Precision is the share of predicted positives that are truly positive. It drops when there are false alarms.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe recall",
+   "expected": "Recall is the share of real positives the model finds. It drops when the model misses positive cases.",
+   "got": "Recall is the share of real positives the model finds. It drops when the model misses positive cases.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by recall?",
+   "expected": "Recall is the share of real positives the model finds. It drops when the model misses positive cases.",
+   "got": "Recall is the share of real positives the model finds. It drops when the model misses positive cases.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand recall",
+   "expected": "Recall is the share of real positives the model finds. It drops when the model misses positive cases.",
+   "got": "Recall is the share of real positives the model finds. It drops when the model misses positive cases.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe the f1 score",
+   "expected": "The F1 score is the harmonic mean of precision and recall, high only when both are high.",
+   "got": "The F1 score is the harmonic mean of precision and recall, high only when both are high.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by the f1 score?",
+   "expected": "The F1 score is the harmonic mean of precision and recall, high only when both are high.",
+   "got": "The F1 score is the harmonic mean of precision and recall, high only when both are high.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand the f1 score",
+   "expected": "The F1 score is the harmonic mean of precision and recall, high only when both are high.",
+   "got": "The F1 score is the harmonic mean of precision and recall, high only when both are high.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe roc auc",
+   "expected": "ROC AUC is the chance a random positive is scored above a random negative. 0.5 is random, 1.0 is perfect.",
+   "got": "ROC AUC is the chance a random positive is scored above a random negative. 0.5 is random, 1.0 is perfect.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by roc auc?",
+   "expected": "ROC AUC is the chance a random positive is scored above a random negative. 0.5 is random, 1.0 is perfect.",
+   "got": "ROC AUC is the chance a random positive is scored above a random negative. 0.5 is random, 1.0 is perfect.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand roc auc",
+   "expected": "ROC AUC is the chance a random positive is scored above a random negative. 0.5 is random, 1.0 is perfect.",
+   "got": "ROC AUC is the chance a random positive is scored above a random negative. 0.5 is random, 1.0 is perfect.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe a confusion matrix",
+   "expected": "A confusion matrix counts true positives, false positives, true negatives and false negatives.",
+   "got": "A confusion matrix counts true positives, false positives, true negatives and false negatives.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by a confusion matrix?",
+   "expected": "A confusion matrix counts true positives, false positives, true negatives and false negatives.",
+   "got": "A confusion matrix counts true positives, false positives, true negatives and false negatives.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand a confusion matrix",
+   "expected": "A confusion matrix counts true positives, false positives, true negatives and false negatives.",
+   "got": "A confusion matrix counts true positives, false positives, true negatives and false negatives.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe regularisation",
+   "expected": "Regularisation penalises large weights so the model stays simple and generalises better.",
+   "got": "Regularisation penalises large weights so the model stays simple and generalises better.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by regularisation?",
+   "expected": "Regularisation penalises large weights so the model stays simple and generalises better.",
+   "got": "Regularisation penalises large weights so the model stays simple and generalises better.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand regularisation",
+   "expected": "Regularisation penalises large weights so the model stays simple and generalises better.",
+   "got": "Regularisation penalises large weights so the model stays simple and generalises better.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe dropout",
+   "expected": "Dropout randomly zeroes activations during training so the network cannot rely on any single unit.",
+   "got": "Dropout randomly zeroes activations during training so the network cannot rely on any single unit.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by dropout?",
+   "expected": "Dropout randomly zeroes activations during training so the network cannot rely on any single unit.",
+   "got": "Dropout randomly zeroes activations during training so the network cannot rely on any single unit.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand dropout",
+   "expected": "Dropout randomly zeroes activations during training so the network cannot rely on any single unit.",
+   "got": "Dropout randomly zeroes activations during training so the network cannot rely on any single unit.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe a random forest",
+   "expected": "A random forest averages many decision trees, each trained on a random sample of rows and features.",
+   "got": "A random forest averages many decision trees, each trained on a random sample of rows and features.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by a random forest?",
+   "expected": "A random forest averages many decision trees, each trained on a random sample of rows and features.",
+   "got": "A random forest averages many decision trees, each trained on a random sample of rows and features.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand a random forest",
+   "expected": "A random forest averages many decision trees, each trained on a random sample of rows and features.",
+   "got": "A random forest averages many decision trees, each trained on a random sample of rows and features.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe gradient boosting",
+   "expected": "Gradient boosting adds small trees one at a time, each one fitting the errors left by the previous trees.",
+   "got": "Gradient boosting adds small trees one at a time, each one fitting the errors left by the previous trees.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by gradient boosting?",
+   "expected": "Gradient boosting adds small trees one at a time, each one fitting the errors left by the previous trees.",
+   "got": "Gradient boosting adds small trees one at a time, each one fitting the errors left by the previous trees.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand gradient boosting",
+   "expected": "Gradient boosting adds small trees one at a time, each one fitting the errors left by the previous trees.",
+   "got": "Gradient boosting adds small trees one at a time, each one fitting the errors left by the previous trees.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe k-means",
+   "expected": "K-means groups points into k clusters by repeatedly assigning each point to its nearest centre and updating centres.",
+   "got": "K-means groups points into k clusters by repeatedly assigning each point to its nearest centre and updating centres.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by k-means?",
+   "expected": "K-means groups points into k clusters by repeatedly assigning each point to its nearest centre and updating centres.",
+   "got": "K-means groups points into k clusters by repeatedly assigning each point to its nearest centre and updating centres.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand k-means",
+   "expected": "K-means groups points into k clusters by repeatedly assigning each point to its nearest centre and updating centres.",
+   "got": "K-means groups points into k clusters by repeatedly assigning each point to its nearest centre and updating centres.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe pca",
+   "expected": "PCA rotates data onto the directions of greatest variance so you can keep a few components and drop the rest.",
+   "got": "CRISP-DM is a six phase process: business understanding, data understanding, preparation, modeling, evaluation, deployment.",
+   "exact": false,
+   "sim": 0.3103448275862069
+  },
+  {
+   "q": "what is meant by pca?",
+   "expected": "PCA rotates data onto the directions of greatest variance so you can keep a few components and drop the rest.",
+   "got": "PCA rotates data onto the directions of greatest variance so you can keep a few components and drop the rest.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand pca",
+   "expected": "PCA rotates data onto the directions of greatest variance so you can keep a few components and drop the rest.",
+   "got": "PCA rotates data onto the directions of greatest variance so you can keep a few components and drop the rest.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe a p-value",
+   "expected": "A p-value is the chance of seeing data this extreme if the null hypothesis were true. Small means surprising.",
+   "got": "A p-value is the chance of seeing data this extreme if the null hypothesis were true. Small means surprising.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by a p-value?",
+   "expected": "A p-value is the chance of seeing data this extreme if the null hypothesis were true. Small means surprising.",
+   "got": "A p-value is the chance of seeing data this extreme if the null hypothesis were true. Small means surprising.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand a p-value",
+   "expected": "A p-value is the chance of seeing data this extreme if the null hypothesis were true. Small means surprising.",
+   "got": "A p-value is the chance of seeing data this extreme if the null hypothesis were true. Small means surprising.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe bias and variance",
+   "expected": "Bias is error from wrong assumptions, variance is error from sensitivity to the sample. Good models balance both.",
+   "got": "Bias is error from wrong assumptions, variance is error from sensitivity to the sample. Good models balance both.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by bias and variance?",
+   "expected": "Bias is error from wrong assumptions, variance is error from sensitivity to the sample. Good models balance both.",
+   "got": "Bias is error from wrong assumptions, variance is error from sensitivity to the sample. Good models balance both.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand bias and variance",
+   "expected": "Bias is error from wrong assumptions, variance is error from sensitivity to the sample. Good models balance both.",
+   "got": "Bias is error from wrong assumptions, variance is error from sensitivity to the sample. Good models balance both.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe feature engineering",
+   "expected": "Feature engineering turns raw data into inputs that expose the signal, like ratios, dates parts or distances.",
+   "got": "Feature engineering turns raw data into inputs that expose the signal, like ratios, dates parts or distances.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by feature engineering?",
+   "expected": "Feature engineering turns raw data into inputs that expose the signal, like ratios, dates parts or distances.",
+   "got": "Feature engineering turns raw data into inputs that expose the signal, like ratios, dates parts or distances.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand feature engineering",
+   "expected": "Feature engineering turns raw data into inputs that expose the signal, like ratios, dates parts or distances.",
+   "got": "Feature engineering turns raw data into inputs that expose the signal, like ratios, dates parts or distances.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe one-hot encoding",
+   "expected": "One-hot encoding turns a category into binary columns, one per level, so models can read it as numbers.",
+   "got": "One-hot encoding turns a category into binary columns, one per level, so models can read it as numbers.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by one-hot encoding?",
+   "expected": "One-hot encoding turns a category into binary columns, one per level, so models can read it as numbers.",
+   "got": "One-hot encoding turns a category into binary columns, one per level, so models can read it as numbers.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand one-hot encoding",
+   "expected": "One-hot encoding turns a category into binary columns, one per level, so models can read it as numbers.",
+   "got": "One-hot encoding turns a category into binary columns, one per level, so models can read it as numbers.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe normalisation",
+   "expected": "Normalisation rescales features to a common range so no feature dominates just because of its units.",
+   "got": "Normalisation rescales features to a common range so no feature dominates just because of its units.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by normalisation?",
+   "expected": "Normalisation rescales features to a common range so no feature dominates just because of its units.",
+   "got": "Normalisation rescales features to a common range so no feature dominates just because of its units.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand normalisation",
+   "expected": "Normalisation rescales features to a common range so no feature dominates just because of its units.",
+   "got": "Normalisation rescales features to a common range so no feature dominates just because of its units.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe an outlier",
+   "expected": "An outlier is a point far from the rest. Check if it is an error before removing it.",
+   "got": "An outlier is a point far from the rest. Check if it is an error before removing it.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by an outlier?",
+   "expected": "An outlier is a point far from the rest. Check if it is an error before removing it.",
+   "got": "An outlier is a point far from the rest. Check if it is an error before removing it.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand an outlier",
+   "expected": "An outlier is a point far from the rest. Check if it is an error before removing it.",
+   "got": "An outlier is a point far from the rest. Check if it is an error before removing it.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe an anomaly",
+   "expected": "An anomaly is a rare observation that differs from normal behaviour, like fraud among ordinary payments.",
+   "got": "An anomaly is a rare observation that differs from normal behaviour, like fraud among ordinary payments.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by an anomaly?",
+   "expected": "An anomaly is a rare observation that differs from normal behaviour, like fraud among ordinary payments.",
+   "got": "An anomaly is a rare observation that differs from normal behaviour, like fraud among ordinary payments.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand an anomaly",
+   "expected": "An anomaly is a rare observation that differs from normal behaviour, like fraud among ordinary payments.",
+   "got": "An anomaly is a rare observation that differs from normal behaviour, like fraud among ordinary payments.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe an isolation forest",
+   "expected": "An isolation forest finds anomalies by random splits: unusual points get isolated in very few splits.",
+   "got": "An isolation forest finds anomalies by random splits: unusual points get isolated in very few splits.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by an isolation forest?",
+   "expected": "An isolation forest finds anomalies by random splits: unusual points get isolated in very few splits.",
+   "got": "An isolation forest finds anomalies by random splits: unusual points get isolated in very few splits.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand an isolation forest",
+   "expected": "An isolation forest finds anomalies by random splits: unusual points get isolated in very few splits.",
+   "got": "An isolation forest finds anomalies by random splits: unusual points get isolated in very few splits.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe an autoencoder",
+   "expected": "An autoencoder compresses input to a small code and rebuilds it. High rebuild error flags unusual inputs.",
+   "got": "An autoencoder compresses input to a small code and rebuilds it. High rebuild error flags unusual inputs.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by an autoencoder?",
+   "expected": "An autoencoder compresses input to a small code and rebuilds it. High rebuild error flags unusual inputs.",
+   "got": "An autoencoder compresses input to a small code and rebuilds it. High rebuild error flags unusual inputs.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand an autoencoder",
+   "expected": "An autoencoder compresses input to a small code and rebuilds it. High rebuild error flags unusual inputs.",
+   "got": "An autoencoder compresses input to a small code and rebuilds it. High rebuild error flags unusual inputs.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe the apriori algorithm",
+   "expected": "Apriori finds frequent itemsets level by level, pruning any set that has an infrequent subset.",
+   "got": "Apriori finds frequent itemsets level by level, pruning any set that has an infrequent subset.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by the apriori algorithm?",
+   "expected": "Apriori finds frequent itemsets level by level, pruning any set that has an infrequent subset.",
+   "got": "Apriori finds frequent itemsets level by level, pruning any set that has an infrequent subset.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand the apriori algorithm",
+   "expected": "Apriori finds frequent itemsets level by level, pruning any set that has an infrequent subset.",
+   "got": "Apriori finds frequent itemsets level by level, pruning any set that has an infrequent subset.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe lift",
+   "expected": "Lift compares how often items occur together with what independence predicts. Above 1 means they attract.",
+   "got": "Lift compares how often items occur together with what independence predicts. Above 1 means they attract.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by lift?",
+   "expected": "Lift compares how often items occur together with what independence predicts. Above 1 means they attract.",
+   "got": "Lift compares how often items occur together with what independence predicts. Above 1 means they attract.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand lift",
+   "expected": "Lift compares how often items occur together with what independence predicts. Above 1 means they attract.",
+   "got": "Lift compares how often items occur together with what independence predicts. Above 1 means they attract.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe stacking",
+   "expected": "Stacking trains a meta model on the out-of-fold predictions of several base models to blend them.",
+   "got": "Stacking trains a meta model on the out-of-fold predictions of several base models to blend them.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by stacking?",
+   "expected": "Stacking trains a meta model on the out-of-fold predictions of several base models to blend them.",
+   "got": "Stacking trains a meta model on the out-of-fold predictions of several base models to blend them.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand stacking",
+   "expected": "Stacking trains a meta model on the out-of-fold predictions of several base models to blend them.",
+   "got": "Stacking trains a meta model on the out-of-fold predictions of several base models to blend them.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe automl",
+   "expected": "AutoML automates model choice, tuning and ensembling so a strong baseline needs only data and a time limit.",
+   "got": "AutoML automates model choice, tuning and ensembling so a strong baseline needs only data and a time limit.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by automl?",
+   "expected": "AutoML automates model choice, tuning and ensembling so a strong baseline needs only data and a time limit.",
+   "got": "AutoML automates model choice, tuning and ensembling so a strong baseline needs only data and a time limit.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand automl",
+   "expected": "AutoML automates model choice, tuning and ensembling so a strong baseline needs only data and a time limit.",
+   "got": "Underfitting is when a model is too simple to capture the pattern, so both train and test error stay high.",
+   "exact": false,
+   "sim": 0.3192488262910798
+  },
+  {
+   "q": "please describe a time series",
+   "expected": "A time series is data ordered in time. Never shuffle it: train on the past and test on the future.",
+   "got": "A time series is data ordered in time. Never shuffle it: train on the past and test on the future.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by a time series?",
+   "expected": "A time series is data ordered in time. Never shuffle it: train on the past and test on the future.",
+   "got": "A time series is data ordered in time. Never shuffle it: train on the past and test on the future.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand a time series",
+   "expected": "A time series is data ordered in time. Never shuffle it: train on the past and test on the future.",
+   "got": "A time series is data ordered in time. Never shuffle it: train on the past and test on the future.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe arima",
+   "expected": "ARIMA forecasts a series from its own lags, differences and past errors.",
+   "got": "ARIMA forecasts a series from its own lags, differences and past errors.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by arima?",
+   "expected": "ARIMA forecasts a series from its own lags, differences and past errors.",
+   "got": "ARIMA forecasts a series from its own lags, differences and past errors.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand arima",
+   "expected": "ARIMA forecasts a series from its own lags, differences and past errors.",
+   "got": "Naive Bayes applies Bayes rule assuming features are independent given the class. Simple and fast.",
+   "exact": false,
+   "sim": 0.23529411764705882
+  },
+  {
+   "q": "please describe stationarity",
+   "expected": "A stationary series has constant mean and variance over time. Differencing often makes a series stationary.",
+   "got": "A stationary series has constant mean and variance over time. Differencing often makes a series stationary.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by stationarity?",
+   "expected": "A stationary series has constant mean and variance over time. Differencing often makes a series stationary.",
+   "got": "A stationary series has constant mean and variance over time. Differencing often makes a series stationary.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand stationarity",
+   "expected": "A stationary series has constant mean and variance over time. Differencing often makes a series stationary.",
+   "got": "A stationary series has constant mean and variance over time. Differencing often makes a series stationary.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe shap values",
+   "expected": "SHAP values split a prediction into fair contributions from each feature using Shapley values from game theory.",
+   "got": "SHAP values split a prediction into fair contributions from each feature using Shapley values from game theory.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by shap values?",
+   "expected": "SHAP values split a prediction into fair contributions from each feature using Shapley values from game theory.",
+   "got": "SHAP values split a prediction into fair contributions from each feature using Shapley values from game theory.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand shap values",
+   "expected": "SHAP values split a prediction into fair contributions from each feature using Shapley values from game theory.",
+   "got": "SHAP values split a prediction into fair contributions from each feature using Shapley values from game theory.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe a baseline",
+   "expected": "A baseline is the simplest reasonable model. If you cannot beat it, the fancy model adds nothing.",
+   "got": "A baseline is the simplest reasonable model. If you cannot beat it, the fancy model adds nothing.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by a baseline?",
+   "expected": "A baseline is the simplest reasonable model. If you cannot beat it, the fancy model adds nothing.",
+   "got": "A baseline is the simplest reasonable model. If you cannot beat it, the fancy model adds nothing.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand a baseline",
+   "expected": "A baseline is the simplest reasonable model. If you cannot beat it, the fancy model adds nothing.",
+   "got": "A baseline is the simplest reasonable model. If you cannot beat it, the fancy model adds nothing.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe a hyperparameter",
+   "expected": "A hyperparameter is a setting chosen before training, like tree depth or learning rate, tuned by validation.",
+   "got": "A hyperparameter is a setting chosen before training, like tree depth or learning rate, tuned by validation.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by a hyperparameter?",
+   "expected": "A hyperparameter is a setting chosen before training, like tree depth or learning rate, tuned by validation.",
+   "got": "A hyperparameter is a setting chosen before training, like tree depth or learning rate, tuned by validation.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand a hyperparameter",
+   "expected": "A hyperparameter is a setting chosen before training, like tree depth or learning rate, tuned by validation.",
+   "got": "A hyperparameter is a setting chosen before training, like tree depth or learning rate, tuned by validation.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe the softmax function",
+   "expected": "Softmax turns a vector of scores into probabilities that are positive and sum to one.",
+   "got": "Softmax turns a vector of scores into probabilities that are positive and sum to one.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by the softmax function?",
+   "expected": "Softmax turns a vector of scores into probabilities that are positive and sum to one.",
+   "got": "Softmax turns a vector of scores into probabilities that are positive and sum to one.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand the softmax function",
+   "expected": "Softmax turns a vector of scores into probabilities that are positive and sum to one.",
+   "got": "Softmax turns a vector of scores into probabilities that are positive and sum to one.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe cross-entropy",
+   "expected": "Cross-entropy loss is the negative log probability the model gave to the correct answer.",
+   "got": "Cross-entropy loss is the negative log probability the model gave to the correct answer.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by cross-entropy?",
+   "expected": "Cross-entropy loss is the negative log probability the model gave to the correct answer.",
+   "got": "Cross-entropy loss is the negative log probability the model gave to the correct answer.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand cross-entropy",
+   "expected": "Cross-entropy loss is the negative log probability the model gave to the correct answer.",
+   "got": "Cross-entropy loss is the negative log probability the model gave to the correct answer.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe naive bayes",
+   "expected": "Naive Bayes applies Bayes rule assuming features are independent given the class. Simple and fast.",
+   "got": "Naive Bayes applies Bayes rule assuming features are independent given the class. Simple and fast.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by naive bayes?",
+   "expected": "Naive Bayes applies Bayes rule assuming features are independent given the class. Simple and fast.",
+   "got": "Naive Bayes applies Bayes rule assuming features are independent given the class. Simple and fast.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand naive bayes",
+   "expected": "Naive Bayes applies Bayes rule assuming features are independent given the class. Simple and fast.",
+   "got": "Naive Bayes applies Bayes rule assuming features are independent given the class. Simple and fast.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe a dag",
+   "expected": "A DAG is a directed acyclic graph. Pipelines use it to run each task after its dependencies.",
+   "got": "A DAG is a directed acyclic graph. Pipelines use it to run each task after its dependencies.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by a dag?",
+   "expected": "A DAG is a directed acyclic graph. Pipelines use it to run each task after its dependencies.",
+   "got": "A DAG is a directed acyclic graph. Pipelines use it to run each task after its dependencies.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand a dag",
+   "expected": "A DAG is a directed acyclic graph. Pipelines use it to run each task after its dependencies.",
+   "got": "Data drift is when live inputs stop looking like training data, so model quality quietly decays.",
+   "exact": false,
+   "sim": 0.23404255319148937
+  },
+  {
+   "q": "please describe mlops",
+   "expected": "MLOps is the practice of deploying, monitoring and retraining models reliably in production.",
+   "got": "MLOps is the practice of deploying, monitoring and retraining models reliably in production.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by mlops?",
+   "expected": "MLOps is the practice of deploying, monitoring and retraining models reliably in production.",
+   "got": "MLOps is the practice of deploying, monitoring and retraining models reliably in production.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand mlops",
+   "expected": "MLOps is the practice of deploying, monitoring and retraining models reliably in production.",
+   "got": "MLOps is the practice of deploying, monitoring and retraining models reliably in production.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "please describe data drift",
+   "expected": "Data drift is when live inputs stop looking like training data, so model quality quietly decays.",
+   "got": "Data drift is when live inputs stop looking like training data, so model quality quietly decays.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "what is meant by data drift?",
+   "expected": "Data drift is when live inputs stop looking like training data, so model quality quietly decays.",
+   "got": "Data drift is when live inputs stop looking like training data, so model quality quietly decays.",
+   "exact": true,
+   "sim": 1.0
+  },
+  {
+   "q": "help me understand data drift",
+   "expected": "Data drift is when live inputs stop looking like training data, so model quality quietly decays.",
+   "got": "Data drift is when live inputs stop looking like training data, so model quality quietly decays.",
+   "exact": true,
+   "sim": 1.0
+  }
+ ],
+ "ood_example": {
+  "q": "who won the world cup?",
+  "got": "Lift compares how often items occur together with what independence predicts. Above 1 means they attract."
+ },
+ "n_concepts": 56,
+ "n_sft_train": 392,
+ "n_sft_test": 168,
+ "train_templates": [
+  "what is {c}?",
+  "explain {c}",
+  "define {c}",
+  "tell me about {c}",
+  "{c}?",
+  "can you explain {c}?",
+  "what does {c} mean?"
+ ],
+ "held_out_templates": [
+  "please describe {c}",
+  "what is meant by {c}?",
+  "help me understand {c}"
+ ],
+ "torch": "2.15.0+cu132",
+ "fast_mode": false,
+ "secs": 2450.0
+}

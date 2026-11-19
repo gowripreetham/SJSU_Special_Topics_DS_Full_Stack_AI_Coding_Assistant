@@ -1,0 +1,7009 @@
+{
+ "n_tx": 9835,
+ "n_items": 169,
+ "avg_size": 4.409456024402644,
+ "density": 0.026091455765696117,
+ "item_freq": [
+  [
+   "whole milk",
+   0.25551601423487547
+  ],
+  [
+   "other vegetables",
+   0.1934926283680732
+  ],
+  [
+   "rolls/buns",
+   0.18393492628368074
+  ],
+  [
+   "soda",
+   0.17437722419928825
+  ],
+  [
+   "yogurt",
+   0.13950177935943062
+  ],
+  [
+   "bottled water",
+   0.11052364006100661
+  ],
+  [
+   "root vegetables",
+   0.10899847483477376
+  ],
+  [
+   "tropical fruit",
+   0.10493136756481952
+  ],
+  [
+   "shopping bags",
+   0.09852567361464158
+  ],
+  [
+   "sausage",
+   0.09395017793594305
+  ],
+  [
+   "pastry",
+   0.08896797153024912
+  ],
+  [
+   "citrus fruit",
+   0.08276563294356888
+  ],
+  [
+   "bottled beer",
+   0.08052872394509406
+  ],
+  [
+   "newspapers",
+   0.07981698017285206
+  ],
+  [
+   "canned beer",
+   0.07768174885612608
+  ],
+  [
+   "pip fruit",
+   0.07564819522114896
+  ],
+  [
+   "fruit/vegetable juice",
+   0.0722928317234367
+  ],
+  [
+   "whipped/sour cream",
+   0.07168276563294357
+  ],
+  [
+   "brown bread",
+   0.06487036095577021
+  ],
+  [
+   "domestic eggs",
+   0.06344687341128623
+  ],
+  [
+   "frankfurter",
+   0.058973055414336555
+  ],
+  [
+   "margarine",
+   0.05856634468734113
+  ],
+  [
+   "coffee",
+   0.05805795627859685
+  ],
+  [
+   "pork",
+   0.05765124555160142
+  ],
+  [
+   "butter",
+   0.05541433655312659
+  ]
+ ],
+ "size_hist": [
+  [
+   1,
+   2159
+  ],
+  [
+   2,
+   1643
+  ],
+  [
+   3,
+   1299
+  ],
+  [
+   4,
+   1005
+  ],
+  [
+   5,
+   855
+  ],
+  [
+   6,
+   645
+  ],
+  [
+   7,
+   545
+  ],
+  [
+   8,
+   438
+  ],
+  [
+   9,
+   350
+  ],
+  [
+   10,
+   246
+  ],
+  [
+   11,
+   182
+  ],
+  [
+   12,
+   117
+  ],
+  [
+   13,
+   78
+  ],
+  [
+   14,
+   77
+  ],
+  [
+   15,
+   55
+  ],
+  [
+   16,
+   46
+  ],
+  [
+   17,
+   29
+  ],
+  [
+   18,
+   14
+  ],
+  [
+   19,
+   14
+  ],
+  [
+   20,
+   9
+  ]
+ ],
+ "bench": [
+  {
+   "min_support": 0.05,
+   "itemsets": 31,
+   "apriori_s": 0.017,
+   "fpgrowth_s": 0.042
+  },
+  {
+   "min_support": 0.03,
+   "itemsets": 63,
+   "apriori_s": 0.028,
+   "fpgrowth_s": 0.08
+  },
+  {
+   "min_support": 0.02,
+   "itemsets": 122,
+   "apriori_s": 0.052,
+   "fpgrowth_s": 0.063
+  },
+  {
+   "min_support": 0.01,
+   "itemsets": 333,
+   "apriori_s": 0.128,
+   "fpgrowth_s": 0.083
+  },
+  {
+   "min_support": 0.007,
+   "itemsets": 594,
+   "apriori_s": 0.207,
+   "fpgrowth_s": 0.104
+  },
+  {
+   "min_support": 0.005,
+   "itemsets": 1001,
+   "apriori_s": 0.344,
+   "fpgrowth_s": 0.23
+  }
+ ],
+ "autoresearch": {
+  "best": {
+   "min_support": 0.01,
+   "min_conf": 0.1,
+   "min_lift": 1.0,
+   "rank_by": "confidence"
+  },
+  "best_score": 0.18966644865925442,
+  "history": [
+   {
+    "iter": 0,
+    "change": "baseline",
+    "config": {
+     "min_support": 0.01,
+     "min_conf": 0.3,
+     "min_lift": 1.0,
+     "rank_by": "confidence"
+    },
+    "score": 0.18247220405493786,
+    "accepted": true,
+    "best": 0.18247220405493786,
+    "secs": 0.16
+   },
+   {
+    "iter": 1,
+    "change": "min_support: 0.01 \u2192 0.002",
+    "config": {
+     "min_support": 0.002,
+     "min_conf": 0.3,
+     "min_lift": 1.0,
+     "rank_by": "confidence"
+    },
+    "score": 0.18051013734466972,
+    "accepted": false,
+    "best": 0.18247220405493786,
+    "secs": 1.03
+   },
+   {
+    "iter": 2,
+    "change": "min_lift: 1.0 \u2192 1.3",
+    "config": {
+     "min_support": 0.01,
+     "min_conf": 0.3,
+     "min_lift": 1.3,
+     "rank_by": "confidence"
+    },
+    "score": 0.18247220405493786,
+    "accepted": false,
+    "best": 0.18247220405493786,
+    "secs": 0.14
+   },
+   {
+    "iter": 3,
+    "change": "min_conf: 0.3 \u2192 0.1",
+    "config": {
+     "min_support": 0.01,
+     "min_conf": 0.1,
+     "min_lift": 1.0,
+     "rank_by": "confidence"
+    },
+    "score": 0.18966644865925442,
+    "accepted": true,
+    "best": 0.18966644865925442,
+    "secs": 0.25
+   },
+   {
+    "iter": 4,
+    "change": "min_support: 0.01 \u2192 0.02",
+    "config": {
+     "min_support": 0.02,
+     "min_conf": 0.1,
+     "min_lift": 1.0,
+     "rank_by": "confidence"
+    },
+    "score": 0.18770438194898625,
+    "accepted": false,
+    "best": 0.18966644865925442,
+    "secs": 0.14
+   },
+   {
+    "iter": 5,
+    "change": "rank_by: confidence \u2192 lift",
+    "config": {
+     "min_support": 0.01,
+     "min_conf": 0.1,
+     "min_lift": 1.0,
+     "rank_by": "lift"
+    },
+    "score": 0.11903204708960105,
+    "accepted": false,
+    "best": 0.18966644865925442,
+    "secs": 0.25
+   },
+   {
+    "iter": 6,
+    "change": "min_support: 0.01 \u2192 0.002",
+    "config": {
+     "min_support": 0.002,
+     "min_conf": 0.1,
+     "min_lift": 1.0,
+     "rank_by": "confidence"
+    },
+    "score": 0.17985611510791366,
+    "accepted": false,
+    "best": 0.18966644865925442,
+    "secs": 3.1
+   },
+   {
+    "iter": 7,
+    "change": "min_conf: 0.1 \u2192 0.15",
+    "config": {
+     "min_support": 0.01,
+     "min_conf": 0.15,
+     "min_lift": 1.0,
+     "rank_by": "confidence"
+    },
+    "score": 0.18835840418574232,
+    "accepted": false,
+    "best": 0.18966644865925442,
+    "secs": 0.21
+   },
+   {
+    "iter": 8,
+    "change": "min_conf: 0.1 \u2192 0.4",
+    "config": {
+     "min_support": 0.01,
+     "min_conf": 0.4,
+     "min_lift": 1.0,
+     "rank_by": "confidence"
+    },
+    "score": 0.17658600392413343,
+    "accepted": false,
+    "best": 0.18966644865925442,
+    "secs": 0.12
+   },
+   {
+    "iter": 9,
+    "change": "min_support: 0.01 \u2192 0.003",
+    "config": {
+     "min_support": 0.003,
+     "min_conf": 0.1,
+     "min_lift": 1.0,
+     "rank_by": "confidence"
+    },
+    "score": 0.18116415958142576,
+    "accepted": false,
+    "best": 0.18966644865925442,
+    "secs": 1.52
+   },
+   {
+    "iter": 10,
+    "change": "min_lift: 1.0 \u2192 1.3",
+    "config": {
+     "min_support": 0.01,
+     "min_conf": 0.1,
+     "min_lift": 1.3,
+     "rank_by": "confidence"
+    },
+    "score": 0.18574231523871812,
+    "accepted": false,
+    "best": 0.18966644865925442,
+    "secs": 0.32
+   },
+   {
+    "iter": 11,
+    "change": "min_conf: 0.1 \u2192 0.2",
+    "config": {
+     "min_support": 0.01,
+     "min_conf": 0.2,
+     "min_lift": 1.0,
+     "rank_by": "confidence"
+    },
+    "score": 0.18770438194898625,
+    "accepted": false,
+    "best": 0.18966644865925442,
+    "secs": 0.19
+   },
+   {
+    "iter": 12,
+    "change": "min_lift: 1.0 \u2192 1.5",
+    "config": {
+     "min_support": 0.01,
+     "min_conf": 0.1,
+     "min_lift": 1.5,
+     "rank_by": "confidence"
+    },
+    "score": 0.17593198168737736,
+    "accepted": false,
+    "best": 0.18966644865925442,
+    "secs": 0.19
+   },
+   {
+    "iter": 13,
+    "change": "min_lift: 1.0 \u2192 1.1",
+    "config": {
+     "min_support": 0.01,
+     "min_conf": 0.1,
+     "min_lift": 1.1,
+     "rank_by": "confidence"
+    },
+    "score": 0.18835840418574232,
+    "accepted": false,
+    "best": 0.18966644865925442,
+    "secs": 0.26
+   },
+   {
+    "iter": 14,
+    "change": "min_conf: 0.1 \u2192 0.05",
+    "config": {
+     "min_support": 0.01,
+     "min_conf": 0.05,
+     "min_lift": 1.0,
+     "rank_by": "confidence"
+    },
+    "score": 0.18966644865925442,
+    "accepted": false,
+    "best": 0.18966644865925442,
+    "secs": 0.29
+   },
+   {
+    "iter": 15,
+    "change": "min_lift: 1.0 \u2192 2.0",
+    "config": {
+     "min_support": 0.01,
+     "min_conf": 0.1,
+     "min_lift": 2.0,
+     "rank_by": "confidence"
+    },
+    "score": 0.16219751471550034,
+    "accepted": false,
+    "best": 0.18966644865925442,
+    "secs": 0.14
+   },
+   {
+    "iter": 16,
+    "change": "min_support: 0.01 \u2192 0.005",
+    "config": {
+     "min_support": 0.005,
+     "min_conf": 0.1,
+     "min_lift": 1.0,
+     "rank_by": "confidence"
+    },
+    "score": 0.18508829300196206,
+    "accepted": false,
+    "best": 0.18966644865925442,
+    "secs": 0.68
+   },
+   {
+    "iter": 17,
+    "change": "min_support: 0.01 \u2192 0.008",
+    "config": {
+     "min_support": 0.008,
+     "min_conf": 0.1,
+     "min_lift": 1.0,
+     "rank_by": "confidence"
+    },
+    "score": 0.18966644865925442,
+    "accepted": false,
+    "best": 0.18966644865925442,
+    "secs": 0.35
+   }
+  ],
+  "maximize": true,
+  "n_trials": 18,
+  "n_accepted": 2
+ },
+ "best": {
+  "min_support": 0.01,
+  "min_conf": 0.1,
+  "min_lift": 1.0,
+  "rank_by": "confidence"
+ },
+ "test": {
+  "rules": {
+   "hit_rate": 0.18901660280970625,
+   "coverage": 0.9361430395913155,
+   "n": 1566
+  },
+  "rules_only": {
+   "hit_rate": 0.1756066411238825,
+   "coverage": 0.9361430395913155,
+   "n": 1566
+  },
+  "popularity": {
+   "hit_rate": 0.18454661558109833,
+   "coverage": 0.0,
+   "n": 1566
+  },
+  "val_popularity": 0.17658600392413343
+ },
+ "n_rules": 414,
+ "n_pairs": 213,
+ "rules": [
+  [
+   "citrus fruit, root vegetables",
+   "other vegetables",
+   0.0104,
+   0.5862,
+   3.0296,
+   0.0069,
+   1.9491
+  ],
+  [
+   "root vegetables, tropical fruit",
+   "other vegetables",
+   0.0123,
+   0.5845,
+   3.021,
+   0.0082,
+   1.9412
+  ],
+  [
+   "curd, yogurt",
+   "whole milk",
+   0.0101,
+   0.5824,
+   2.2791,
+   0.0056,
+   1.7826
+  ],
+  [
+   "butter, other vegetables",
+   "whole milk",
+   0.0115,
+   0.5736,
+   2.2449,
+   0.0064,
+   1.746
+  ],
+  [
+   "root vegetables, tropical fruit",
+   "whole milk",
+   0.012,
+   0.57,
+   2.231,
+   0.0066,
+   1.7316
+  ],
+  [
+   "root vegetables, yogurt",
+   "whole milk",
+   0.0145,
+   0.563,
+   2.2034,
+   0.0079,
+   1.7036
+  ],
+  [
+   "domestic eggs, other vegetables",
+   "whole milk",
+   0.0123,
+   0.5525,
+   2.1623,
+   0.0066,
+   1.6637
+  ],
+  [
+   "whipped/sour cream, yogurt",
+   "whole milk",
+   0.0109,
+   0.5245,
+   2.0527,
+   0.0056,
+   1.5657
+  ],
+  [
+   "rolls/buns, root vegetables",
+   "whole milk",
+   0.0127,
+   0.523,
+   2.0469,
+   0.0065,
+   1.5608
+  ],
+  [
+   "other vegetables, pip fruit",
+   "whole milk",
+   0.0135,
+   0.5175,
+   2.0254,
+   0.0068,
+   1.543
+  ],
+  [
+   "tropical fruit, yogurt",
+   "whole milk",
+   0.0151,
+   0.5174,
+   2.0248,
+   0.0077,
+   1.5425
+  ],
+  [
+   "other vegetables, yogurt",
+   "whole milk",
+   0.0223,
+   0.5129,
+   2.0072,
+   0.0112,
+   1.5283
+  ],
+  [
+   "other vegetables, whipped/sour cream",
+   "whole milk",
+   0.0146,
+   0.507,
+   1.9844,
+   0.0073,
+   1.5102
+  ],
+  [
+   "rolls/buns, root vegetables",
+   "other vegetables",
+   0.0122,
+   0.5021,
+   2.5949,
+   0.0075,
+   1.6198
+  ],
+  [
+   "root vegetables, yogurt",
+   "other vegetables",
+   0.0129,
+   0.5,
+   2.5841,
+   0.0079,
+   1.613
+  ],
+  [
+   "fruit/vegetable juice, other vegetables",
+   "whole milk",
+   0.0105,
+   0.4976,
+   1.9474,
+   0.0051,
+   1.4818
+  ],
+  [
+   "butter",
+   "whole milk",
+   0.0276,
+   0.4972,
+   1.9461,
+   0.0134,
+   1.4808
+  ],
+  [
+   "curd",
+   "whole milk",
+   0.0261,
+   0.4905,
+   1.9195,
+   0.0125,
+   1.4611
+  ],
+  [
+   "whipped/sour cream, yogurt",
+   "other vegetables",
+   0.0102,
+   0.4902,
+   2.5334,
+   0.0062,
+   1.582
+  ],
+  [
+   "other vegetables, root vegetables",
+   "whole milk",
+   0.0232,
+   0.4893,
+   1.9148,
+   0.0111,
+   1.4577
+  ],
+  [
+   "other vegetables, tropical fruit",
+   "whole milk",
+   0.0171,
+   0.4759,
+   1.8626,
+   0.0079,
+   1.4206
+  ],
+  [
+   "citrus fruit, yogurt",
+   "whole milk",
+   0.0103,
+   0.4742,
+   1.8558,
+   0.0047,
+   1.4158
+  ],
+  [
+   "root vegetables, whole milk",
+   "other vegetables",
+   0.0232,
+   0.474,
+   2.4498,
+   0.0137,
+   1.5333
+  ],
+  [
+   "domestic eggs",
+   "whole milk",
+   0.03,
+   0.4728,
+   1.8502,
+   0.0138,
+   1.412
+  ],
+  [
+   "other vegetables, pork",
+   "whole milk",
+   0.0102,
+   0.4695,
+   1.8374,
+   0.0046,
+   1.4033
+  ],
+  [
+   "other vegetables, pastry",
+   "whole milk",
+   0.0106,
+   0.4685,
+   1.8334,
+   0.0048,
+   1.4006
+  ],
+  [
+   "onions",
+   "other vegetables",
+   0.0142,
+   0.459,
+   2.3723,
+   0.0082,
+   1.4908
+  ],
+  [
+   "pork, whole milk",
+   "other vegetables",
+   0.0102,
+   0.4587,
+   2.3707,
+   0.0059,
+   1.49
+  ],
+  [
+   "whipped/sour cream, whole milk",
+   "other vegetables",
+   0.0146,
+   0.4543,
+   2.3477,
+   0.0084,
+   1.4778
+  ],
+  [
+   "rolls/buns, yogurt",
+   "whole milk",
+   0.0156,
+   0.4527,
+   1.7716,
+   0.0068,
+   1.3602
+  ],
+  [
+   "citrus fruit, other vegetables",
+   "whole milk",
+   0.013,
+   0.4507,
+   1.7639,
+   0.0056,
+   1.3553
+  ],
+  [
+   "whipped/sour cream",
+   "whole milk",
+   0.0322,
+   0.4496,
+   1.7598,
+   0.0139,
+   1.3527
+  ],
+  [
+   "pip fruit, whole milk",
+   "other vegetables",
+   0.0135,
+   0.4493,
+   2.3222,
+   0.0077,
+   1.4646
+  ],
+  [
+   "root vegetables",
+   "whole milk",
+   0.0489,
+   0.4487,
+   1.756,
+   0.0211,
+   1.3504
+  ],
+  [
+   "rolls/buns, tropical fruit",
+   "whole milk",
+   0.011,
+   0.4463,
+   1.7466,
+   0.0047,
+   1.3445
+  ],
+  [
+   "sugar",
+   "whole milk",
+   0.015,
+   0.4444,
+   1.7394,
+   0.0064,
+   1.3401
+  ],
+  [
+   "hamburger meat",
+   "whole milk",
+   0.0147,
+   0.4434,
+   1.7354,
+   0.0062,
+   1.3376
+  ],
+  [
+   "ham",
+   "whole milk",
+   0.0115,
+   0.4414,
+   1.7275,
+   0.0048,
+   1.3328
+  ],
+  [
+   "sliced cheese",
+   "whole milk",
+   0.0108,
+   0.4398,
+   1.7214,
+   0.0045,
+   1.329
+  ],
+  [
+   "root vegetables",
+   "other vegetables",
+   0.0474,
+   0.4347,
+   2.2466,
+   0.0263,
+   1.4267
+  ],
+  [
+   "bottled water, other vegetables",
+   "whole milk",
+   0.0108,
+   0.4344,
+   1.7002,
+   0.0044,
+   1.3163
+  ],
+  [
+   "citrus fruit, whole milk",
+   "other vegetables",
+   0.013,
+   0.4267,
+   2.2051,
+   0.0071,
+   1.4067
+  ],
+  [
+   "other vegetables, soda",
+   "whole milk",
+   0.0139,
+   0.4255,
+   1.6651,
+   0.0056,
+   1.2958
+  ],
+  [
+   "frozen vegetables",
+   "whole milk",
+   0.0204,
+   0.4249,
+   1.6631,
+   0.0081,
+   1.2946
+  ],
+  [
+   "tropical fruit, yogurt",
+   "other vegetables",
+   0.0123,
+   0.4201,
+   2.1713,
+   0.0066,
+   1.3909
+  ],
+  [
+   "other vegetables, rolls/buns",
+   "whole milk",
+   0.0179,
+   0.42,
+   1.6439,
+   0.007,
+   1.2837
+  ],
+  [
+   "chicken",
+   "other vegetables",
+   0.0179,
+   0.4171,
+   2.1554,
+   0.0096,
+   1.3835
+  ],
+  [
+   "butter, whole milk",
+   "other vegetables",
+   0.0115,
+   0.417,
+   2.155,
+   0.0062,
+   1.3833
+  ],
+  [
+   "hamburger meat",
+   "other vegetables",
+   0.0138,
+   0.4159,
+   2.1494,
+   0.0074,
+   1.3808
+  ],
+  [
+   "cream cheese",
+   "whole milk",
+   0.0165,
+   0.4154,
+   1.6257,
+   0.0063,
+   1.2735
+  ],
+  [
+   "butter milk",
+   "whole milk",
+   0.0116,
+   0.4145,
+   1.6224,
+   0.0044,
+   1.2716
+  ],
+  [
+   "margarine",
+   "whole milk",
+   0.0242,
+   0.4132,
+   1.6171,
+   0.0092,
+   1.2687
+  ],
+  [
+   "hard cheese",
+   "whole milk",
+   0.0101,
+   0.4108,
+   1.6077,
+   0.0038,
+   1.2635
+  ],
+  [
+   "domestic eggs, whole milk",
+   "other vegetables",
+   0.0123,
+   0.4102,
+   2.1198,
+   0.0065,
+   1.3674
+  ],
+  [
+   "chicken",
+   "whole milk",
+   0.0176,
+   0.41,
+   1.6044,
+   0.0066,
+   1.2617
+  ],
+  [
+   "white bread",
+   "whole milk",
+   0.0171,
+   0.4058,
+   1.5881,
+   0.0063,
+   1.2529
+  ],
+  [
+   "beef",
+   "whole milk",
+   0.0213,
+   0.405,
+   1.5852,
+   0.0078,
+   1.2513
+  ],
+  [
+   "tropical fruit, whole milk",
+   "other vegetables",
+   0.0171,
+   0.4038,
+   2.0871,
+   0.0089,
+   1.3529
+  ],
+  [
+   "tropical fruit",
+   "whole milk",
+   0.0423,
+   0.4031,
+   1.5776,
+   0.0155,
+   1.2473
+  ],
+  [
+   "whipped/sour cream",
+   "other vegetables",
+   0.0289,
+   0.4028,
+   2.0819,
+   0.015,
+   1.3506
+  ],
+  [
+   "oil",
+   "whole milk",
+   0.0113,
+   0.4022,
+   1.574,
+   0.0041,
+   1.2453
+  ],
+  [
+   "yogurt",
+   "whole milk",
+   0.056,
+   0.4016,
+   1.5717,
+   0.0204,
+   1.2441
+  ],
+  [
+   "pip fruit",
+   "whole milk",
+   0.0301,
+   0.3978,
+   1.557,
+   0.0108,
+   1.2364
+  ],
+  [
+   "whole milk, yogurt",
+   "other vegetables",
+   0.0223,
+   0.3975,
+   2.0541,
+   0.0114,
+   1.3385
+  ],
+  [
+   "fruit/vegetable juice, whole milk",
+   "other vegetables",
+   0.0105,
+   0.3931,
+   2.0318,
+   0.0053,
+   1.329
+  ],
+  [
+   "onions",
+   "whole milk",
+   0.0121,
+   0.3902,
+   1.527,
+   0.0042,
+   1.2208
+  ],
+  [
+   "hygiene articles",
+   "whole milk",
+   0.0128,
+   0.3889,
+   1.522,
+   0.0044,
+   1.2182
+  ],
+  [
+   "brown bread",
+   "whole milk",
+   0.0252,
+   0.3887,
+   1.5213,
+   0.0086,
+   1.2179
+  ],
+  [
+   "other vegetables",
+   "whole milk",
+   0.0748,
+   0.3868,
+   1.5136,
+   0.0254,
+   1.214
+  ],
+  [
+   "curd, whole milk",
+   "yogurt",
+   0.0101,
+   0.3852,
+   2.7614,
+   0.0064,
+   1.3997
+  ],
+  [
+   "pork",
+   "whole milk",
+   0.0222,
+   0.3845,
+   1.5047,
+   0.0074,
+   1.2095
+  ],
+  [
+   "soda, yogurt",
+   "whole milk",
+   0.0105,
+   0.3829,
+   1.4985,
+   0.0035,
+   1.2064
+  ],
+  [
+   "other vegetables, sausage",
+   "whole milk",
+   0.0102,
+   0.3774,
+   1.4768,
+   0.0033,
+   1.1957
+  ],
+  [
+   "napkins",
+   "whole milk",
+   0.0197,
+   0.3767,
+   1.4743,
+   0.0063,
+   1.1944
+  ],
+  [
+   "beef",
+   "other vegetables",
+   0.0197,
+   0.376,
+   1.9431,
+   0.0096,
+   1.2924
+  ],
+  [
+   "pork",
+   "other vegetables",
+   0.0217,
+   0.3757,
+   1.9415,
+   0.0105,
+   1.2918
+  ],
+  [
+   "pastry",
+   "whole milk",
+   0.0332,
+   0.3737,
+   1.4626,
+   0.0105,
+   1.1887
+  ],
+  [
+   "butter milk",
+   "other vegetables",
+   0.0104,
+   0.3709,
+   1.9169,
+   0.005,
+   1.282
+  ],
+  [
+   "frozen vegetables",
+   "other vegetables",
+   0.0178,
+   0.37,
+   1.9121,
+   0.0085,
+   1.2801
+  ],
+  [
+   "dessert",
+   "whole milk",
+   0.0137,
+   0.3699,
+   1.4475,
+   0.0042,
+   1.1815
+  ],
+  [
+   "citrus fruit",
+   "whole milk",
+   0.0305,
+   0.3686,
+   1.4424,
+   0.0094,
+   1.179
+  ],
+  [
+   "fruit/vegetable juice",
+   "whole milk",
+   0.0266,
+   0.3685,
+   1.4422,
+   0.0082,
+   1.1789
+  ],
+  [
+   "butter",
+   "other vegetables",
+   0.02,
+   0.3615,
+   1.8681,
+   0.0093,
+   1.2631
+  ],
+  [
+   "long life bakery product",
+   "whole milk",
+   0.0135,
+   0.3614,
+   1.4144,
+   0.004,
+   1.1658
+  ],
+  [
+   "citrus fruit, other vegetables",
+   "root vegetables",
+   0.0104,
+   0.3592,
+   3.295,
+   0.0072,
+   1.3904
+  ],
+  [
+   "tropical fruit, whole milk",
+   "yogurt",
+   0.0151,
+   0.3582,
+   2.5675,
+   0.0092,
+   1.3407
+  ],
+  [
+   "berries",
+   "whole milk",
+   0.0118,
+   0.3547,
+   1.3883,
+   0.0033,
+   1.1538
+  ],
+  [
+   "other vegetables, whipped/sour cream",
+   "yogurt",
+   0.0102,
+   0.3521,
+   2.5241,
+   0.0061,
+   1.3282
+  ],
+  [
+   "domestic eggs",
+   "other vegetables",
+   0.0223,
+   0.351,
+   1.8138,
+   0.01,
+   1.2426
+  ],
+  [
+   "citrus fruit",
+   "other vegetables",
+   0.0289,
+   0.3489,
+   1.8031,
+   0.0129,
+   1.2387
+  ],
+  [
+   "frankfurter",
+   "whole milk",
+   0.0205,
+   0.3483,
+   1.363,
+   0.0055,
+   1.1423
+  ],
+  [
+   "soda, whole milk",
+   "other vegetables",
+   0.0139,
+   0.3477,
+   1.797,
+   0.0062,
+   1.2364
+  ],
+  [
+   "cream cheese",
+   "other vegetables",
+   0.0137,
+   0.3462,
+   1.789,
+   0.0061,
+   1.2335
+  ],
+  [
+   "pip fruit",
+   "other vegetables",
+   0.0261,
+   0.3454,
+   1.7852,
+   0.0115,
+   1.2321
+  ],
+  [
+   "other vegetables, tropical fruit",
+   "root vegetables",
+   0.0123,
+   0.3428,
+   3.1448,
+   0.0084,
+   1.3557
+  ],
+  [
+   "other vegetables, tropical fruit",
+   "yogurt",
+   0.0123,
+   0.3428,
+   2.4571,
+   0.0073,
+   1.3093
+  ],
+  [
+   "newspapers",
+   "whole milk",
+   0.0274,
+   0.3427,
+   1.3411,
+   0.007,
+   1.1326
+  ],
+  [
+   "tropical fruit",
+   "other vegetables",
+   0.0359,
+   0.3421,
+   1.7678,
+   0.0156,
+   1.2258
+  ],
+  [
+   "sausage, whole milk",
+   "other vegetables",
+   0.0102,
+   0.3401,
+   1.7579,
+   0.0044,
+   1.2222
+  ],
+  [
+   "whipped/sour cream, whole milk",
+   "yogurt",
+   0.0109,
+   0.3375,
+   2.4196,
+   0.0064,
+   1.2989
+  ],
+  [
+   "margarine",
+   "other vegetables",
+   0.0197,
+   0.3368,
+   1.7407,
+   0.0084,
+   1.2161
+  ],
+  [
+   "citrus fruit, whole milk",
+   "yogurt",
+   0.0103,
+   0.3367,
+   2.4134,
+   0.006,
+   1.2972
+  ],
+  [
+   "chocolate",
+   "whole milk",
+   0.0167,
+   0.3361,
+   1.3152,
+   0.004,
+   1.1213
+  ],
+  [
+   "rolls/buns, yogurt",
+   "other vegetables",
+   0.0115,
+   0.3343,
+   1.7278,
+   0.0048,
+   1.2116
+  ],
+  [
+   "beef",
+   "root vegetables",
+   0.0174,
+   0.3314,
+   3.0404,
+   0.0117,
+   1.3326
+  ],
+  [
+   "waffles",
+   "whole milk",
+   0.0127,
+   0.3307,
+   1.2942,
+   0.0029,
+   1.1123
+  ],
+  [
+   "white bread",
+   "other vegetables",
+   0.0137,
+   0.3261,
+   1.6853,
+   0.0056,
+   1.1968
+  ],
+  [
+   "frankfurter",
+   "rolls/buns",
+   0.0192,
+   0.3259,
+   1.7716,
+   0.0084,
+   1.2105
+  ],
+  [
+   "sausage",
+   "rolls/buns",
+   0.0306,
+   0.3258,
+   1.771,
+   0.0133,
+   1.2103
+  ],
+  [
+   "curd",
+   "yogurt",
+   0.0173,
+   0.3244,
+   2.3256,
+   0.0099,
+   1.2737
+  ],
+  [
+   "curd",
+   "other vegetables",
+   0.0172,
+   0.3225,
+   1.6668,
+   0.0069,
+   1.1905
+  ],
+  [
+   "coffee",
+   "whole milk",
+   0.0187,
+   0.3222,
+   1.2611,
+   0.0039,
+   1.0985
+  ],
+  [
+   "sugar",
+   "other vegetables",
+   0.0108,
+   0.3183,
+   1.6451,
+   0.0042,
+   1.1831
+  ],
+  [
+   "sausage",
+   "whole milk",
+   0.0299,
+   0.3182,
+   1.2453,
+   0.0059,
+   1.0919
+  ],
+  [
+   "berries",
+   "yogurt",
+   0.0106,
+   0.318,
+   2.2798,
+   0.0059,
+   1.2618
+  ],
+  [
+   "pastry, whole milk",
+   "other vegetables",
+   0.0106,
+   0.318,
+   1.6437,
+   0.0041,
+   1.1826
+  ],
+  [
+   "rolls/buns, whole milk",
+   "other vegetables",
+   0.0179,
+   0.316,
+   1.633,
+   0.0069,
+   1.1791
+  ],
+  [
+   "bottled water, whole milk",
+   "other vegetables",
+   0.0108,
+   0.3136,
+   1.6208,
+   0.0041,
+   1.175
+  ],
+  [
+   "cream cheese",
+   "yogurt",
+   0.0124,
+   0.3128,
+   2.2424,
+   0.0069,
+   1.2522
+  ],
+  [
+   "dessert",
+   "other vegetables",
+   0.0116,
+   0.3123,
+   1.6142,
+   0.0044,
+   1.1728
+  ],
+  [
+   "yogurt",
+   "other vegetables",
+   0.0434,
+   0.3112,
+   1.6085,
+   0.0164,
+   1.1709
+  ],
+  [
+   "bottled water",
+   "whole milk",
+   0.0344,
+   0.3109,
+   1.2169,
+   0.0061,
+   1.0804
+  ],
+  [
+   "other vegetables, whole milk",
+   "root vegetables",
+   0.0232,
+   0.3098,
+   2.8421,
+   0.015,
+   1.2909
+  ],
+  [
+   "berries",
+   "other vegetables",
+   0.0103,
+   0.3089,
+   1.5963,
+   0.0038,
+   1.1669
+  ],
+  [
+   "rolls/buns",
+   "whole milk",
+   0.0566,
+   0.3079,
+   1.205,
+   0.0096,
+   1.0757
+  ],
+  [
+   "other vegetables, whole milk",
+   "yogurt",
+   0.0223,
+   0.2976,
+   2.133,
+   0.0118,
+   1.225
+  ],
+  [
+   "other vegetables, yogurt",
+   "root vegetables",
+   0.0129,
+   0.2974,
+   2.7287,
+   0.0082,
+   1.2682
+  ],
+  [
+   "root vegetables, whole milk",
+   "yogurt",
+   0.0145,
+   0.2973,
+   2.1311,
+   0.0077,
+   1.2246
+  ],
+  [
+   "salty snack",
+   "whole milk",
+   0.0112,
+   0.2957,
+   1.1573,
+   0.0015,
+   1.0571
+  ],
+  [
+   "whole milk",
+   "other vegetables",
+   0.0748,
+   0.2929,
+   1.5136,
+   0.0254,
+   1.1405
+  ],
+  [
+   "fruit/vegetable juice",
+   "other vegetables",
+   0.021,
+   0.2911,
+   1.5047,
+   0.0071,
+   1.1378
+  ],
+  [
+   "whipped/sour cream",
+   "yogurt",
+   0.0207,
+   0.2894,
+   2.0743,
+   0.0107,
+   1.2109
+  ],
+  [
+   "brown bread",
+   "other vegetables",
+   0.0187,
+   0.2884,
+   1.4905,
+   0.0062,
+   1.1334
+  ],
+  [
+   "sausage",
+   "other vegetables",
+   0.0269,
+   0.2868,
+   1.4822,
+   0.0088,
+   1.1308
+  ],
+  [
+   "other vegetables, rolls/buns",
+   "root vegetables",
+   0.0122,
+   0.2864,
+   2.6275,
+   0.0076,
+   1.2486
+  ],
+  [
+   "long life bakery product",
+   "other vegetables",
+   0.0107,
+   0.2853,
+   1.4746,
+   0.0034,
+   1.1285
+  ],
+  [
+   "salty snack",
+   "other vegetables",
+   0.0108,
+   0.2849,
+   1.4726,
+   0.0035,
+   1.1279
+  ],
+  [
+   "tropical fruit, whole milk",
+   "root vegetables",
+   0.012,
+   0.2837,
+   2.6024,
+   0.0074,
+   1.2438
+  ],
+  [
+   "other vegetables, yogurt",
+   "tropical fruit",
+   0.0123,
+   0.2834,
+   2.7005,
+   0.0077,
+   1.249
+  ],
+  [
+   "frankfurter",
+   "other vegetables",
+   0.0165,
+   0.2793,
+   1.4435,
+   0.0051,
+   1.1191
+  ],
+  [
+   "tropical fruit",
+   "yogurt",
+   0.0293,
+   0.2791,
+   2.0005,
+   0.0146,
+   1.1936
+  ],
+  [
+   "whole milk, yogurt",
+   "rolls/buns",
+   0.0156,
+   0.2777,
+   1.5096,
+   0.0053,
+   1.1298
+  ],
+  [
+   "napkins",
+   "other vegetables",
+   0.0144,
+   0.2757,
+   1.425,
+   0.0043,
+   1.1135
+  ],
+  [
+   "rolls/buns, whole milk",
+   "yogurt",
+   0.0156,
+   0.2747,
+   1.969,
+   0.0077,
+   1.1864
+  ],
+  [
+   "chocolate",
+   "soda",
+   0.0135,
+   0.2725,
+   1.5629,
+   0.0049,
+   1.1349
+  ],
+  [
+   "other vegetables, root vegetables",
+   "yogurt",
+   0.0129,
+   0.2725,
+   1.9536,
+   0.0063,
+   1.1829
+  ],
+  [
+   "whole milk, yogurt",
+   "tropical fruit",
+   0.0151,
+   0.2704,
+   2.5771,
+   0.0093,
+   1.2268
+  ],
+  [
+   "pip fruit",
+   "tropical fruit",
+   0.0204,
+   0.2702,
+   2.5746,
+   0.0125,
+   1.2264
+  ],
+  [
+   "other vegetables, rolls/buns",
+   "yogurt",
+   0.0115,
+   0.2697,
+   1.9332,
+   0.0055,
+   1.1783
+  ],
+  [
+   "other vegetables, yogurt",
+   "rolls/buns",
+   0.0115,
+   0.2646,
+   1.4388,
+   0.0035,
+   1.1097
+  ],
+  [
+   "butter",
+   "yogurt",
+   0.0146,
+   0.2642,
+   1.894,
+   0.0069,
+   1.1695
+  ],
+  [
+   "bottled water",
+   "soda",
+   0.029,
+   0.2622,
+   1.5036,
+   0.0097,
+   1.119
+  ],
+  [
+   "waffles",
+   "other vegetables",
+   0.0101,
+   0.2619,
+   1.3536,
+   0.0026,
+   1.0927
+  ],
+  [
+   "citrus fruit",
+   "yogurt",
+   0.0217,
+   0.2617,
+   1.8758,
+   0.0101,
+   1.1655
+  ],
+  [
+   "soda, whole milk",
+   "yogurt",
+   0.0105,
+   0.2614,
+   1.874,
+   0.0049,
+   1.1651
+  ],
+  [
+   "root vegetables, whole milk",
+   "rolls/buns",
+   0.0127,
+   0.2599,
+   1.4129,
+   0.0037,
+   1.1026
+  ],
+  [
+   "beef",
+   "rolls/buns",
+   0.0136,
+   0.2597,
+   1.4119,
+   0.004,
+   1.1023
+  ],
+  [
+   "other vegetables, root vegetables",
+   "tropical fruit",
+   0.0123,
+   0.2597,
+   2.4745,
+   0.0073,
+   1.209
+  ],
+  [
+   "tropical fruit, whole milk",
+   "rolls/buns",
+   0.011,
+   0.2596,
+   1.4115,
+   0.0032,
+   1.1022
+  ],
+  [
+   "whole milk, yogurt",
+   "root vegetables",
+   0.0145,
+   0.2595,
+   2.381,
+   0.0084,
+   1.2033
+  ],
+  [
+   "fruit/vegetable juice",
+   "yogurt",
+   0.0187,
+   0.2588,
+   1.8551,
+   0.0086,
+   1.1609
+  ],
+  [
+   "sausage",
+   "soda",
+   0.0243,
+   0.2587,
+   1.4833,
+   0.0079,
+   1.1137
+  ],
+  [
+   "frozen vegetables",
+   "yogurt",
+   0.0124,
+   0.2579,
+   1.8489,
+   0.0057,
+   1.1596
+  ],
+  [
+   "other vegetables, root vegetables",
+   "rolls/buns",
+   0.0122,
+   0.2575,
+   1.4,
+   0.0035,
+   1.0991
+  ],
+  [
+   "chocolate",
+   "other vegetables",
+   0.0127,
+   0.2561,
+   1.3238,
+   0.0031,
+   1.0842
+  ],
+  [
+   "fruit/vegetable juice",
+   "soda",
+   0.0184,
+   0.2546,
+   1.4599,
+   0.0058,
+   1.1076
+  ],
+  [
+   "pastry",
+   "other vegetables",
+   0.0226,
+   0.2537,
+   1.3112,
+   0.0054,
+   1.0807
+  ],
+  [
+   "chicken",
+   "root vegetables",
+   0.0109,
+   0.2536,
+   2.3262,
+   0.0062,
+   1.1937
+  ],
+  [
+   "margarine",
+   "rolls/buns",
+   0.0147,
+   0.2517,
+   1.3686,
+   0.004,
+   1.0906
+  ],
+  [
+   "shopping bags",
+   "soda",
+   0.0246,
+   0.2497,
+   1.4322,
+   0.0074,
+   1.1005
+  ],
+  [
+   "newspapers",
+   "rolls/buns",
+   0.0197,
+   0.2471,
+   1.3436,
+   0.005,
+   1.0839
+  ],
+  [
+   "domestic eggs",
+   "rolls/buns",
+   0.0157,
+   0.2468,
+   1.3418,
+   0.004,
+   1.0835
+  ],
+  [
+   "yogurt",
+   "rolls/buns",
+   0.0344,
+   0.2464,
+   1.3394,
+   0.0087,
+   1.0828
+  ],
+  [
+   "root vegetables, whole milk",
+   "tropical fruit",
+   0.012,
+   0.2453,
+   2.3379,
+   0.0069,
+   1.186
+  ],
+  [
+   "other vegetables",
+   "root vegetables",
+   0.0474,
+   0.2449,
+   2.2466,
+   0.0263,
+   1.1799
+  ],
+  [
+   "white bread",
+   "soda",
+   0.0103,
+   0.244,
+   1.399,
+   0.0029,
+   1.092
+  ],
+  [
+   "margarine",
+   "yogurt",
+   0.0142,
+   0.2431,
+   1.7423,
+   0.0061,
+   1.1368
+  ],
+  [
+   "butter",
+   "rolls/buns",
+   0.0134,
+   0.2422,
+   1.3168,
+   0.0032,
+   1.0769
+  ],
+  [
+   "newspapers",
+   "other vegetables",
+   0.0193,
+   0.242,
+   1.2509,
+   0.0039,
+   1.064
+  ],
+  [
+   "frozen vegetables",
+   "root vegetables",
+   0.0116,
+   0.241,
+   2.2112,
+   0.0063,
+   1.1739
+  ],
+  [
+   "citrus fruit",
+   "tropical fruit",
+   0.0199,
+   0.2408,
+   2.2947,
+   0.0112,
+   1.1789
+  ],
+  [
+   "other vegetables, whole milk",
+   "rolls/buns",
+   0.0179,
+   0.2391,
+   1.3001,
+   0.0041,
+   1.0725
+  ],
+  [
+   "whipped/sour cream",
+   "root vegetables",
+   0.0171,
+   0.2383,
+   2.1862,
+   0.0093,
+   1.1698
+  ],
+  [
+   "pip fruit",
+   "yogurt",
+   0.018,
+   0.2379,
+   1.7054,
+   0.0074,
+   1.1291
+  ],
+  [
+   "chocolate",
+   "rolls/buns",
+   0.0118,
+   0.2377,
+   1.2923,
+   0.0027,
+   1.0705
+  ],
+  [
+   "root vegetables",
+   "yogurt",
+   0.0258,
+   0.2369,
+   1.6985,
+   0.0106,
+   1.1277
+  ],
+  [
+   "pastry",
+   "soda",
+   0.021,
+   0.2366,
+   1.3567,
+   0.0055,
+   1.0815
+  ],
+  [
+   "pork",
+   "root vegetables",
+   0.0136,
+   0.2363,
+   2.1682,
+   0.0073,
+   1.1667
+  ],
+  [
+   "pastry",
+   "rolls/buns",
+   0.0209,
+   0.2354,
+   1.28,
+   0.0046,
+   1.0673
+  ],
+  [
+   "shopping bags",
+   "other vegetables",
+   0.0232,
+   0.2353,
+   1.216,
+   0.0041,
+   1.0547
+  ],
+  [
+   "napkins",
+   "yogurt",
+   0.0123,
+   0.235,
+   1.6842,
+   0.005,
+   1.1248
+  ],
+  [
+   "tropical fruit",
+   "rolls/buns",
+   0.0246,
+   0.2345,
+   1.2749,
+   0.0053,
+   1.066
+  ],
+  [
+   "other vegetables, yogurt",
+   "whipped/sour cream",
+   0.0102,
+   0.2342,
+   3.2671,
+   0.0071,
+   1.2122
+  ],
+  [
+   "butter",
+   "root vegetables",
+   0.0129,
+   0.233,
+   2.1379,
+   0.0069,
+   1.1617
+  ],
+  [
+   "rolls/buns",
+   "other vegetables",
+   0.0426,
+   0.2316,
+   1.197,
+   0.007,
+   1.0496
+  ],
+  [
+   "coffee",
+   "other vegetables",
+   0.0134,
+   0.2312,
+   1.1947,
+   0.0022,
+   1.049
+  ],
+  [
+   "napkins",
+   "soda",
+   0.012,
+   0.2291,
+   1.314,
+   0.0029,
+   1.071
+  ],
+  [
+   "other vegetables, whole milk",
+   "tropical fruit",
+   0.0171,
+   0.2283,
+   2.1753,
+   0.0092,
+   1.1598
+  ],
+  [
+   "domestic eggs",
+   "root vegetables",
+   0.0143,
+   0.226,
+   2.0731,
+   0.0074,
+   1.1511
+  ],
+  [
+   "domestic eggs",
+   "yogurt",
+   0.0143,
+   0.226,
+   1.6198,
+   0.0055,
+   1.1117
+  ],
+  [
+   "bottled water",
+   "other vegetables",
+   0.0248,
+   0.2245,
+   1.1601,
+   0.0034,
+   1.0399
+  ],
+  [
+   "rolls/buns, whole milk",
+   "root vegetables",
+   0.0127,
+   0.2244,
+   2.0589,
+   0.0065,
+   1.1488
+  ],
+  [
+   "other vegetables",
+   "yogurt",
+   0.0434,
+   0.2244,
+   1.6085,
+   0.0164,
+   1.1094
+  ],
+  [
+   "brown bread",
+   "yogurt",
+   0.0145,
+   0.2241,
+   1.6067,
+   0.0055,
+   1.1091
+  ],
+  [
+   "napkins",
+   "rolls/buns",
+   0.0117,
+   0.2233,
+   1.214,
+   0.0021,
+   1.0507
+  ],
+  [
+   "root vegetables",
+   "rolls/buns",
+   0.0243,
+   0.2229,
+   1.2121,
+   0.0043,
+   1.0502
+  ],
+  [
+   "beef",
+   "yogurt",
+   0.0117,
+   0.2229,
+   1.5976,
+   0.0044,
+   1.1073
+  ],
+  [
+   "whole milk",
+   "rolls/buns",
+   0.0566,
+   0.2216,
+   1.205,
+   0.0096,
+   1.0485
+  ],
+  [
+   "other vegetables",
+   "rolls/buns",
+   0.0426,
+   0.2202,
+   1.197,
+   0.007,
+   1.0465
+  ],
+  [
+   "soda",
+   "rolls/buns",
+   0.0383,
+   0.2198,
+   1.1951,
+   0.0063,
+   1.046
+  ],
+  [
+   "whole milk",
+   "yogurt",
+   0.056,
+   0.2193,
+   1.5717,
+   0.0204,
+   1.1022
+  ],
+  [
+   "bottled water",
+   "rolls/buns",
+   0.0242,
+   0.219,
+   1.1904,
+   0.0039,
+   1.0448
+  ],
+  [
+   "other vegetables, root vegetables",
+   "citrus fruit",
+   0.0104,
+   0.2189,
+   2.6446,
+   0.0064,
+   1.1743
+  ],
+  [
+   "citrus fruit",
+   "root vegetables",
+   0.0177,
+   0.2138,
+   1.9611,
+   0.0087,
+   1.1332
+  ],
+  [
+   "frozen vegetables",
+   "rolls/buns",
+   0.0102,
+   0.2114,
+   1.1494,
+   0.0013,
+   1.0348
+  ],
+  [
+   "bottled beer",
+   "soda",
+   0.017,
+   0.2109,
+   1.2092,
+   0.0029,
+   1.0462
+  ],
+  [
+   "yogurt",
+   "tropical fruit",
+   0.0293,
+   0.2099,
+   2.0005,
+   0.0146,
+   1.1329
+  ],
+  [
+   "sausage",
+   "yogurt",
+   0.0196,
+   0.2089,
+   1.4973,
+   0.0065,
+   1.0877
+  ],
+  [
+   "rolls/buns",
+   "soda",
+   0.0383,
+   0.2084,
+   1.1951,
+   0.0063,
+   1.043
+  ],
+  [
+   "bottled water",
+   "yogurt",
+   0.023,
+   0.2079,
+   1.4904,
+   0.0076,
+   1.0864
+  ],
+  [
+   "pork",
+   "soda",
+   0.0119,
+   0.2063,
+   1.1833,
+   0.0018,
+   1.0403
+  ],
+  [
+   "pip fruit",
+   "root vegetables",
+   0.0156,
+   0.2056,
+   1.8867,
+   0.0073,
+   1.1217
+  ],
+  [
+   "whipped/sour cream",
+   "rolls/buns",
+   0.0146,
+   0.2043,
+   1.1105,
+   0.0015,
+   1.0255
+  ],
+  [
+   "curd",
+   "root vegetables",
+   0.0109,
+   0.2042,
+   1.8734,
+   0.0051,
+   1.1196
+  ],
+  [
+   "citrus fruit",
+   "rolls/buns",
+   0.0168,
+   0.2027,
+   1.102,
+   0.0016,
+   1.0235
+  ],
+  [
+   "fruit/vegetable juice",
+   "rolls/buns",
+   0.0145,
+   0.2011,
+   1.0935,
+   0.0012,
+   1.0215
+  ],
+  [
+   "bottled beer",
+   "other vegetables",
+   0.0162,
+   0.2008,
+   1.0375,
+   0.0006,
+   1.0091
+  ],
+  [
+   "tropical fruit",
+   "root vegetables",
+   0.021,
+   0.2006,
+   1.8402,
+   0.0096,
+   1.1146
+  ],
+  [
+   "pastry",
+   "yogurt",
+   0.0177,
+   0.1989,
+   1.4255,
+   0.0053,
+   1.0741
+  ],
+  [
+   "tropical fruit",
+   "soda",
+   0.0208,
+   0.1986,
+   1.1392,
+   0.0025,
+   1.0303
+  ],
+  [
+   "shopping bags",
+   "rolls/buns",
+   0.0195,
+   0.1981,
+   1.0772,
+   0.0014,
+   1.0177
+  ],
+  [
+   "fruit/vegetable juice",
+   "bottled water",
+   0.0142,
+   0.1969,
+   1.7816,
+   0.0062,
+   1.1076
+  ],
+  [
+   "curd",
+   "whipped/sour cream",
+   0.0105,
+   0.1966,
+   2.7421,
+   0.0067,
+   1.1554
+  ],
+  [
+   "yogurt",
+   "soda",
+   0.0274,
+   0.1961,
+   1.1244,
+   0.003,
+   1.027
+  ],
+  [
+   "pork",
+   "rolls/buns",
+   0.0113,
+   0.1958,
+   1.0643,
+   0.0007,
+   1.0147
+  ],
+  [
+   "bottled beer",
+   "bottled water",
+   0.0158,
+   0.1957,
+   1.7707,
+   0.0069,
+   1.1059
+  ],
+  [
+   "other vegetables, whole milk",
+   "whipped/sour cream",
+   0.0146,
+   0.1957,
+   2.7294,
+   0.0093,
+   1.1541
+  ],
+  [
+   "domestic eggs",
+   "soda",
+   0.0124,
+   0.1955,
+   1.1212,
+   0.0013,
+   1.0263
+  ],
+  [
+   "tropical fruit",
+   "pip fruit",
+   0.0204,
+   0.1948,
+   2.5746,
+   0.0125,
+   1.1479
+  ],
+  [
+   "brown bread",
+   "soda",
+   0.0126,
+   0.1944,
+   1.1146,
+   0.0013,
+   1.0248
+  ],
+  [
+   "brown bread",
+   "rolls/buns",
+   0.0126,
+   0.1944,
+   1.0567,
+   0.0007,
+   1.0129
+  ],
+  [
+   "whole milk, yogurt",
+   "whipped/sour cream",
+   0.0109,
+   0.1942,
+   2.7091,
+   0.0069,
+   1.152
+  ],
+  [
+   "rolls/buns, whole milk",
+   "tropical fruit",
+   0.011,
+   0.1939,
+   1.8478,
+   0.005,
+   1.1104
+  ],
+  [
+   "root vegetables",
+   "tropical fruit",
+   0.021,
+   0.1931,
+   1.8402,
+   0.0096,
+   1.1093
+  ],
+  [
+   "whipped/sour cream",
+   "tropical fruit",
+   0.0138,
+   0.1929,
+   1.8384,
+   0.0063,
+   1.109
+  ],
+  [
+   "curd",
+   "tropical fruit",
+   0.0103,
+   0.1927,
+   1.8369,
+   0.0047,
+   1.1088
+  ],
+  [
+   "newspapers",
+   "yogurt",
+   0.0154,
+   0.1924,
+   1.3789,
+   0.0042,
+   1.0654
+  ],
+  [
+   "napkins",
+   "tropical fruit",
+   0.0101,
+   0.1922,
+   1.832,
+   0.0046,
+   1.1081
+  ],
+  [
+   "whole milk",
+   "root vegetables",
+   0.0489,
+   0.1914,
+   1.756,
+   0.0211,
+   1.1019
+  ],
+  [
+   "frankfurter",
+   "soda",
+   0.0113,
+   0.1914,
+   1.0975,
+   0.001,
+   1.021
+  ],
+  [
+   "tropical fruit",
+   "citrus fruit",
+   0.0199,
+   0.1899,
+   2.2947,
+   0.0112,
+   1.1323
+  ],
+  [
+   "fruit/vegetable juice",
+   "tropical fruit",
+   0.0137,
+   0.1899,
+   1.8095,
+   0.0061,
+   1.1049
+  ],
+  [
+   "frankfurter",
+   "yogurt",
+   0.0112,
+   0.1897,
+   1.3595,
+   0.003,
+   1.0619
+  ],
+  [
+   "margarine",
+   "root vegetables",
+   0.0111,
+   0.1892,
+   1.7361,
+   0.0047,
+   1.099
+  ],
+  [
+   "coffee",
+   "rolls/buns",
+   0.011,
+   0.1891,
+   1.0283,
+   0.0003,
+   1.0064
+  ],
+  [
+   "curd",
+   "rolls/buns",
+   0.0101,
+   0.1889,
+   1.0272,
+   0.0003,
+   1.0062
+  ],
+  [
+   "whole milk, yogurt",
+   "soda",
+   0.0105,
+   0.1869,
+   1.072,
+   0.0007,
+   1.0154
+  ],
+  [
+   "rolls/buns",
+   "yogurt",
+   0.0344,
+   0.1868,
+   1.3394,
+   0.0087,
+   1.0582
+  ],
+  [
+   "other vegetables, whole milk",
+   "soda",
+   0.0139,
+   0.1861,
+   1.0675,
+   0.0009,
+   1.0145
+  ],
+  [
+   "other vegetables",
+   "tropical fruit",
+   0.0359,
+   0.1855,
+   1.7678,
+   0.0156,
+   1.0989
+  ],
+  [
+   "yogurt",
+   "root vegetables",
+   0.0258,
+   0.1851,
+   1.6985,
+   0.0106,
+   1.0934
+  ],
+  [
+   "pip fruit",
+   "rolls/buns",
+   0.0139,
+   0.1841,
+   1.0011,
+   0.0,
+   1.0003
+  ],
+  [
+   "butter",
+   "whipped/sour cream",
+   0.0102,
+   0.1835,
+   2.5597,
+   0.0062,
+   1.1369
+  ],
+  [
+   "newspapers",
+   "soda",
+   0.0146,
+   0.1834,
+   1.052,
+   0.0007,
+   1.0111
+  ],
+  [
+   "whole milk, yogurt",
+   "citrus fruit",
+   0.0103,
+   0.1833,
+   2.2147,
+   0.0056,
+   1.1231
+  ],
+  [
+   "pip fruit",
+   "citrus fruit",
+   0.0138,
+   0.1828,
+   2.2086,
+   0.0076,
+   1.1224
+  ],
+  [
+   "other vegetables, whole milk",
+   "pip fruit",
+   0.0135,
+   0.1807,
+   2.3888,
+   0.0079,
+   1.1282
+  ],
+  [
+   "whole milk, yogurt",
+   "curd",
+   0.0101,
+   0.1797,
+   3.3723,
+   0.0071,
+   1.1541
+  ],
+  [
+   "domestic eggs",
+   "tropical fruit",
+   0.0114,
+   0.1795,
+   1.7105,
+   0.0047,
+   1.0909
+  ],
+  [
+   "canned beer",
+   "soda",
+   0.0138,
+   0.178,
+   1.0208,
+   0.0003,
+   1.0044
+  ],
+  [
+   "tropical fruit",
+   "bottled water",
+   0.0185,
+   0.1764,
+   1.5956,
+   0.0069,
+   1.0799
+  ],
+  [
+   "pip fruit",
+   "soda",
+   0.0133,
+   0.1761,
+   1.0097,
+   0.0001,
+   1.0021
+  ],
+  [
+   "margarine",
+   "bottled water",
+   0.0103,
+   0.1753,
+   1.5865,
+   0.0038,
+   1.0786
+  ],
+  [
+   "other vegetables, whole milk",
+   "citrus fruit",
+   0.013,
+   0.1739,
+   2.1013,
+   0.0068,
+   1.1103
+  ],
+  [
+   "frankfurter",
+   "root vegetables",
+   0.0102,
+   0.1724,
+   1.5818,
+   0.0037,
+   1.0766
+  ],
+  [
+   "frankfurter",
+   "sausage",
+   0.0101,
+   0.1707,
+   1.8168,
+   0.0045,
+   1.0925
+  ],
+  [
+   "bottled water",
+   "tropical fruit",
+   0.0185,
+   0.1674,
+   1.5956,
+   0.0069,
+   1.0751
+  ],
+  [
+   "citrus fruit",
+   "pip fruit",
+   0.0138,
+   0.1671,
+   2.2086,
+   0.0076,
+   1.1098
+  ],
+  [
+   "sausage",
+   "shopping bags",
+   0.0157,
+   0.1667,
+   1.6916,
+   0.0064,
+   1.0818
+  ],
+  [
+   "rolls/buns",
+   "sausage",
+   0.0306,
+   0.1664,
+   1.771,
+   0.0133,
+   1.0869
+  ],
+  [
+   "soda",
+   "bottled water",
+   0.029,
+   0.1662,
+   1.5036,
+   0.0097,
+   1.0667
+  ],
+  [
+   "fruit/vegetable juice",
+   "root vegetables",
+   0.012,
+   0.166,
+   1.5226,
+   0.0041,
+   1.0683
+  ],
+  [
+   "whole milk",
+   "tropical fruit",
+   0.0423,
+   0.1655,
+   1.5776,
+   0.0155,
+   1.0726
+  ],
+  [
+   "yogurt",
+   "bottled water",
+   0.023,
+   0.1647,
+   1.4904,
+   0.0076,
+   1.0649
+  ],
+  [
+   "brown bread",
+   "sausage",
+   0.0107,
+   0.1646,
+   1.7517,
+   0.0046,
+   1.0845
+  ],
+  [
+   "brown bread",
+   "tropical fruit",
+   0.0107,
+   0.1646,
+   1.5684,
+   0.0039,
+   1.0714
+  ],
+  [
+   "other vegetables, whole milk",
+   "domestic eggs",
+   0.0123,
+   0.1644,
+   2.5912,
+   0.0076,
+   1.1208
+  ],
+  [
+   "domestic eggs",
+   "citrus fruit",
+   0.0104,
+   0.1635,
+   1.975,
+   0.0051,
+   1.0965
+  ],
+  [
+   "citrus fruit",
+   "bottled water",
+   0.0135,
+   0.1634,
+   1.4783,
+   0.0044,
+   1.0632
+  ],
+  [
+   "root vegetables",
+   "citrus fruit",
+   0.0177,
+   0.1623,
+   1.9611,
+   0.0087,
+   1.095
+  ],
+  [
+   "root vegetables",
+   "beef",
+   0.0174,
+   0.1595,
+   3.0404,
+   0.0117,
+   1.1274
+  ],
+  [
+   "sausage",
+   "root vegetables",
+   0.0149,
+   0.1591,
+   1.4596,
+   0.0047,
+   1.0596
+  ],
+  [
+   "shopping bags",
+   "sausage",
+   0.0157,
+   0.1589,
+   1.6916,
+   0.0064,
+   1.0773
+  ],
+  [
+   "soda",
+   "yogurt",
+   0.0274,
+   0.1569,
+   1.1244,
+   0.003,
+   1.0206
+  ],
+  [
+   "brown bread",
+   "root vegetables",
+   0.0102,
+   0.1567,
+   1.438,
+   0.0031,
+   1.0566
+  ],
+  [
+   "root vegetables",
+   "whipped/sour cream",
+   0.0171,
+   0.1567,
+   2.1862,
+   0.0093,
+   1.1008
+  ],
+  [
+   "yogurt",
+   "citrus fruit",
+   0.0217,
+   0.1552,
+   1.8758,
+   0.0101,
+   1.0858
+  ],
+  [
+   "shopping bags",
+   "yogurt",
+   0.0153,
+   0.1548,
+   1.1097,
+   0.0015,
+   1.0181
+  ],
+  [
+   "other vegetables, whole milk",
+   "butter",
+   0.0115,
+   0.1535,
+   2.7706,
+   0.0073,
+   1.1159
+  ],
+  [
+   "whipped/sour cream",
+   "citrus fruit",
+   0.0109,
+   0.1518,
+   1.8338,
+   0.0049,
+   1.0814
+  ],
+  [
+   "other vegetables",
+   "whipped/sour cream",
+   0.0289,
+   0.1492,
+   2.0819,
+   0.015,
+   1.0912
+  ],
+  [
+   "other vegetables",
+   "citrus fruit",
+   0.0289,
+   0.1492,
+   1.8031,
+   0.0129,
+   1.0781
+  ],
+  [
+   "yogurt",
+   "whipped/sour cream",
+   0.0207,
+   0.1487,
+   2.0743,
+   0.0107,
+   1.0905
+  ],
+  [
+   "pastry",
+   "tropical fruit",
+   0.0132,
+   0.1486,
+   1.4159,
+   0.0039,
+   1.0513
+  ],
+  [
+   "sausage",
+   "tropical fruit",
+   0.0139,
+   0.1483,
+   1.413,
+   0.0041,
+   1.0509
+  ],
+  [
+   "newspapers",
+   "tropical fruit",
+   0.0118,
+   0.1478,
+   1.4083,
+   0.0034,
+   1.0503
+  ],
+  [
+   "fruit/vegetable juice",
+   "shopping bags",
+   0.0107,
+   0.1477,
+   1.4989,
+   0.0036,
+   1.0577
+  ],
+  [
+   "canned beer",
+   "shopping bags",
+   0.0114,
+   0.1466,
+   1.4879,
+   0.0037,
+   1.0563
+  ],
+  [
+   "whipped/sour cream",
+   "curd",
+   0.0105,
+   0.1461,
+   2.7421,
+   0.0067,
+   1.1087
+  ],
+  [
+   "other vegetables, whole milk",
+   "bottled water",
+   0.0108,
+   0.144,
+   1.3031,
+   0.0025,
+   1.0391
+  ],
+  [
+   "newspapers",
+   "root vegetables",
+   0.0115,
+   0.1439,
+   1.3207,
+   0.0028,
+   1.0408
+  ],
+  [
+   "root vegetables",
+   "bottled water",
+   0.0157,
+   0.1437,
+   1.2998,
+   0.0036,
+   1.0387
+  ],
+  [
+   "fruit/vegetable juice",
+   "citrus fruit",
+   0.0104,
+   0.1435,
+   1.7333,
+   0.0044,
+   1.0709
+  ],
+  [
+   "root vegetables",
+   "pip fruit",
+   0.0156,
+   0.1427,
+   1.8867,
+   0.0073,
+   1.0782
+  ],
+  [
+   "bottled water",
+   "bottled beer",
+   0.0158,
+   0.1426,
+   1.7707,
+   0.0069,
+   1.0724
+  ],
+  [
+   "pip fruit",
+   "sausage",
+   0.0108,
+   0.1425,
+   1.5165,
+   0.0037,
+   1.0566
+  ],
+  [
+   "whipped/sour cream",
+   "butter",
+   0.0102,
+   0.1418,
+   2.5597,
+   0.0062,
+   1.1007
+  ],
+  [
+   "bottled water",
+   "root vegetables",
+   0.0157,
+   0.1417,
+   1.2998,
+   0.0036,
+   1.0381
+  ],
+  [
+   "newspapers",
+   "bottled water",
+   0.0113,
+   0.1414,
+   1.2794,
+   0.0025,
+   1.036
+  ],
+  [
+   "other vegetables, whole milk",
+   "pastry",
+   0.0106,
+   0.1413,
+   1.5883,
+   0.0039,
+   1.0609
+  ],
+  [
+   "pip fruit",
+   "pastry",
+   0.0107,
+   0.1411,
+   1.5863,
+   0.0039,
+   1.0607
+  ],
+  [
+   "soda",
+   "shopping bags",
+   0.0246,
+   0.1411,
+   1.4322,
+   0.0074,
+   1.0496
+  ],
+  [
+   "yogurt",
+   "sausage",
+   0.0196,
+   0.1407,
+   1.4973,
+   0.0065,
+   1.0544
+  ],
+  [
+   "pastry",
+   "sausage",
+   0.0125,
+   0.1406,
+   1.4962,
+   0.0041,
+   1.0542
+  ],
+  [
+   "other vegetables, whole milk",
+   "fruit/vegetable juice",
+   0.0105,
+   0.1399,
+   1.9358,
+   0.0051,
+   1.0787
+  ],
+  [
+   "pip fruit",
+   "bottled water",
+   0.0106,
+   0.1398,
+   1.2648,
+   0.0022,
+   1.034
+  ],
+  [
+   "soda",
+   "sausage",
+   0.0243,
+   0.1394,
+   1.4833,
+   0.0079,
+   1.0528
+  ],
+  [
+   "other vegetables",
+   "sausage",
+   0.0269,
+   0.1393,
+   1.4822,
+   0.0088,
+   1.0526
+  ],
+  [
+   "fruit/vegetable juice",
+   "sausage",
+   0.0101,
+   0.1392,
+   1.4821,
+   0.0033,
+   1.0526
+  ],
+  [
+   "shopping bags",
+   "tropical fruit",
+   0.0135,
+   0.1373,
+   1.308,
+   0.0032,
+   1.0375
+  ],
+  [
+   "root vegetables",
+   "sausage",
+   0.0149,
+   0.1371,
+   1.4596,
+   0.0047,
+   1.05
+  ],
+  [
+   "citrus fruit",
+   "sausage",
+   0.0113,
+   0.1364,
+   1.4514,
+   0.0035,
+   1.0491
+  ],
+  [
+   "other vegetables, whole milk",
+   "pork",
+   0.0102,
+   0.1359,
+   2.3567,
+   0.0059,
+   1.0905
+  ],
+  [
+   "other vegetables, whole milk",
+   "sausage",
+   0.0102,
+   0.1359,
+   1.4462,
+   0.0031,
+   1.0485
+  ],
+  [
+   "other vegetables",
+   "pip fruit",
+   0.0261,
+   0.135,
+   1.7852,
+   0.0115,
+   1.0687
+  ],
+  [
+   "whole milk",
+   "bottled water",
+   0.0344,
+   0.1345,
+   1.2169,
+   0.0061,
+   1.0277
+  ],
+  [
+   "yogurt",
+   "fruit/vegetable juice",
+   0.0187,
+   0.1341,
+   1.8551,
+   0.0086,
+   1.0714
+  ],
+  [
+   "rolls/buns",
+   "tropical fruit",
+   0.0246,
+   0.1338,
+   1.2749,
+   0.0053,
+   1.0333
+  ],
+  [
+   "pastry",
+   "shopping bags",
+   0.0119,
+   0.1337,
+   1.3572,
+   0.0031,
+   1.0406
+  ],
+  [
+   "sausage",
+   "pastry",
+   0.0125,
+   0.1331,
+   1.4962,
+   0.0041,
+   1.0509
+  ],
+  [
+   "tropical fruit",
+   "sausage",
+   0.0139,
+   0.1328,
+   1.413,
+   0.0041,
+   1.0447
+  ],
+  [
+   "rolls/buns",
+   "root vegetables",
+   0.0243,
+   0.1321,
+   1.2121,
+   0.0043,
+   1.0266
+  ],
+  [
+   "tropical fruit",
+   "whipped/sour cream",
+   0.0138,
+   0.1318,
+   1.8384,
+   0.0063,
+   1.0692
+  ],
+  [
+   "rolls/buns",
+   "bottled water",
+   0.0242,
+   0.1316,
+   1.1904,
+   0.0039,
+   1.0242
+  ],
+  [
+   "root vegetables",
+   "domestic eggs",
+   0.0143,
+   0.1315,
+   2.0731,
+   0.0074,
+   1.0784
+  ],
+  [
+   "citrus fruit",
+   "whipped/sour cream",
+   0.0109,
+   0.1314,
+   1.8338,
+   0.0049,
+   1.0688
+  ],
+  [
+   "tropical fruit",
+   "fruit/vegetable juice",
+   0.0137,
+   0.1308,
+   1.8095,
+   0.0061,
+   1.0673
+  ],
+  [
+   "whole milk",
+   "pastry",
+   0.0332,
+   0.1301,
+   1.4626,
+   0.0105,
+   1.0473
+  ],
+  [
+   "shopping bags",
+   "root vegetables",
+   0.0128,
+   0.13,
+   1.193,
+   0.0021,
+   1.0242
+  ],
+  [
+   "yogurt",
+   "pip fruit",
+   0.018,
+   0.129,
+   1.7054,
+   0.0074,
+   1.0613
+  ],
+  [
+   "tropical fruit",
+   "shopping bags",
+   0.0135,
+   0.1289,
+   1.308,
+   0.0032,
+   1.0348
+  ],
+  [
+   "bottled water",
+   "fruit/vegetable juice",
+   0.0142,
+   0.1288,
+   1.7816,
+   0.0062,
+   1.0649
+  ],
+  [
+   "other vegetables",
+   "bottled water",
+   0.0248,
+   0.1282,
+   1.1601,
+   0.0034,
+   1.0203
+  ],
+  [
+   "sausage",
+   "bottled water",
+   0.012,
+   0.1277,
+   1.1555,
+   0.0016,
+   1.0197
+  ],
+  [
+   "yogurt",
+   "pastry",
+   0.0177,
+   0.1268,
+   1.4255,
+   0.0053,
+   1.0434
+  ],
+  [
+   "whole milk",
+   "whipped/sour cream",
+   0.0322,
+   0.1261,
+   1.7598,
+   0.0139,
+   1.0623
+  ],
+  [
+   "tropical fruit",
+   "pastry",
+   0.0132,
+   0.126,
+   1.4159,
+   0.0039,
+   1.0423
+  ],
+  [
+   "citrus fruit",
+   "domestic eggs",
+   0.0104,
+   0.1253,
+   1.975,
+   0.0051,
+   1.0707
+  ],
+  [
+   "citrus fruit",
+   "fruit/vegetable juice",
+   0.0104,
+   0.1253,
+   1.7333,
+   0.0044,
+   1.0606
+  ],
+  [
+   "root vegetables",
+   "pork",
+   0.0136,
+   0.125,
+   2.1682,
+   0.0073,
+   1.077
+  ],
+  [
+   "yogurt",
+   "curd",
+   0.0173,
+   0.1239,
+   2.3256,
+   0.0099,
+   1.0806
+  ],
+  [
+   "pastry",
+   "root vegetables",
+   0.011,
+   0.1234,
+   1.1324,
+   0.0013,
+   1.0165
+  ],
+  [
+   "bottled water",
+   "citrus fruit",
+   0.0135,
+   0.1224,
+   1.4783,
+   0.0044,
+   1.0451
+  ],
+  [
+   "shopping bags",
+   "pastry",
+   0.0119,
+   0.1207,
+   1.3572,
+   0.0031,
+   1.0361
+  ],
+  [
+   "soda",
+   "pastry",
+   0.021,
+   0.1207,
+   1.3567,
+   0.0055,
+   1.0361
+  ],
+  [
+   "sausage",
+   "citrus fruit",
+   0.0113,
+   0.1201,
+   1.4514,
+   0.0035,
+   1.0425
+  ],
+  [
+   "pastry",
+   "pip fruit",
+   0.0107,
+   0.12,
+   1.5863,
+   0.0039,
+   1.0504
+  ],
+  [
+   "other vegetables",
+   "shopping bags",
+   0.0232,
+   0.1198,
+   1.216,
+   0.0041,
+   1.0242
+  ],
+  [
+   "soda",
+   "tropical fruit",
+   0.0208,
+   0.1195,
+   1.1392,
+   0.0025,
+   1.0166
+  ],
+  [
+   "whole milk",
+   "citrus fruit",
+   0.0305,
+   0.1194,
+   1.4424,
+   0.0094,
+   1.0416
+  ],
+  [
+   "root vegetables",
+   "butter",
+   0.0129,
+   0.1185,
+   2.1379,
+   0.0069,
+   1.0715
+  ],
+  [
+   "whole milk",
+   "pip fruit",
+   0.0301,
+   0.1178,
+   1.557,
+   0.0108,
+   1.0478
+  ],
+  [
+   "root vegetables",
+   "shopping bags",
+   0.0128,
+   0.1175,
+   1.193,
+   0.0021,
+   1.0215
+  ],
+  [
+   "whole milk",
+   "domestic eggs",
+   0.03,
+   0.1174,
+   1.8502,
+   0.0138,
+   1.0611
+  ],
+  [
+   "whole milk",
+   "sausage",
+   0.0299,
+   0.117,
+   1.2453,
+   0.0059,
+   1.0261
+  ],
+  [
+   "other vegetables",
+   "pastry",
+   0.0226,
+   0.1167,
+   1.3112,
+   0.0054,
+   1.0313
+  ],
+  [
+   "shopping bags",
+   "canned beer",
+   0.0114,
+   0.1156,
+   1.4879,
+   0.0037,
+   1.0429
+  ],
+  [
+   "other vegetables",
+   "domestic eggs",
+   0.0223,
+   0.1151,
+   1.8138,
+   0.01,
+   1.0583
+  ],
+  [
+   "sausage",
+   "pip fruit",
+   0.0108,
+   0.1147,
+   1.5165,
+   0.0037,
+   1.0441
+  ],
+  [
+   "rolls/buns",
+   "pastry",
+   0.0209,
+   0.1139,
+   1.28,
+   0.0046,
+   1.0281
+  ],
+  [
+   "sausage",
+   "brown bread",
+   0.0107,
+   0.1136,
+   1.7517,
+   0.0046,
+   1.055
+  ],
+  [
+   "tropical fruit",
+   "newspapers",
+   0.0118,
+   0.1124,
+   1.4083,
+   0.0034,
+   1.0367
+  ],
+  [
+   "other vegetables",
+   "pork",
+   0.0217,
+   0.1119,
+   1.9415,
+   0.0105,
+   1.0611
+  ],
+  [
+   "shopping bags",
+   "bottled water",
+   0.011,
+   0.1115,
+   1.0084,
+   0.0001,
+   1.001
+  ],
+  [
+   "root vegetables",
+   "fruit/vegetable juice",
+   0.012,
+   0.1101,
+   1.5226,
+   0.0041,
+   1.0425
+  ],
+  [
+   "yogurt",
+   "newspapers",
+   0.0154,
+   0.1101,
+   1.3789,
+   0.0042,
+   1.034
+  ],
+  [
+   "yogurt",
+   "shopping bags",
+   0.0153,
+   0.1093,
+   1.1097,
+   0.0015,
+   1.0121
+  ],
+  [
+   "other vegetables",
+   "fruit/vegetable juice",
+   0.021,
+   0.1088,
+   1.5047,
+   0.0071,
+   1.0409
+  ],
+  [
+   "bottled water",
+   "sausage",
+   0.012,
+   0.1086,
+   1.1555,
+   0.0016,
+   1.0164
+  ],
+  [
+   "tropical fruit",
+   "domestic eggs",
+   0.0114,
+   0.1085,
+   1.7105,
+   0.0047,
+   1.0506
+  ],
+  [
+   "shopping bags",
+   "fruit/vegetable juice",
+   0.0107,
+   0.1084,
+   1.4989,
+   0.0036,
+   1.0404
+  ],
+  [
+   "whole milk",
+   "butter",
+   0.0276,
+   0.1078,
+   1.9461,
+   0.0134,
+   1.0588
+  ],
+  [
+   "rolls/buns",
+   "newspapers",
+   0.0197,
+   0.1072,
+   1.3436,
+   0.005,
+   1.0307
+  ],
+  [
+   "sausage",
+   "frankfurter",
+   0.0101,
+   0.1071,
+   1.8168,
+   0.0045,
+   1.054
+  ],
+  [
+   "sausage",
+   "fruit/vegetable juice",
+   0.0101,
+   0.1071,
+   1.4821,
+   0.0033,
+   1.039
+  ],
+  [
+   "whole milk",
+   "newspapers",
+   0.0274,
+   0.107,
+   1.3411,
+   0.007,
+   1.0305
+  ],
+  [
+   "root vegetables",
+   "frozen vegetables",
+   0.0116,
+   0.1063,
+   2.2112,
+   0.0063,
+   1.0652
+  ],
+  [
+   "rolls/buns",
+   "shopping bags",
+   0.0195,
+   0.1061,
+   1.0772,
+   0.0014,
+   1.0085
+  ],
+  [
+   "soda",
+   "fruit/vegetable juice",
+   0.0184,
+   0.1055,
+   1.4599,
+   0.0058,
+   1.0372
+  ],
+  [
+   "root vegetables",
+   "newspapers",
+   0.0115,
+   0.1054,
+   1.3207,
+   0.0028,
+   1.0286
+  ]
+ ],
+ "edges": [
+  {
+   "a": [
+    "whole milk",
+    "yogurt"
+   ],
+   "c": "curd",
+   "lift": 3.37230365331597,
+   "conf": 0.17967332123411978
+  },
+  {
+   "a": [
+    "citrus fruit",
+    "other vegetables"
+   ],
+   "c": "root vegetables",
+   "lift": 3.295045459323103,
+   "conf": 0.3591549295774648
+  },
+  {
+   "a": [
+    "other vegetables",
+    "yogurt"
+   ],
+   "c": "whipped/sour cream",
+   "lift": 3.2670619695384255,
+   "conf": 0.23419203747072598
+  },
+  {
+   "a": [
+    "other vegetables",
+    "tropical fruit"
+   ],
+   "c": "root vegetables",
+   "lift": 3.144779819035136,
+   "conf": 0.34277620396600567
+  },
+  {
+   "a": [
+    "root vegetables"
+   ],
+   "c": "beef",
+   "lift": 3.0403668431100312,
+   "conf": 0.15951492537313433
+  },
+  {
+   "a": [
+    "beef"
+   ],
+   "c": "root vegetables",
+   "lift": 3.0403668431100312,
+   "conf": 0.3313953488372093
+  },
+  {
+   "a": [
+    "citrus fruit",
+    "root vegetables"
+   ],
+   "c": "other vegetables",
+   "lift": 3.0296084222733612,
+   "conf": 0.5862068965517241
+  },
+  {
+   "a": [
+    "root vegetables",
+    "tropical fruit"
+   ],
+   "c": "other vegetables",
+   "lift": 3.020999134344196,
+   "conf": 0.5845410628019324
+  },
+  {
+   "a": [
+    "other vegetables",
+    "whole milk"
+   ],
+   "c": "root vegetables",
+   "lift": 2.84208204899416,
+   "conf": 0.30978260869565216
+  },
+  {
+   "a": [
+    "other vegetables",
+    "whole milk"
+   ],
+   "c": "butter",
+   "lift": 2.7706297367371358,
+   "conf": 0.15353260869565216
+  },
+  {
+   "a": [
+    "curd",
+    "whole milk"
+   ],
+   "c": "yogurt",
+   "lift": 2.761355514968633,
+   "conf": 0.3852140077821012
+  },
+  {
+   "a": [
+    "curd"
+   ],
+   "c": "whipped/sour cream",
+   "lift": 2.7421498565318605,
+   "conf": 0.1965648854961832
+  },
+  {
+   "a": [
+    "whipped/sour cream"
+   ],
+   "c": "curd",
+   "lift": 2.7421498565318605,
+   "conf": 0.14609929078014183
+  },
+  {
+   "a": [
+    "other vegetables",
+    "whole milk"
+   ],
+   "c": "whipped/sour cream",
+   "lift": 2.729417206290472,
+   "conf": 0.1956521739130435
+  },
+  {
+   "a": [
+    "other vegetables",
+    "yogurt"
+   ],
+   "c": "root vegetables",
+   "lift": 2.728697700024468,
+   "conf": 0.297423887587822
+  },
+  {
+   "a": [
+    "whole milk",
+    "yogurt"
+   ],
+   "c": "whipped/sour cream",
+   "lift": 2.709052528606917,
+   "conf": 0.19419237749546278
+  },
+  {
+   "a": [
+    "other vegetables",
+    "yogurt"
+   ],
+   "c": "tropical fruit",
+   "lift": 2.700549625111196,
+   "conf": 0.28337236533957844
+  },
+  {
+   "a": [
+    "other vegetables",
+    "root vegetables"
+   ],
+   "c": "citrus fruit",
+   "lift": 2.644625702565617,
+   "conf": 0.21888412017167383
+  },
+  {
+   "a": [
+    "other vegetables",
+    "rolls/buns"
+   ],
+   "c": "root vegetables",
+   "lift": 2.6275246678302997,
+   "conf": 0.2863961813842482
+  },
+  {
+   "a": [
+    "tropical fruit",
+    "whole milk"
+   ],
+   "c": "root vegetables",
+   "lift": 2.602365276980483,
+   "conf": 0.2836538461538462
+  },
+  {
+   "a": [
+    "rolls/buns",
+    "root vegetables"
+   ],
+   "c": "other vegetables",
+   "lift": 2.5948898128258175,
+   "conf": 0.502092050209205
+  },
+  {
+   "a": [
+    "other vegetables",
+    "whole milk"
+   ],
+   "c": "domestic eggs",
+   "lift": 2.5911784942865106,
+   "conf": 0.1644021739130435
+  },
+  {
+   "a": [
+    "root vegetables",
+    "yogurt"
+   ],
+   "c": "other vegetables",
+   "lift": 2.5840777719390435,
+   "conf": 0.5
+  },
+  {
+   "a": [
+    "whole milk",
+    "yogurt"
+   ],
+   "c": "tropical fruit",
+   "lift": 2.5770885212228642,
+   "conf": 0.2704174228675136
+  },
+  {
+   "a": [
+    "tropical fruit"
+   ],
+   "c": "pip fruit",
+   "lift": 2.5746475681420353,
+   "conf": 0.1947674418604651
+  },
+  {
+   "a": [
+    "pip fruit"
+   ],
+   "c": "tropical fruit",
+   "lift": 2.5746475681420353,
+   "conf": 0.2701612903225806
+  },
+  {
+   "a": [
+    "tropical fruit",
+    "whole milk"
+   ],
+   "c": "yogurt",
+   "lift": 2.5675161891679745,
+   "conf": 0.3581730769230769
+  },
+  {
+   "a": [
+    "butter"
+   ],
+   "c": "whipped/sour cream",
+   "lift": 2.5596980935649682,
+   "conf": 0.18348623853211007
+  },
+  {
+   "a": [
+    "whipped/sour cream"
+   ],
+   "c": "butter",
+   "lift": 2.5596980935649682,
+   "conf": 0.14184397163120566
+  },
+  {
+   "a": [
+    "whipped/sour cream",
+    "yogurt"
+   ],
+   "c": "other vegetables",
+   "lift": 2.5334095803323953,
+   "conf": 0.4901960784313725
+  },
+  {
+   "a": [
+    "other vegetables",
+    "whipped/sour cream"
+   ],
+   "c": "yogurt",
+   "lift": 2.524073009485484,
+   "conf": 0.352112676056338
+  },
+  {
+   "a": [
+    "other vegetables",
+    "root vegetables"
+   ],
+   "c": "tropical fruit",
+   "lift": 2.4745379612070404,
+   "conf": 0.25965665236051505
+  },
+  {
+   "a": [
+    "other vegetables",
+    "tropical fruit"
+   ],
+   "c": "yogurt",
+   "lift": 2.4571457478175405,
+   "conf": 0.34277620396600567
+  },
+  {
+   "a": [
+    "root vegetables",
+    "whole milk"
+   ],
+   "c": "other vegetables",
+   "lift": 2.4497701954349353,
+   "conf": 0.47401247401247404
+  },
+  {
+   "a": [
+    "whipped/sour cream",
+    "whole milk"
+   ],
+   "c": "yogurt",
+   "lift": 2.419606643919397,
+   "conf": 0.3375394321766561
+  },
+  {
+   "a": [
+    "citrus fruit",
+    "whole milk"
+   ],
+   "c": "yogurt",
+   "lift": 2.4133503401360543,
+   "conf": 0.33666666666666667
+  },
+  {
+   "a": [
+    "other vegetables",
+    "whole milk"
+   ],
+   "c": "pip fruit",
+   "lift": 2.3887750555165965,
+   "conf": 0.18070652173913043
+  },
+  {
+   "a": [
+    "whole milk",
+    "yogurt"
+   ],
+   "c": "root vegetables",
+   "lift": 2.3810253406289785,
+   "conf": 0.2595281306715063
+  },
+  {
+   "a": [
+    "onions"
+   ],
+   "c": "other vegetables",
+   "lift": 2.372268118501417,
+   "conf": 0.45901639344262296
+  },
+  {
+   "a": [
+    "pork",
+    "whole milk"
+   ],
+   "c": "other vegetables",
+   "lift": 2.370713552237654,
+   "conf": 0.45871559633027514
+  },
+  {
+   "a": [
+    "other vegetables",
+    "whole milk"
+   ],
+   "c": "pork",
+   "lift": 2.3567498658078367,
+   "conf": 0.1358695652173913
+  },
+  {
+   "a": [
+    "whipped/sour cream",
+    "whole milk"
+   ],
+   "c": "other vegetables",
+   "lift": 2.3476794899635474,
+   "conf": 0.4542586750788643
+  },
+  {
+   "a": [
+    "root vegetables",
+    "whole milk"
+   ],
+   "c": "tropical fruit",
+   "lift": 2.337930506535158,
+   "conf": 0.24532224532224534
+  },
+  {
+   "a": [
+    "chicken"
+   ],
+   "c": "root vegetables",
+   "lift": 2.32622064440829,
+   "conf": 0.2535545023696682
+  },
+  {
+   "a": [
+    "yogurt"
+   ],
+   "c": "curd",
+   "lift": 2.325615360648076,
+   "conf": 0.12390670553935858
+  }
+ ],
+ "items": [
+  "Instant food products",
+  "UHT-milk",
+  "abrasive cleaner",
+  "artif. sweetener",
+  "baby cosmetics",
+  "baby food",
+  "bags",
+  "baking powder",
+  "bathroom cleaner",
+  "beef",
+  "berries",
+  "beverages",
+  "bottled beer",
+  "bottled water",
+  "brandy",
+  "brown bread",
+  "butter",
+  "butter milk",
+  "cake bar",
+  "candles",
+  "candy",
+  "canned beer",
+  "canned fish",
+  "canned fruit",
+  "canned vegetables",
+  "cat food",
+  "cereals",
+  "chewing gum",
+  "chicken",
+  "chocolate",
+  "chocolate marshmallow",
+  "citrus fruit",
+  "cleaner",
+  "cling film/bags",
+  "cocoa drinks",
+  "coffee",
+  "condensed milk",
+  "cooking chocolate",
+  "cookware",
+  "cream",
+  "cream cheese",
+  "curd",
+  "curd cheese",
+  "decalcifier",
+  "dental care",
+  "dessert",
+  "detergent",
+  "dish cleaner",
+  "dishes",
+  "dog food",
+  "domestic eggs",
+  "female sanitary products",
+  "finished products",
+  "fish",
+  "flour",
+  "flower (seeds)",
+  "flower soil/fertilizer",
+  "frankfurter",
+  "frozen chicken",
+  "frozen dessert",
+  "frozen fish",
+  "frozen fruits",
+  "frozen meals",
+  "frozen potato products",
+  "frozen vegetables",
+  "fruit/vegetable juice",
+  "grapes",
+  "hair spray",
+  "ham",
+  "hamburger meat",
+  "hard cheese",
+  "herbs",
+  "honey",
+  "house keeping products",
+  "hygiene articles",
+  "ice cream",
+  "instant coffee",
+  "jam",
+  "ketchup",
+  "kitchen towels",
+  "kitchen utensil",
+  "light bulbs",
+  "liqueur",
+  "liquor",
+  "liquor (appetizer)",
+  "liver loaf",
+  "long life bakery product",
+  "make up remover",
+  "male cosmetics",
+  "margarine",
+  "mayonnaise",
+  "meat",
+  "meat spreads",
+  "misc. beverages",
+  "mustard",
+  "napkins",
+  "newspapers",
+  "nut snack",
+  "nuts/prunes",
+  "oil",
+  "onions",
+  "organic products",
+  "organic sausage",
+  "other vegetables",
+  "packaged fruit/vegetables",
+  "pasta",
+  "pastry",
+  "pet care",
+  "photo/film",
+  "pickled vegetables",
+  "pip fruit",
+  "popcorn",
+  "pork",
+  "pot plants",
+  "potato products",
+  "preservation products",
+  "processed cheese",
+  "prosecco",
+  "pudding powder",
+  "ready soups",
+  "red/blush wine",
+  "rice",
+  "roll products",
+  "rolls/buns",
+  "root vegetables",
+  "rubbing alcohol",
+  "rum",
+  "salad dressing",
+  "salt",
+  "salty snack",
+  "sauces",
+  "sausage",
+  "seasonal products",
+  "semi-finished bread",
+  "shopping bags",
+  "skin care",
+  "sliced cheese",
+  "snack products",
+  "soap",
+  "soda",
+  "soft cheese",
+  "softener",
+  "sound storage medium",
+  "soups",
+  "sparkling wine",
+  "specialty bar",
+  "specialty cheese",
+  "specialty chocolate",
+  "specialty fat",
+  "specialty vegetables",
+  "spices",
+  "spread cheese",
+  "sugar",
+  "sweet spreads",
+  "syrup",
+  "tea",
+  "tidbits",
+  "toilet cleaner",
+  "tropical fruit",
+  "turkey",
+  "vinegar",
+  "waffles",
+  "whipped/sour cream",
+  "whisky",
+  "white bread",
+  "white wine",
+  "whole milk",
+  "yogurt",
+  "zwieback"
+ ],
+ "lift_items": [
+  "whole milk",
+  "other vegetables",
+  "rolls/buns",
+  "soda",
+  "yogurt",
+  "bottled water",
+  "root vegetables",
+  "tropical fruit",
+  "shopping bags",
+  "sausage",
+  "pastry",
+  "citrus fruit",
+  "bottled beer",
+  "newspapers"
+ ],
+ "lift_matrix": [
+  [
+   null,
+   1.5136340948246207,
+   1.2050317893663838,
+   0.899112370774016,
+   1.5717351405345263,
+   1.2169396232507244,
+   1.75603095247994,
+   1.5775949558420244,
+   0.9733636894136045,
+   1.2452519625221574,
+   1.4625865499403101,
+   1.4423767905662055,
+   0.9932366843926731,
+   1.341110302858258
+  ],
+  [
+   1.5136340948246207,
+   null,
+   1.1970465300635258,
+   0.9703475715036409,
+   1.6084565723294046,
+   1.1601011524436553,
+   2.2466049285887952,
+   1.7677896385551983,
+   1.21603659855955,
+   1.4822091116100575,
+   1.3112348922753547,
+   1.803140263466065,
+   1.0375463781270402,
+   1.2508911507475624
+  ],
+  [
+   1.2050317893663838,
+   1.1970465300635258,
+   null,
+   1.1951241524802292,
+   1.339363274331291,
+   1.1903733911450616,
+   1.2121012887469782,
+   1.274886334906004,
+   1.077241929328247,
+   1.771047958858904,
+   1.2799557766721943,
+   1.102034870691587,
+   0.9198466142910586,
+   1.3435934270614371
+  ],
+  [
+   0.899112370774016,
+   0.9703475715036409,
+   1.1951241524802292,
+   null,
+   1.1243678229309215,
+   1.5035765916302126,
+   0.9789636003655194,
+   1.1391591520329063,
+   1.4321939302036606,
+   1.483324498630621,
+   1.3566647230320699,
+   0.8876798876798877,
+   1.2092094413522985,
+   1.0519693227609515
+  ],
+  [
+   1.5717351405345263,
+   1.6084565723294046,
+   1.339363274331291,
+   1.1243678229309215,
+   null,
+   1.4903873232825788,
+   1.6984750989948219,
+   2.0004746084480303,
+   1.109654388071018,
+   1.4972888506051771,
+   1.4254810495626822,
+   1.8757521436092863,
+   0.8236381673881673,
+   1.3788834004939554
+  ],
+  [
+   1.2169396232507244,
+   1.1601011524436553,
+   1.1903733911450616,
+   1.5035765916302126,
+   1.4903873232825788,
+   null,
+   1.2997827101841302,
+   1.5956458640879172,
+   1.0084277743441348,
+   1.1554598422123723,
+   0.9099540018399263,
+   1.4783322672007126,
+   1.7707258881361918,
+   1.2793758313361734
+  ],
+  [
+   1.75603095247994,
+   2.2466049285887952,
+   1.2121012887469782,
+   0.9789636003655194,
+   1.6984750989948219,
+   1.2997827101841302,
+   null,
+   1.8402220366192295,
+   1.1929612772053049,
+   1.4595700474898237,
+   1.1323880597014926,
+   1.961121144889802,
+   1.1004694802502637,
+   1.3206519155813292
+  ],
+  [
+   1.5775949558420244,
+   1.7677896385551983,
+   1.274886334906004,
+   1.1391591520329063,
+   2.0004746084480303,
+   1.5956458640879172,
+   1.8402220366192295,
+   null,
+   1.308044535643715,
+   1.4130035823349778,
+   1.415891472868217,
+   2.294702207492905,
+   0.9746630549682875,
+   1.4082605046166
+  ],
+  [
+   0.9733636894136045,
+   1.21603659855955,
+   1.077241929328247,
+   1.4321939302036606,
+   1.109654388071018,
+   1.0084277743441348,
+   1.1929612772053049,
+   1.308044535643715,
+   null,
+   1.691606467148263,
+   1.3571517027863775,
+   1.1970089988665842,
+   0.7048360279784428,
+   0.8792043803776958
+  ],
+  [
+   1.2452519625221574,
+   1.4822091116100575,
+   1.771047958858904,
+   1.483324498630621,
+   1.4972888506051771,
+   1.1554598422123723,
+   1.4595700474898237,
+   1.4130035823349778,
+   1.691606467148263,
+   null,
+   1.4962337662337664,
+   1.4514462809917357,
+   1.0348274410774412,
+   1.0711735186257478
+  ],
+  [
+   1.4625865499403101,
+   1.3112348922753547,
+   1.2799557766721943,
+   1.3566647230320699,
+   1.4254810495626822,
+   0.9099540018399263,
+   1.1323880597014926,
+   1.415891472868217,
+   1.3571517027863775,
+   1.4962337662337664,
+   null,
+   1.3256019656019657,
+   0.6386363636363637,
+   1.1884331210191081
+  ],
+  [
+   1.4423767905662055,
+   1.803140263466065,
+   1.102034870691587,
+   0.8876798876798877,
+   1.8757521436092863,
+   1.4783322672007126,
+   1.961121144889802,
+   2.294702207492905,
+   1.1970089988665842,
+   1.4514462809917357,
+   1.3256019656019657,
+   null,
+   0.9153264835083017,
+   1.2621011283431665
+  ],
+  [
+   0.9932366843926731,
+   1.0375463781270402,
+   0.9198466142910586,
+   1.2092094413522985,
+   0.8236381673881673,
+   1.7707258881361918,
+   1.1004694802502637,
+   0.9746630549682875,
+   0.7048360279784428,
+   1.0348274410774412,
+   0.6386363636363637,
+   0.9153264835083017,
+   null,
+   0.7751318921701087
+  ],
+  [
+   1.341110302858258,
+   1.2508911507475624,
+   1.3435934270614371,
+   1.0519693227609515,
+   1.3788834004939554,
+   1.2793758313361734,
+   1.3206519155813292,
+   1.4082605046166,
+   0.8792043803776958,
+   1.0711735186257478,
+   1.1884331210191081,
+   1.2621011283431665,
+   0.7751318921701087,
+   null
+  ]
+ ],
+ "scatter": [
+  {
+   "x": 0.0104,
+   "y": 0.586,
+   "lift": 3.03
+  },
+  {
+   "x": 0.0123,
+   "y": 0.585,
+   "lift": 3.02
+  },
+  {
+   "x": 0.0101,
+   "y": 0.582,
+   "lift": 2.28
+  },
+  {
+   "x": 0.0115,
+   "y": 0.574,
+   "lift": 2.24
+  },
+  {
+   "x": 0.012,
+   "y": 0.57,
+   "lift": 2.23
+  },
+  {
+   "x": 0.0145,
+   "y": 0.563,
+   "lift": 2.2
+  },
+  {
+   "x": 0.0123,
+   "y": 0.553,
+   "lift": 2.16
+  },
+  {
+   "x": 0.0109,
+   "y": 0.525,
+   "lift": 2.05
+  },
+  {
+   "x": 0.0127,
+   "y": 0.523,
+   "lift": 2.05
+  },
+  {
+   "x": 0.0135,
+   "y": 0.518,
+   "lift": 2.03
+  },
+  {
+   "x": 0.0151,
+   "y": 0.517,
+   "lift": 2.02
+  },
+  {
+   "x": 0.0223,
+   "y": 0.513,
+   "lift": 2.01
+  },
+  {
+   "x": 0.0146,
+   "y": 0.507,
+   "lift": 1.98
+  },
+  {
+   "x": 0.0122,
+   "y": 0.502,
+   "lift": 2.59
+  },
+  {
+   "x": 0.0129,
+   "y": 0.5,
+   "lift": 2.58
+  },
+  {
+   "x": 0.0105,
+   "y": 0.498,
+   "lift": 1.95
+  },
+  {
+   "x": 0.0276,
+   "y": 0.497,
+   "lift": 1.95
+  },
+  {
+   "x": 0.0261,
+   "y": 0.49,
+   "lift": 1.92
+  },
+  {
+   "x": 0.0102,
+   "y": 0.49,
+   "lift": 2.53
+  },
+  {
+   "x": 0.0232,
+   "y": 0.489,
+   "lift": 1.91
+  },
+  {
+   "x": 0.0171,
+   "y": 0.476,
+   "lift": 1.86
+  },
+  {
+   "x": 0.0103,
+   "y": 0.474,
+   "lift": 1.86
+  },
+  {
+   "x": 0.0232,
+   "y": 0.474,
+   "lift": 2.45
+  },
+  {
+   "x": 0.03,
+   "y": 0.473,
+   "lift": 1.85
+  },
+  {
+   "x": 0.0102,
+   "y": 0.469,
+   "lift": 1.84
+  },
+  {
+   "x": 0.0106,
+   "y": 0.468,
+   "lift": 1.83
+  },
+  {
+   "x": 0.0142,
+   "y": 0.459,
+   "lift": 2.37
+  },
+  {
+   "x": 0.0102,
+   "y": 0.459,
+   "lift": 2.37
+  },
+  {
+   "x": 0.0146,
+   "y": 0.454,
+   "lift": 2.35
+  },
+  {
+   "x": 0.0156,
+   "y": 0.453,
+   "lift": 1.77
+  },
+  {
+   "x": 0.013,
+   "y": 0.451,
+   "lift": 1.76
+  },
+  {
+   "x": 0.0322,
+   "y": 0.45,
+   "lift": 1.76
+  },
+  {
+   "x": 0.0135,
+   "y": 0.449,
+   "lift": 2.32
+  },
+  {
+   "x": 0.0489,
+   "y": 0.449,
+   "lift": 1.76
+  },
+  {
+   "x": 0.011,
+   "y": 0.446,
+   "lift": 1.75
+  },
+  {
+   "x": 0.015,
+   "y": 0.444,
+   "lift": 1.74
+  },
+  {
+   "x": 0.0147,
+   "y": 0.443,
+   "lift": 1.74
+  },
+  {
+   "x": 0.0115,
+   "y": 0.441,
+   "lift": 1.73
+  },
+  {
+   "x": 0.0108,
+   "y": 0.44,
+   "lift": 1.72
+  },
+  {
+   "x": 0.0474,
+   "y": 0.435,
+   "lift": 2.25
+  },
+  {
+   "x": 0.0108,
+   "y": 0.434,
+   "lift": 1.7
+  },
+  {
+   "x": 0.013,
+   "y": 0.427,
+   "lift": 2.21
+  },
+  {
+   "x": 0.0139,
+   "y": 0.425,
+   "lift": 1.67
+  },
+  {
+   "x": 0.0204,
+   "y": 0.425,
+   "lift": 1.66
+  },
+  {
+   "x": 0.0123,
+   "y": 0.42,
+   "lift": 2.17
+  },
+  {
+   "x": 0.0179,
+   "y": 0.42,
+   "lift": 1.64
+  },
+  {
+   "x": 0.0179,
+   "y": 0.417,
+   "lift": 2.16
+  },
+  {
+   "x": 0.0115,
+   "y": 0.417,
+   "lift": 2.15
+  },
+  {
+   "x": 0.0138,
+   "y": 0.416,
+   "lift": 2.15
+  },
+  {
+   "x": 0.0165,
+   "y": 0.415,
+   "lift": 1.63
+  },
+  {
+   "x": 0.0116,
+   "y": 0.415,
+   "lift": 1.62
+  },
+  {
+   "x": 0.0242,
+   "y": 0.413,
+   "lift": 1.62
+  },
+  {
+   "x": 0.0101,
+   "y": 0.411,
+   "lift": 1.61
+  },
+  {
+   "x": 0.0123,
+   "y": 0.41,
+   "lift": 2.12
+  },
+  {
+   "x": 0.0176,
+   "y": 0.41,
+   "lift": 1.6
+  },
+  {
+   "x": 0.0171,
+   "y": 0.406,
+   "lift": 1.59
+  },
+  {
+   "x": 0.0213,
+   "y": 0.405,
+   "lift": 1.59
+  },
+  {
+   "x": 0.0171,
+   "y": 0.404,
+   "lift": 2.09
+  },
+  {
+   "x": 0.0423,
+   "y": 0.403,
+   "lift": 1.58
+  },
+  {
+   "x": 0.0289,
+   "y": 0.403,
+   "lift": 2.08
+  },
+  {
+   "x": 0.0113,
+   "y": 0.402,
+   "lift": 1.57
+  },
+  {
+   "x": 0.056,
+   "y": 0.402,
+   "lift": 1.57
+  },
+  {
+   "x": 0.0301,
+   "y": 0.398,
+   "lift": 1.56
+  },
+  {
+   "x": 0.0223,
+   "y": 0.397,
+   "lift": 2.05
+  },
+  {
+   "x": 0.0105,
+   "y": 0.393,
+   "lift": 2.03
+  },
+  {
+   "x": 0.0121,
+   "y": 0.39,
+   "lift": 1.53
+  },
+  {
+   "x": 0.0128,
+   "y": 0.389,
+   "lift": 1.52
+  },
+  {
+   "x": 0.0252,
+   "y": 0.389,
+   "lift": 1.52
+  },
+  {
+   "x": 0.0748,
+   "y": 0.387,
+   "lift": 1.51
+  },
+  {
+   "x": 0.0101,
+   "y": 0.385,
+   "lift": 2.76
+  },
+  {
+   "x": 0.0222,
+   "y": 0.384,
+   "lift": 1.5
+  },
+  {
+   "x": 0.0105,
+   "y": 0.383,
+   "lift": 1.5
+  },
+  {
+   "x": 0.0102,
+   "y": 0.377,
+   "lift": 1.48
+  },
+  {
+   "x": 0.0197,
+   "y": 0.377,
+   "lift": 1.47
+  },
+  {
+   "x": 0.0197,
+   "y": 0.376,
+   "lift": 1.94
+  },
+  {
+   "x": 0.0217,
+   "y": 0.376,
+   "lift": 1.94
+  },
+  {
+   "x": 0.0332,
+   "y": 0.374,
+   "lift": 1.46
+  },
+  {
+   "x": 0.0104,
+   "y": 0.371,
+   "lift": 1.92
+  },
+  {
+   "x": 0.0178,
+   "y": 0.37,
+   "lift": 1.91
+  },
+  {
+   "x": 0.0137,
+   "y": 0.37,
+   "lift": 1.45
+  },
+  {
+   "x": 0.0305,
+   "y": 0.369,
+   "lift": 1.44
+  },
+  {
+   "x": 0.0266,
+   "y": 0.368,
+   "lift": 1.44
+  },
+  {
+   "x": 0.02,
+   "y": 0.361,
+   "lift": 1.87
+  },
+  {
+   "x": 0.0135,
+   "y": 0.361,
+   "lift": 1.41
+  },
+  {
+   "x": 0.0104,
+   "y": 0.359,
+   "lift": 3.3
+  },
+  {
+   "x": 0.0151,
+   "y": 0.358,
+   "lift": 2.57
+  },
+  {
+   "x": 0.0118,
+   "y": 0.355,
+   "lift": 1.39
+  },
+  {
+   "x": 0.0102,
+   "y": 0.352,
+   "lift": 2.52
+  },
+  {
+   "x": 0.0223,
+   "y": 0.351,
+   "lift": 1.81
+  },
+  {
+   "x": 0.0289,
+   "y": 0.349,
+   "lift": 1.8
+  },
+  {
+   "x": 0.0205,
+   "y": 0.348,
+   "lift": 1.36
+  },
+  {
+   "x": 0.0139,
+   "y": 0.348,
+   "lift": 1.8
+  },
+  {
+   "x": 0.0137,
+   "y": 0.346,
+   "lift": 1.79
+  },
+  {
+   "x": 0.0261,
+   "y": 0.345,
+   "lift": 1.79
+  },
+  {
+   "x": 0.0123,
+   "y": 0.343,
+   "lift": 3.14
+  },
+  {
+   "x": 0.0123,
+   "y": 0.343,
+   "lift": 2.46
+  },
+  {
+   "x": 0.0274,
+   "y": 0.343,
+   "lift": 1.34
+  },
+  {
+   "x": 0.0359,
+   "y": 0.342,
+   "lift": 1.77
+  },
+  {
+   "x": 0.0102,
+   "y": 0.34,
+   "lift": 1.76
+  },
+  {
+   "x": 0.0109,
+   "y": 0.338,
+   "lift": 2.42
+  },
+  {
+   "x": 0.0197,
+   "y": 0.337,
+   "lift": 1.74
+  },
+  {
+   "x": 0.0103,
+   "y": 0.337,
+   "lift": 2.41
+  },
+  {
+   "x": 0.0167,
+   "y": 0.336,
+   "lift": 1.32
+  },
+  {
+   "x": 0.0115,
+   "y": 0.334,
+   "lift": 1.73
+  },
+  {
+   "x": 0.0174,
+   "y": 0.331,
+   "lift": 3.04
+  },
+  {
+   "x": 0.0127,
+   "y": 0.331,
+   "lift": 1.29
+  },
+  {
+   "x": 0.0137,
+   "y": 0.326,
+   "lift": 1.69
+  },
+  {
+   "x": 0.0192,
+   "y": 0.326,
+   "lift": 1.77
+  },
+  {
+   "x": 0.0306,
+   "y": 0.326,
+   "lift": 1.77
+  },
+  {
+   "x": 0.0173,
+   "y": 0.324,
+   "lift": 2.33
+  },
+  {
+   "x": 0.0172,
+   "y": 0.323,
+   "lift": 1.67
+  },
+  {
+   "x": 0.0187,
+   "y": 0.322,
+   "lift": 1.26
+  },
+  {
+   "x": 0.0108,
+   "y": 0.318,
+   "lift": 1.65
+  },
+  {
+   "x": 0.0299,
+   "y": 0.318,
+   "lift": 1.25
+  },
+  {
+   "x": 0.0106,
+   "y": 0.318,
+   "lift": 2.28
+  },
+  {
+   "x": 0.0106,
+   "y": 0.318,
+   "lift": 1.64
+  },
+  {
+   "x": 0.0179,
+   "y": 0.316,
+   "lift": 1.63
+  },
+  {
+   "x": 0.0108,
+   "y": 0.314,
+   "lift": 1.62
+  },
+  {
+   "x": 0.0124,
+   "y": 0.313,
+   "lift": 2.24
+  },
+  {
+   "x": 0.0116,
+   "y": 0.312,
+   "lift": 1.61
+  },
+  {
+   "x": 0.0434,
+   "y": 0.311,
+   "lift": 1.61
+  },
+  {
+   "x": 0.0344,
+   "y": 0.311,
+   "lift": 1.22
+  },
+  {
+   "x": 0.0232,
+   "y": 0.31,
+   "lift": 2.84
+  },
+  {
+   "x": 0.0103,
+   "y": 0.309,
+   "lift": 1.6
+  },
+  {
+   "x": 0.0566,
+   "y": 0.308,
+   "lift": 1.21
+  },
+  {
+   "x": 0.0223,
+   "y": 0.298,
+   "lift": 2.13
+  },
+  {
+   "x": 0.0129,
+   "y": 0.297,
+   "lift": 2.73
+  },
+  {
+   "x": 0.0145,
+   "y": 0.297,
+   "lift": 2.13
+  },
+  {
+   "x": 0.0112,
+   "y": 0.296,
+   "lift": 1.16
+  },
+  {
+   "x": 0.0748,
+   "y": 0.293,
+   "lift": 1.51
+  },
+  {
+   "x": 0.021,
+   "y": 0.291,
+   "lift": 1.5
+  },
+  {
+   "x": 0.0207,
+   "y": 0.289,
+   "lift": 2.07
+  },
+  {
+   "x": 0.0187,
+   "y": 0.288,
+   "lift": 1.49
+  },
+  {
+   "x": 0.0269,
+   "y": 0.287,
+   "lift": 1.48
+  },
+  {
+   "x": 0.0122,
+   "y": 0.286,
+   "lift": 2.63
+  },
+  {
+   "x": 0.0107,
+   "y": 0.285,
+   "lift": 1.47
+  },
+  {
+   "x": 0.0108,
+   "y": 0.285,
+   "lift": 1.47
+  },
+  {
+   "x": 0.012,
+   "y": 0.284,
+   "lift": 2.6
+  },
+  {
+   "x": 0.0123,
+   "y": 0.283,
+   "lift": 2.7
+  },
+  {
+   "x": 0.0165,
+   "y": 0.279,
+   "lift": 1.44
+  },
+  {
+   "x": 0.0293,
+   "y": 0.279,
+   "lift": 2.0
+  },
+  {
+   "x": 0.0156,
+   "y": 0.278,
+   "lift": 1.51
+  },
+  {
+   "x": 0.0144,
+   "y": 0.276,
+   "lift": 1.43
+  },
+  {
+   "x": 0.0156,
+   "y": 0.275,
+   "lift": 1.97
+  },
+  {
+   "x": 0.0135,
+   "y": 0.273,
+   "lift": 1.56
+  },
+  {
+   "x": 0.0129,
+   "y": 0.273,
+   "lift": 1.95
+  },
+  {
+   "x": 0.0151,
+   "y": 0.27,
+   "lift": 2.58
+  },
+  {
+   "x": 0.0204,
+   "y": 0.27,
+   "lift": 2.57
+  },
+  {
+   "x": 0.0115,
+   "y": 0.27,
+   "lift": 1.93
+  },
+  {
+   "x": 0.0115,
+   "y": 0.265,
+   "lift": 1.44
+  },
+  {
+   "x": 0.0146,
+   "y": 0.264,
+   "lift": 1.89
+  },
+  {
+   "x": 0.029,
+   "y": 0.262,
+   "lift": 1.5
+  },
+  {
+   "x": 0.0101,
+   "y": 0.262,
+   "lift": 1.35
+  },
+  {
+   "x": 0.0217,
+   "y": 0.262,
+   "lift": 1.88
+  },
+  {
+   "x": 0.0105,
+   "y": 0.261,
+   "lift": 1.87
+  },
+  {
+   "x": 0.0127,
+   "y": 0.26,
+   "lift": 1.41
+  },
+  {
+   "x": 0.0136,
+   "y": 0.26,
+   "lift": 1.41
+  },
+  {
+   "x": 0.0123,
+   "y": 0.26,
+   "lift": 2.47
+  },
+  {
+   "x": 0.011,
+   "y": 0.26,
+   "lift": 1.41
+  },
+  {
+   "x": 0.0145,
+   "y": 0.26,
+   "lift": 2.38
+  },
+  {
+   "x": 0.0187,
+   "y": 0.259,
+   "lift": 1.86
+  },
+  {
+   "x": 0.0243,
+   "y": 0.259,
+   "lift": 1.48
+  },
+  {
+   "x": 0.0124,
+   "y": 0.258,
+   "lift": 1.85
+  },
+  {
+   "x": 0.0122,
+   "y": 0.258,
+   "lift": 1.4
+  },
+  {
+   "x": 0.0127,
+   "y": 0.256,
+   "lift": 1.32
+  },
+  {
+   "x": 0.0184,
+   "y": 0.255,
+   "lift": 1.46
+  },
+  {
+   "x": 0.0226,
+   "y": 0.254,
+   "lift": 1.31
+  },
+  {
+   "x": 0.0109,
+   "y": 0.254,
+   "lift": 2.33
+  },
+  {
+   "x": 0.0147,
+   "y": 0.252,
+   "lift": 1.37
+  },
+  {
+   "x": 0.0246,
+   "y": 0.25,
+   "lift": 1.43
+  },
+  {
+   "x": 0.0197,
+   "y": 0.247,
+   "lift": 1.34
+  },
+  {
+   "x": 0.0157,
+   "y": 0.247,
+   "lift": 1.34
+  },
+  {
+   "x": 0.0344,
+   "y": 0.246,
+   "lift": 1.34
+  },
+  {
+   "x": 0.012,
+   "y": 0.245,
+   "lift": 2.34
+  },
+  {
+   "x": 0.0474,
+   "y": 0.245,
+   "lift": 2.25
+  },
+  {
+   "x": 0.0103,
+   "y": 0.244,
+   "lift": 1.4
+  },
+  {
+   "x": 0.0142,
+   "y": 0.243,
+   "lift": 1.74
+  },
+  {
+   "x": 0.0134,
+   "y": 0.242,
+   "lift": 1.32
+  },
+  {
+   "x": 0.0193,
+   "y": 0.242,
+   "lift": 1.25
+  },
+  {
+   "x": 0.0116,
+   "y": 0.241,
+   "lift": 2.21
+  },
+  {
+   "x": 0.0199,
+   "y": 0.241,
+   "lift": 2.29
+  },
+  {
+   "x": 0.0179,
+   "y": 0.239,
+   "lift": 1.3
+  },
+  {
+   "x": 0.0171,
+   "y": 0.238,
+   "lift": 2.19
+  },
+  {
+   "x": 0.018,
+   "y": 0.238,
+   "lift": 1.71
+  },
+  {
+   "x": 0.0118,
+   "y": 0.238,
+   "lift": 1.29
+  },
+  {
+   "x": 0.0258,
+   "y": 0.237,
+   "lift": 1.7
+  },
+  {
+   "x": 0.021,
+   "y": 0.237,
+   "lift": 1.36
+  },
+  {
+   "x": 0.0136,
+   "y": 0.236,
+   "lift": 2.17
+  },
+  {
+   "x": 0.0209,
+   "y": 0.235,
+   "lift": 1.28
+  },
+  {
+   "x": 0.0232,
+   "y": 0.235,
+   "lift": 1.22
+  },
+  {
+   "x": 0.0123,
+   "y": 0.235,
+   "lift": 1.68
+  },
+  {
+   "x": 0.0246,
+   "y": 0.234,
+   "lift": 1.27
+  },
+  {
+   "x": 0.0102,
+   "y": 0.234,
+   "lift": 3.27
+  },
+  {
+   "x": 0.0129,
+   "y": 0.233,
+   "lift": 2.14
+  },
+  {
+   "x": 0.0426,
+   "y": 0.232,
+   "lift": 1.2
+  },
+  {
+   "x": 0.0134,
+   "y": 0.231,
+   "lift": 1.19
+  },
+  {
+   "x": 0.012,
+   "y": 0.229,
+   "lift": 1.31
+  },
+  {
+   "x": 0.0171,
+   "y": 0.228,
+   "lift": 2.18
+  },
+  {
+   "x": 0.0143,
+   "y": 0.226,
+   "lift": 2.07
+  },
+  {
+   "x": 0.0143,
+   "y": 0.226,
+   "lift": 1.62
+  },
+  {
+   "x": 0.0248,
+   "y": 0.224,
+   "lift": 1.16
+  },
+  {
+   "x": 0.0127,
+   "y": 0.224,
+   "lift": 2.06
+  },
+  {
+   "x": 0.0434,
+   "y": 0.224,
+   "lift": 1.61
+  },
+  {
+   "x": 0.0145,
+   "y": 0.224,
+   "lift": 1.61
+  },
+  {
+   "x": 0.0117,
+   "y": 0.223,
+   "lift": 1.21
+  },
+  {
+   "x": 0.0243,
+   "y": 0.223,
+   "lift": 1.21
+  },
+  {
+   "x": 0.0117,
+   "y": 0.223,
+   "lift": 1.6
+  },
+  {
+   "x": 0.0566,
+   "y": 0.222,
+   "lift": 1.21
+  },
+  {
+   "x": 0.0426,
+   "y": 0.22,
+   "lift": 1.2
+  },
+  {
+   "x": 0.0383,
+   "y": 0.22,
+   "lift": 1.2
+  },
+  {
+   "x": 0.056,
+   "y": 0.219,
+   "lift": 1.57
+  },
+  {
+   "x": 0.0242,
+   "y": 0.219,
+   "lift": 1.19
+  },
+  {
+   "x": 0.0104,
+   "y": 0.219,
+   "lift": 2.64
+  },
+  {
+   "x": 0.0177,
+   "y": 0.214,
+   "lift": 1.96
+  },
+  {
+   "x": 0.0102,
+   "y": 0.211,
+   "lift": 1.15
+  },
+  {
+   "x": 0.017,
+   "y": 0.211,
+   "lift": 1.21
+  },
+  {
+   "x": 0.0293,
+   "y": 0.21,
+   "lift": 2.0
+  },
+  {
+   "x": 0.0196,
+   "y": 0.209,
+   "lift": 1.5
+  },
+  {
+   "x": 0.0383,
+   "y": 0.208,
+   "lift": 1.2
+  },
+  {
+   "x": 0.023,
+   "y": 0.208,
+   "lift": 1.49
+  },
+  {
+   "x": 0.0119,
+   "y": 0.206,
+   "lift": 1.18
+  },
+  {
+   "x": 0.0156,
+   "y": 0.206,
+   "lift": 1.89
+  },
+  {
+   "x": 0.0146,
+   "y": 0.204,
+   "lift": 1.11
+  },
+  {
+   "x": 0.0109,
+   "y": 0.204,
+   "lift": 1.87
+  },
+  {
+   "x": 0.0168,
+   "y": 0.203,
+   "lift": 1.1
+  },
+  {
+   "x": 0.0145,
+   "y": 0.201,
+   "lift": 1.09
+  },
+  {
+   "x": 0.0162,
+   "y": 0.201,
+   "lift": 1.04
+  },
+  {
+   "x": 0.021,
+   "y": 0.201,
+   "lift": 1.84
+  },
+  {
+   "x": 0.0177,
+   "y": 0.199,
+   "lift": 1.43
+  },
+  {
+   "x": 0.0208,
+   "y": 0.199,
+   "lift": 1.14
+  },
+  {
+   "x": 0.0195,
+   "y": 0.198,
+   "lift": 1.08
+  },
+  {
+   "x": 0.0142,
+   "y": 0.197,
+   "lift": 1.78
+  },
+  {
+   "x": 0.0105,
+   "y": 0.197,
+   "lift": 2.74
+  },
+  {
+   "x": 0.0274,
+   "y": 0.196,
+   "lift": 1.12
+  },
+  {
+   "x": 0.0113,
+   "y": 0.196,
+   "lift": 1.06
+  },
+  {
+   "x": 0.0158,
+   "y": 0.196,
+   "lift": 1.77
+  },
+  {
+   "x": 0.0146,
+   "y": 0.196,
+   "lift": 2.73
+  },
+  {
+   "x": 0.0124,
+   "y": 0.196,
+   "lift": 1.12
+  },
+  {
+   "x": 0.0204,
+   "y": 0.195,
+   "lift": 2.57
+  },
+  {
+   "x": 0.0126,
+   "y": 0.194,
+   "lift": 1.11
+  },
+  {
+   "x": 0.0126,
+   "y": 0.194,
+   "lift": 1.06
+  },
+  {
+   "x": 0.0109,
+   "y": 0.194,
+   "lift": 2.71
+  },
+  {
+   "x": 0.011,
+   "y": 0.194,
+   "lift": 1.85
+  },
+  {
+   "x": 0.021,
+   "y": 0.193,
+   "lift": 1.84
+  },
+  {
+   "x": 0.0138,
+   "y": 0.193,
+   "lift": 1.84
+  },
+  {
+   "x": 0.0103,
+   "y": 0.193,
+   "lift": 1.84
+  },
+  {
+   "x": 0.0154,
+   "y": 0.192,
+   "lift": 1.38
+  },
+  {
+   "x": 0.0101,
+   "y": 0.192,
+   "lift": 1.83
+  },
+  {
+   "x": 0.0489,
+   "y": 0.191,
+   "lift": 1.76
+  },
+  {
+   "x": 0.0113,
+   "y": 0.191,
+   "lift": 1.1
+  },
+  {
+   "x": 0.0199,
+   "y": 0.19,
+   "lift": 2.29
+  },
+  {
+   "x": 0.0137,
+   "y": 0.19,
+   "lift": 1.81
+  },
+  {
+   "x": 0.0112,
+   "y": 0.19,
+   "lift": 1.36
+  },
+  {
+   "x": 0.0111,
+   "y": 0.189,
+   "lift": 1.74
+  },
+  {
+   "x": 0.011,
+   "y": 0.189,
+   "lift": 1.03
+  },
+  {
+   "x": 0.0101,
+   "y": 0.189,
+   "lift": 1.03
+  },
+  {
+   "x": 0.0105,
+   "y": 0.187,
+   "lift": 1.07
+  },
+  {
+   "x": 0.0344,
+   "y": 0.187,
+   "lift": 1.34
+  },
+  {
+   "x": 0.0139,
+   "y": 0.186,
+   "lift": 1.07
+  },
+  {
+   "x": 0.0359,
+   "y": 0.185,
+   "lift": 1.77
+  },
+  {
+   "x": 0.0258,
+   "y": 0.185,
+   "lift": 1.7
+  },
+  {
+   "x": 0.0139,
+   "y": 0.184,
+   "lift": 1.0
+  },
+  {
+   "x": 0.0102,
+   "y": 0.183,
+   "lift": 2.56
+  },
+  {
+   "x": 0.0146,
+   "y": 0.183,
+   "lift": 1.05
+  },
+  {
+   "x": 0.0103,
+   "y": 0.183,
+   "lift": 2.21
+  },
+  {
+   "x": 0.0138,
+   "y": 0.183,
+   "lift": 2.21
+  },
+  {
+   "x": 0.0135,
+   "y": 0.181,
+   "lift": 2.39
+  },
+  {
+   "x": 0.0101,
+   "y": 0.18,
+   "lift": 3.37
+  },
+  {
+   "x": 0.0114,
+   "y": 0.179,
+   "lift": 1.71
+  },
+  {
+   "x": 0.0138,
+   "y": 0.178,
+   "lift": 1.02
+  },
+  {
+   "x": 0.0185,
+   "y": 0.176,
+   "lift": 1.6
+  },
+  {
+   "x": 0.0133,
+   "y": 0.176,
+   "lift": 1.01
+  },
+  {
+   "x": 0.0103,
+   "y": 0.175,
+   "lift": 1.59
+  },
+  {
+   "x": 0.013,
+   "y": 0.174,
+   "lift": 2.1
+  },
+  {
+   "x": 0.0102,
+   "y": 0.172,
+   "lift": 1.58
+  },
+  {
+   "x": 0.0101,
+   "y": 0.171,
+   "lift": 1.82
+  },
+  {
+   "x": 0.0185,
+   "y": 0.167,
+   "lift": 1.6
+  },
+  {
+   "x": 0.0138,
+   "y": 0.167,
+   "lift": 2.21
+  },
+  {
+   "x": 0.0157,
+   "y": 0.167,
+   "lift": 1.69
+  },
+  {
+   "x": 0.0306,
+   "y": 0.166,
+   "lift": 1.77
+  },
+  {
+   "x": 0.029,
+   "y": 0.166,
+   "lift": 1.5
+  },
+  {
+   "x": 0.012,
+   "y": 0.166,
+   "lift": 1.52
+  },
+  {
+   "x": 0.0423,
+   "y": 0.166,
+   "lift": 1.58
+  },
+  {
+   "x": 0.023,
+   "y": 0.165,
+   "lift": 1.49
+  },
+  {
+   "x": 0.0107,
+   "y": 0.165,
+   "lift": 1.75
+  },
+  {
+   "x": 0.0107,
+   "y": 0.165,
+   "lift": 1.57
+  },
+  {
+   "x": 0.0123,
+   "y": 0.164,
+   "lift": 2.59
+  },
+  {
+   "x": 0.0104,
+   "y": 0.163,
+   "lift": 1.97
+  },
+  {
+   "x": 0.0135,
+   "y": 0.163,
+   "lift": 1.48
+  },
+  {
+   "x": 0.0177,
+   "y": 0.162,
+   "lift": 1.96
+  },
+  {
+   "x": 0.0174,
+   "y": 0.16,
+   "lift": 3.04
+  },
+  {
+   "x": 0.0149,
+   "y": 0.159,
+   "lift": 1.46
+  },
+  {
+   "x": 0.0157,
+   "y": 0.159,
+   "lift": 1.69
+  },
+  {
+   "x": 0.0274,
+   "y": 0.157,
+   "lift": 1.12
+  },
+  {
+   "x": 0.0102,
+   "y": 0.157,
+   "lift": 1.44
+  },
+  {
+   "x": 0.0171,
+   "y": 0.157,
+   "lift": 2.19
+  },
+  {
+   "x": 0.0217,
+   "y": 0.155,
+   "lift": 1.88
+  },
+  {
+   "x": 0.0153,
+   "y": 0.155,
+   "lift": 1.11
+  },
+  {
+   "x": 0.0115,
+   "y": 0.154,
+   "lift": 2.77
+  },
+  {
+   "x": 0.0109,
+   "y": 0.152,
+   "lift": 1.83
+  },
+  {
+   "x": 0.0289,
+   "y": 0.149,
+   "lift": 2.08
+  },
+  {
+   "x": 0.0289,
+   "y": 0.149,
+   "lift": 1.8
+  },
+  {
+   "x": 0.0207,
+   "y": 0.149,
+   "lift": 2.07
+  },
+  {
+   "x": 0.0132,
+   "y": 0.149,
+   "lift": 1.42
+  },
+  {
+   "x": 0.0139,
+   "y": 0.148,
+   "lift": 1.41
+  },
+  {
+   "x": 0.0118,
+   "y": 0.148,
+   "lift": 1.41
+  },
+  {
+   "x": 0.0107,
+   "y": 0.148,
+   "lift": 1.5
+  },
+  {
+   "x": 0.0114,
+   "y": 0.147,
+   "lift": 1.49
+  },
+  {
+   "x": 0.0105,
+   "y": 0.146,
+   "lift": 2.74
+  },
+  {
+   "x": 0.0108,
+   "y": 0.144,
+   "lift": 1.3
+  },
+  {
+   "x": 0.0115,
+   "y": 0.144,
+   "lift": 1.32
+  },
+  {
+   "x": 0.0157,
+   "y": 0.144,
+   "lift": 1.3
+  },
+  {
+   "x": 0.0104,
+   "y": 0.143,
+   "lift": 1.73
+  },
+  {
+   "x": 0.0156,
+   "y": 0.143,
+   "lift": 1.89
+  },
+  {
+   "x": 0.0158,
+   "y": 0.143,
+   "lift": 1.77
+  },
+  {
+   "x": 0.0108,
+   "y": 0.142,
+   "lift": 1.52
+  },
+  {
+   "x": 0.0102,
+   "y": 0.142,
+   "lift": 2.56
+  },
+  {
+   "x": 0.0157,
+   "y": 0.142,
+   "lift": 1.3
+  },
+  {
+   "x": 0.0113,
+   "y": 0.141,
+   "lift": 1.28
+  },
+  {
+   "x": 0.0106,
+   "y": 0.141,
+   "lift": 1.59
+  },
+  {
+   "x": 0.0107,
+   "y": 0.141,
+   "lift": 1.59
+  },
+  {
+   "x": 0.0246,
+   "y": 0.141,
+   "lift": 1.43
+  },
+  {
+   "x": 0.0196,
+   "y": 0.141,
+   "lift": 1.5
+  },
+  {
+   "x": 0.0125,
+   "y": 0.141,
+   "lift": 1.5
+  },
+  {
+   "x": 0.0105,
+   "y": 0.14,
+   "lift": 1.94
+  },
+  {
+   "x": 0.0106,
+   "y": 0.14,
+   "lift": 1.26
+  },
+  {
+   "x": 0.0243,
+   "y": 0.139,
+   "lift": 1.48
+  },
+  {
+   "x": 0.0269,
+   "y": 0.139,
+   "lift": 1.48
+  },
+  {
+   "x": 0.0101,
+   "y": 0.139,
+   "lift": 1.48
+  },
+  {
+   "x": 0.0135,
+   "y": 0.137,
+   "lift": 1.31
+  },
+  {
+   "x": 0.0149,
+   "y": 0.137,
+   "lift": 1.46
+  },
+  {
+   "x": 0.0113,
+   "y": 0.136,
+   "lift": 1.45
+  },
+  {
+   "x": 0.0102,
+   "y": 0.136,
+   "lift": 2.36
+  },
+  {
+   "x": 0.0102,
+   "y": 0.136,
+   "lift": 1.45
+  },
+  {
+   "x": 0.0261,
+   "y": 0.135,
+   "lift": 1.79
+  },
+  {
+   "x": 0.0344,
+   "y": 0.135,
+   "lift": 1.22
+  },
+  {
+   "x": 0.0187,
+   "y": 0.134,
+   "lift": 1.86
+  },
+  {
+   "x": 0.0246,
+   "y": 0.134,
+   "lift": 1.27
+  },
+  {
+   "x": 0.0119,
+   "y": 0.134,
+   "lift": 1.36
+  },
+  {
+   "x": 0.0125,
+   "y": 0.133,
+   "lift": 1.5
+  },
+  {
+   "x": 0.0139,
+   "y": 0.133,
+   "lift": 1.41
+  },
+  {
+   "x": 0.0243,
+   "y": 0.132,
+   "lift": 1.21
+  },
+  {
+   "x": 0.0138,
+   "y": 0.132,
+   "lift": 1.84
+  },
+  {
+   "x": 0.0242,
+   "y": 0.132,
+   "lift": 1.19
+  },
+  {
+   "x": 0.0143,
+   "y": 0.132,
+   "lift": 2.07
+  },
+  {
+   "x": 0.0109,
+   "y": 0.131,
+   "lift": 1.83
+  },
+  {
+   "x": 0.0137,
+   "y": 0.131,
+   "lift": 1.81
+  },
+  {
+   "x": 0.0332,
+   "y": 0.13,
+   "lift": 1.46
+  },
+  {
+   "x": 0.0128,
+   "y": 0.13,
+   "lift": 1.19
+  },
+  {
+   "x": 0.018,
+   "y": 0.129,
+   "lift": 1.71
+  },
+  {
+   "x": 0.0135,
+   "y": 0.129,
+   "lift": 1.31
+  },
+  {
+   "x": 0.0142,
+   "y": 0.129,
+   "lift": 1.78
+  },
+  {
+   "x": 0.0248,
+   "y": 0.128,
+   "lift": 1.16
+  },
+  {
+   "x": 0.012,
+   "y": 0.128,
+   "lift": 1.16
+  },
+  {
+   "x": 0.0177,
+   "y": 0.127,
+   "lift": 1.43
+  },
+  {
+   "x": 0.0322,
+   "y": 0.126,
+   "lift": 1.76
+  },
+  {
+   "x": 0.0132,
+   "y": 0.126,
+   "lift": 1.42
+  },
+  {
+   "x": 0.0104,
+   "y": 0.125,
+   "lift": 1.97
+  },
+  {
+   "x": 0.0104,
+   "y": 0.125,
+   "lift": 1.73
+  },
+  {
+   "x": 0.0136,
+   "y": 0.125,
+   "lift": 2.17
+  },
+  {
+   "x": 0.0173,
+   "y": 0.124,
+   "lift": 2.33
+  },
+  {
+   "x": 0.011,
+   "y": 0.123,
+   "lift": 1.13
+  },
+  {
+   "x": 0.0135,
+   "y": 0.122,
+   "lift": 1.48
+  },
+  {
+   "x": 0.0119,
+   "y": 0.121,
+   "lift": 1.36
+  },
+  {
+   "x": 0.021,
+   "y": 0.121,
+   "lift": 1.36
+  },
+  {
+   "x": 0.0113,
+   "y": 0.12,
+   "lift": 1.45
+  },
+  {
+   "x": 0.0107,
+   "y": 0.12,
+   "lift": 1.59
+  },
+  {
+   "x": 0.0232,
+   "y": 0.12,
+   "lift": 1.22
+  },
+  {
+   "x": 0.0208,
+   "y": 0.12,
+   "lift": 1.14
+  },
+  {
+   "x": 0.0305,
+   "y": 0.119,
+   "lift": 1.44
+  },
+  {
+   "x": 0.0129,
+   "y": 0.118,
+   "lift": 2.14
+  },
+  {
+   "x": 0.0301,
+   "y": 0.118,
+   "lift": 1.56
+  },
+  {
+   "x": 0.0128,
+   "y": 0.118,
+   "lift": 1.19
+  },
+  {
+   "x": 0.03,
+   "y": 0.117,
+   "lift": 1.85
+  },
+  {
+   "x": 0.0299,
+   "y": 0.117,
+   "lift": 1.25
+  },
+  {
+   "x": 0.0226,
+   "y": 0.117,
+   "lift": 1.31
+  },
+  {
+   "x": 0.0114,
+   "y": 0.116,
+   "lift": 1.49
+  },
+  {
+   "x": 0.0223,
+   "y": 0.115,
+   "lift": 1.81
+  },
+  {
+   "x": 0.0108,
+   "y": 0.115,
+   "lift": 1.52
+  },
+  {
+   "x": 0.0209,
+   "y": 0.114,
+   "lift": 1.28
+  },
+  {
+   "x": 0.0107,
+   "y": 0.114,
+   "lift": 1.75
+  },
+  {
+   "x": 0.0118,
+   "y": 0.112,
+   "lift": 1.41
+  },
+  {
+   "x": 0.0217,
+   "y": 0.112,
+   "lift": 1.94
+  },
+  {
+   "x": 0.011,
+   "y": 0.111,
+   "lift": 1.01
+  },
+  {
+   "x": 0.012,
+   "y": 0.11,
+   "lift": 1.52
+  },
+  {
+   "x": 0.0154,
+   "y": 0.11,
+   "lift": 1.38
+  },
+  {
+   "x": 0.0153,
+   "y": 0.109,
+   "lift": 1.11
+  },
+  {
+   "x": 0.021,
+   "y": 0.109,
+   "lift": 1.5
+  },
+  {
+   "x": 0.012,
+   "y": 0.109,
+   "lift": 1.16
+  },
+  {
+   "x": 0.0114,
+   "y": 0.109,
+   "lift": 1.71
+  },
+  {
+   "x": 0.0107,
+   "y": 0.108,
+   "lift": 1.5
+  },
+  {
+   "x": 0.0276,
+   "y": 0.108,
+   "lift": 1.95
+  },
+  {
+   "x": 0.0197,
+   "y": 0.107,
+   "lift": 1.34
+  },
+  {
+   "x": 0.0101,
+   "y": 0.107,
+   "lift": 1.82
+  },
+  {
+   "x": 0.0101,
+   "y": 0.107,
+   "lift": 1.48
+  },
+  {
+   "x": 0.0274,
+   "y": 0.107,
+   "lift": 1.34
+  },
+  {
+   "x": 0.0116,
+   "y": 0.106,
+   "lift": 2.21
+  },
+  {
+   "x": 0.0195,
+   "y": 0.106,
+   "lift": 1.08
+  },
+  {
+   "x": 0.0184,
+   "y": 0.106,
+   "lift": 1.46
+  },
+  {
+   "x": 0.0115,
+   "y": 0.105,
+   "lift": 1.32
+  },
+  {
+   "x": 0.0146,
+   "y": 0.105,
+   "lift": 1.89
+  },
+  {
+   "x": 0.0192,
+   "y": 0.104,
+   "lift": 1.77
+  },
+  {
+   "x": 0.0266,
+   "y": 0.104,
+   "lift": 1.44
+  },
+  {
+   "x": 0.0145,
+   "y": 0.104,
+   "lift": 1.61
+  },
+  {
+   "x": 0.02,
+   "y": 0.104,
+   "lift": 1.87
+  },
+  {
+   "x": 0.0143,
+   "y": 0.103,
+   "lift": 1.62
+  },
+  {
+   "x": 0.0261,
+   "y": 0.102,
+   "lift": 1.92
+  },
+  {
+   "x": 0.0113,
+   "y": 0.102,
+   "lift": 1.28
+  },
+  {
+   "x": 0.0142,
+   "y": 0.102,
+   "lift": 1.74
+  },
+  {
+   "x": 0.0197,
+   "y": 0.102,
+   "lift": 1.94
+  },
+  {
+   "x": 0.0197,
+   "y": 0.102,
+   "lift": 1.74
+  },
+  {
+   "x": 0.0107,
+   "y": 0.102,
+   "lift": 1.57
+  },
+  {
+   "x": 0.0111,
+   "y": 0.102,
+   "lift": 1.74
+  },
+  {
+   "x": 0.011,
+   "y": 0.101,
+   "lift": 1.13
+  }
+ ],
+ "split": {
+  "train": 5901,
+  "val": 1967,
+  "test": 1967
+ },
+ "secs": 11.6
+}
